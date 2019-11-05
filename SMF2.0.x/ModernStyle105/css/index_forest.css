@@ -1,0 +1,14 @@
+html {  
+	font-family: 'Arimo', sans-serif;-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; 
+}
+a:link, a:visited { text-decoration: none; color: #458; }
+
+#ftop  { background: url(../images/theme/darkbg2.jpg) repeat #000; color: #fff; }
+.ftop #fheader a { color: #fff; }
+.ftop #fheader { background: none;  border: none; }
+.ftopfixed { 	background: url(../images/theme/darkbg2.jpg) repeat #000;  	box-shadow: none; }
+.ftopfixed #fheader { color: #fff;	background: none; border: none; }
+.ftopfixed #fheader a { 	color: #fff;  }
+#mmenu_desktop .toplist li li a {color: #222; }
+ul.roundlist li a { background: #7ad; }
+ul.roundlist li a.active { background: #7cc; }

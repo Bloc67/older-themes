@@ -1,0 +1,79 @@
+html {  
+	font-family: 'Raleway', sans-serif;-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; 
+	background: #222;
+}
+
+a:link, a:visited { text-decoration: none; color: #ddd; }
+a:hover { color: #fff; }
+body { 
+	color: #ccc;
+	background: #222;
+}
+input, button, select, textarea { background: #444; }
+hr, .hrcolor { 	
+	color: #666;
+	background-color: #666;
+}
+fieldset { background: #111; }
+fieldset legend { border: solid 1px #888; background: #555;  }
+.catbg2, .catbg, .titlebg {color: #bbb; }
+.catbg h3, h3.catbg { color: #bbb; }
+.cat_bar h3.catbg { border-bottom: solid 1px #666; }
+
+#amenu li , #asubmenus li { border-right: 1px #777 solid; }
+.quickbuttons li a { color: #fff;}
+.horiz_list li ul { 
+	background: #333; 
+	border: solid 1px #444;
+	border-right: solid 6px #444;
+}
+.horiz_list li li a{ border-right: solid 1px #444; }
+.horiz_list li li a:hover{ background: #444; color: #aaa; }
+.toplist li, .toplist li a { 
+	color: #bbb; 
+}
+.horiz_list li:hover > a { color: #fff; }
+#linktree a { color: #aaa; display: block; padding: 2px 10px; border: solid 1px #444; border-right: none; }
+#linktree li:first-of-type a { border-radius: 16px 0 0 16px; padding-left: 16px; }
+#linktree li:last-of-type a { color: #fff; border: solid 1px #444; background: #444; color: #fff; border-radius: 0 16px 16px 0; padding-right: 16px; }
+#linktree li a.single { background: none; color: #fff; padding: 2px 16px; border: solid 1px #444; border-radius: 16px; }
+ul.roundlist li a { background: #444; 	color: #bbb; }
+.rounds li { border: solid 1px #444; }
+table.table_grid th td, table.table_grid td { border: none; border-bottom: solid 1px #555;  }
+.post_separator { color: #444; background: #444; }
+#fwidth, .ftopfixed #fheader, .ftop #fheader { background: #222; }
+#bwidth a { color: #ddd; }
+.plaincats { 	color: #bbb; }
+#fheader { background: none;  border: none; }
+.information { background: #333; color: #aaa; }
+#myhelp { background: #222;	color: #ddd; }
+#ftop { background: #222; }
+.ftopfixed { 	background: #222; 	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.7); }
+
+.pagelinks {	color: #999;}
+.pagelinks a,.pagelinks strong {	background: #445;	color: #ddd;}
+.pagelinks a.chosen, .pagelinks a:hover,.pagelinks strong:hover { background: #888; color: white; }
+.arrow_more {	border-color: #8f8f8f transparent transparent transparent;}
+#display_jump_to input, #display_jump_to select, #display_jump_to button {	border-bottom: solid 1px #ddd;}
+.attbox{	border: solid 2px #fff;}
+.napprove { border: solid 2px red; }
+.bar {	background: #333;}
+.bar span {	background: #fea;}
+.voted .bar span { background: #aef; }
+#gen_menu > div  { border-right: solid 1px #666;  }
+.pagesection, .pagesection div.pagelinks { color: #fff; }
+.pushup {	border: solid 1px #222; 	box-shadow: 0 1px 10px 0 rgba(0,0,0,0.7); }
+.divider_vert { border-left: solid 1px #333; }
+
+.dropmenu li { border-top: solid 2px #333; }
+.button_submit {  background: #444; border: none; }
+.button_submit:hover {  background: #666;  border: none;}
+#fbottom { border-top: solid 1px #555; }
+h1, h2, h3, h4, h5, h6 { color: #999; }
+.pagesection > span { color: #222; }
+#calendar .days:nth-child(even) , #calendar .weeklist tr:nth-child(even) td{ border-left: solid 1px #888; background: #111; }
+#calendar .days > div, #calendar .weekdays > div { border: solid 1px #555; background: #334; }
+.minical { border: solid 1px #666; }
+
+
+

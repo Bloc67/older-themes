@@ -1,0 +1,112 @@
+#forumposts .poster,
+#forumposts .keyinfo .messageicon,
+#forumposts .keyinfo .smalltext
+{
+	display: none;
+}
+#forumposts h5{
+	font-weight: normal;
+	border: none;
+	margin: 0;
+	padding: 0;
+	float: none;
+}
+#forumposts .windowbg,
+#forumposts .windowbg2,
+#forumposts span.topslice,
+#forumposts span.topslice span,
+#forumposts span.botslice,
+#forumposts span.botslice span
+{
+	font-size: 1em;
+}
+#forumposts .windowbg,
+#forumposts .windowbg2
+{
+	margin: 0 3em;
+	padding: 0.5em;
+	color: #ccc;
+}
+#forumposts .postarea{
+	margin: 0;
+	padding: 0.5em 0em 1em 0.5em;
+}
+#forumposts .quickbuttons li{
+	width: 18px;
+	overflow: hidden;
+	margin: 0 2px 0 0;
+	padding: 0;
+}
+#forumposts .quickbuttons{
+	width: 100px;
+	float: right;
+	margin: 0;
+}
+#forumposts .messageicon{
+	float: right;
+}
+#forumposts #firstblog h5{
+	font-size: 1.7em;
+}
+#forumposts #firstblog span.topslice,
+#forumposts #firstblog span.topslice span,
+#forumposts #firstblog span.botslice,
+#forumposts #firstblog span.botslice span,
+#forumposts #firstblog
+{
+	background: none;
+}
+#forumposts #firstblog
+{
+	background: none;
+	color: #ccc;
+	font-size: 1em;
+	margin: 0;
+	padding: 0.5em 0;
+}
+#forumposts #firstblog .post
+{
+	line-height: 1.6em;
+}
+#forumposts .blogger{
+	font-size: 0.8em;
+	display: block;
+	color: #ccc;
+}
+#forumposts .blogger a{
+	color: #ddd;
+	font-weight: bold;
+}
+#forumposts #firstblog .blogger{
+	color: #bbb;
+	font-size: 0.9em;	
+	padding: 5px 0 0 0;
+}
+#forumposts .post_separator{
+	display: block;
+	margin: 1px 0;
+	background: #000;
+	color: #000;
+}
+#forumposts #firstpost .moderatorbar{
+	border-top: solid 1px #000;
+	margin: 0;
+	padding: 10px 0;
+	color: #bbb;
+}
+a.blogavy{
+	float: left;
+	margin: 0 1em 0 0;
+}
+a.cavy img{
+	width: 40px;
+}
+#forumposts .signature{
+	display: none;
+}
+#forumposts .inner{
+	border-top: solid 1px #000;
+	padding-top: 5px;
+	margin-top: 0;
+	color: #bbb;
+}

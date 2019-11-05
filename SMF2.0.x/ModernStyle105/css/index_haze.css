@@ -1,0 +1,15 @@
+html {  
+	font-family: 'Arimo', sans-serif;-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; 
+	background: url(../images/theme/sidebar_bg1.jpg) fixed repeat #000; 
+}
+body, #fwidth, .ftopfixed #fheader, .ftop #fheader, .ftop { 	background: none;  }
+
+#fwidth, .ftopfixed #fheader, .ftop #fheader { 	background: white; }
+#fbody { padding-left: 4em;  padding-right: 4em; background: white; margin-top: 0; padding-top: 2em; }
+#fbottom, #fheader > .themepadding { padding-left: 4em;  padding-right: 4em;}
+a:link, a:visited { text-decoration: none; color: #458; }
+#fbody { min-height: 700px; }
+
+.cat_bar h3.catbg { border-bottom: #b8d5ff solid 2px ; padding-bottom: 2rem; margin-bottom: 1em; }
+.inner .toplist a{ background: #f0f4f8; padding: 0.1em 1em; margin-right: 2px; border-radius: 4px;  }
+.inner .toplist a:hover{ background: none; color: #000;  }

@@ -1,0 +1,24 @@
+/* over 1600 screens - newer desktops */
+@media only screen and (min-width: 1400px) {
+	#wrapper { 
+		width: 1200px; 
+		margin: auto;
+		-webkit-box-shadow:  0px 4px 25px 0px rgba(0, 0, 0, .6);
+		box-shadow:  0px 4px 25px 0px rgba(0, 0, 0, .6);
+	}
+	html {
+		background: repeat-x fixed url(../images/backgrounds/coral2.jpg) #000  top center;
+	}
+}
+
+/* up to 1000 - older desktops */
+@media only screen and (max-width: 1399px) {
+	html {
+		background: repeat-x fixed url(../images/backgrounds/coral2.jpg) #000  top center;
+	}
+	#wrapper { 
+		width: 95%; 
+		margin: auto; 
+		
+	}
+}

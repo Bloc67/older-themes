@@ -1,0 +1,42 @@
+.miniprofile
+{
+	color: #333;
+}
+.miniprofile h2
+{
+	color: #335;
+}
+.miniprofile h2 a.fullprof
+{
+	color: #444;
+}
+.miniprofile hr
+{
+	color: #aaa;
+	background: #aaa;
+}
+.miniprofile .avyframe
+{
+	background: #fff;
+}
+#minprof
+{
+	color: #333;
+}
+.miniprofile a,
+#minprof a
+{
+	color: #353;
+}
+.MultiBoxContainer {
+	background: url(../img/multiback2.png) no-repeat;
+	background: white\9;
+	/*overflow: hidden;*/
+}
+.MultiBoxClose {
+	top: 35px;
+	right: 35px;
+}
+.MultiBoxLoading {
+	background: url(../img/loader.gif) no-repeat center;
+}

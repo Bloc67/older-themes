@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<name>AlphaCentauri</name>
+	<id>blocthemes:alphacentauri</id>
+	<type>modification</type>
+	<version>1.01</version>
+
+	<install for="2.0 - 2.0.99">
+		<redirect url="$scripturl?action=admin;area=blocthemes">Installed!</redirect>
+		<require-dir name="Themes" destination="$boarddir" />
+		<require-dir name="Sources" destination="$boarddir" />
+        <readme type="inline">Installing the theme + BAC (Blocthemes Admin Center)</readme>
+		<code>InstallTheme.php</code>
+    </install>
+	<uninstall for="2.0 - 2.0.99">
+		<readme type="inline">Un-installing the theme + BAC (Blocthemes Admin Center). If you have several blocthemes the BAC will be kept.</readme>
+		<remove-dir name="$boarddir/Themes/AlphaCentauri" />
+		<code>InstallTheme.php</code>
+    </uninstall>
+</package-info>

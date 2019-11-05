@@ -1,0 +1,2601 @@
+/**
+ * @package Blocthemes Admin
+ * @version 1.0
+ * @theme Studio002
+ * @author Blocthemes - http://www.blocthemes.net
+ * Copyright (C) 2014 - Blocthemes
+ *
+ */
+
+a:link, a:visited {
+	color: #346;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+a.new_win:link, a.new_win:visited {
+	color: #346;
+	text-decoration: none;
+}
+a.new_win:hover {	text-decoration: underline; }
+table {	empty-cells: show; border-collapse: collapse; }
+html, body { overflow-x:hidden; }
+body {
+	background: #1b272f url(../images/theme/backdrop_dark.jpg) repeat-x top right fixed;
+	font: 86%/150% "Segoe UI", "Arial", "Helvetica", sans-serif;
+	margin: 0 auto;
+	padding: 0;
+}
+body#help_popup {	padding: 0; background: #fff; }
+body#help_popup a {	display: inline-block; padding: 1px 12px; background: #888; color: #fff; border-radius: 20px; font-size: 85%; }
+body#help_popup .windowbg , body#help_popup .description { padding: 1.5em 1em;	margin: 0; font-size: 1em; }
+body, td, th, tr {	color: #444; }
+form { padding: 0; margin: 0; } 
+
+.forumwidth { width: 100%; margin: 0 auto;  }
+body#help_popup { padding: 1em; }
+
+
+/* theme related */
+/*******************/
+.gradient01 {
+	background: #ffffff; 
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f4f4f4 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#f4f4f4 100%); /* W3C */
+}
+#themeframe #topframe { 
+	background: #fff; overflow: hidden; 
+}
+#full_titlebox { padding: 2em 1.5em 1em 1.5em; overflow: hidden; clear: both; }
+#full_newsbox {
+	padding: 1.5em;
+	color: #888;
+	font-style: italic;
+	border-top: solid 1px #f2f2f2;
+}
+#full_menubox {
+	border-top: solid 1px #f2f2f2;
+}
+#full_linktreebox { 
+	clear: both; 
+	padding: 0.75em 1.5em;
+	color: #888;
+	border-top: solid 1px #f7f7f7;
+	overflow: hidden;
+}
+#userbox { text-align: right; padding-top: 1em; color: #888;}
+#userbox a { color: #99a;}
+#userbox ul li { 
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 1em;
+	font-size: 0.9em;
+	display: inline-block; 
+	padding: 1px 10px 1px 5px;
+	border-right: solid 1px #bbb;
+}
+#userbox ul li:last-of-type { border-right: none; }
+#topavatar { height: 45px; border: solid 4px #f0f0f0; border-radius: 45px; float: right; margin: -10px 0 0 0.5em;  }
+#userbox li.greeting {
+	font-size: 1.1em;
+	float: none;
+	display: block;
+	border: none;
+}
+#full_content {
+	background: #f0f0f0;
+	padding: 1em 1.5em;
+	clear: both;
+}
+#full_footer {
+	background: #fff;
+	color: #999;
+	padding: 1em;
+	clear: both;
+	border-top: 2px solid #ddd;
+	text-align: center;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+#socialbox { overflow: hidden;  height: 40px; text-align: right; padding-right: 2em; }
+#socialbox a {	
+	display: inline-block; 
+	opacity: 0.5;
+	width: 70px;
+	height: 40px;
+	position: relative;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+#socialbox a:hover {	
+	opacity: 1;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+#socialbox a#fb {	 background: url(../images/theme/social_23.png) no-repeat 0 10px; }
+#socialbox a#fb:hover { background: url(../images/theme/social_23.png) no-repeat 0 0px; }
+#socialbox a#pi {	background: url(../images/theme/social_23.png) no-repeat -70px 10px; }
+#socialbox a#pi:hover { background: url(../images/theme/social_23.png) no-repeat -70px 0px; }
+#socialbox a#tw { background: url(../images/theme/social_23.png) no-repeat -140px 10px; }
+#socialbox a#tw:hover { background: url(../images/theme/social_23.png) no-repeat -140px 0px; }
+#socialbox a#rs { background: url(../images/theme/social_23.png) no-repeat -208px 10px; }
+#socialbox a#rs:hover { background: url(../images/theme/social_23.png) no-repeat -208px 0px; }
+
+textarea {
+	padding: 1em;
+	margin: 1em 0;
+	background: #f7f7ff;
+	border: solid 1px #bbc;
+}
+#full_content fieldset { margin: 1em 0; padding: 2em 1.5em 1em 1.5em; overflow: hidden; clear: both; border: solid 1px #ccc; background: #f9f9f9; border-radius: 10px; }
+fieldset legend {
+	margin: 2px 0 0 1em;
+	display: block;
+	padding: 3px 2em;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #ddd;
+	background: #555;
+	border-radius: 20px;
+	font-weight: normal;
+}
+fieldset legend a:link, fieldset legend a:visited {
+	color: #ddd;
+	text-decoration: none;
+}
+input { padding: 2px 8px; }
+.button_submit:hover, .button_reset:hover {  }
+input.input_check, input.input_radio { border: none;	background: none; }
+input[disabled].input_text { background-color: #d0d0d0; }
+
+/* Select elements - sometimes called drop down lists */
+input, .input_text, button, select, select > option, label {
+    padding: 1px 4px;
+    height: 1.8em;
+    min-height: 1.8em;
+    max-height: 1.8em;
+    font-size: 1em; 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+	overflow: hidden;
+}
+label {  display: inline; vertical-align: middle; cursor: pointer;  }
+#search_form {
+	border: solid 1px #bbb;
+	background: #fff;
+	padding: 0;
+}
+#search_form input {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+}
+#search_form input.input_text { 
+	width: 5em; 
+	padding: 3px 1em 0 1em; 
+	float: left; 
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+#search_form input.input_text:focus { 
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	width: 15em; 
+}
+#search_form input.button_submit {
+	width: 60px;
+	background: url(../images/theme/searchformbg.png) no-repeat top right;
+}
+#search_form input,#search_form input,#search_form input:active,#search_form input:focus { outline: none; border: none;  }
+
+input[disabled].input_text {	background-color: #eee; }
+hr, .hrcolor {
+	height: 1px;
+	border: 0;
+	color: #ccc;
+	background-color: #ccc;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+a img {	border: 0; }
+
+/* Define strong as bold, and em as italics */
+strong {	font-weight: bold; }
+em {	font-style: italic; }
+/* Alternative for u tag */
+.underline {	text-decoration: underline; }
+/* Common classes to easy styling.
+------------------------------------------------------- */
+.floatright {	float: right; }
+.floatleft {	float: left; }
+.flow_auto {	overflow: auto; }
+.flow_hidden {	overflow: hidden; }
+.flow_hidden .windowbg, .flow_hidden .windowbg2 {	margin-top: 2px; }
+.clear {	clear: both; }
+.clear_left {	clear: left; }
+.clear_right {	clear: right; }
+
+/* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
+.smalltext, tr.smalltext th { font-size: 0.85em; }
+.middletext { font-size: 0.9em; line-height: 1em; }
+.normaltext { font-size: 1em; line-height: 1.2em; }
+.largetext {	font-size: 1.4em; }
+.centertext { margin: 0 auto; text-align: center; }
+.righttext { margin-left: auto; margin-right: 0; text-align: right; }
+.lefttext {
+	margin-left: 0;
+	margin-right: auto;
+	text-align: left;
+}
+.double_height {	line-height: 2em; }
+/* some common padding styles */
+.padding {	padding: 0.7em; }
+.main_section, .lower_padding {	padding-bottom: 0.5em; }
+/* a quick reset list class. */
+ul.reset, ul.reset li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/* Some BBC related styles.
+------------------------------------------------------- */
+
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader {
+	color: #888;
+	background: #fff;
+	display: block;
+	font-size: x-small;
+	padding: .4em 1em;
+	border: solid 1px #ccc;
+	border-bottom: none; 
+	margin: 0 auto -0.2em auto;
+	border-radius: 4px 4px 0 0;
+}
+.quoteheader a {	color: #888; }
+
+/* A quote, perhaps from another post. */
+blockquote.bbc_standard_quote, blockquote.bbc_alternate_quote {
+	font-size: 0.95em;
+	border: double 4px #ccc;
+	color: #000;
+	line-height: 1.3em;
+	background: #f0f5f8;
+	padding: 1em;
+	margin: 0.1em 0 10px 0;
+	border-radius: 4px;
+	overflow: auto;
+}
+
+/* Alterate blockquote stylings */
+blockquote.bbc_standard_quote {	 }
+blockquote.bbc_alternate_quote {	background-color: #fbfbfb; }
+
+/* A code block - maybe PHP ;). */
+code.bbc_code {
+	display: block;
+	font-family: "dejavu sans mono", "monaco", "lucida console", "courier new", monospace;
+	font-size: x-small;
+	background: #eef;
+	border-top: 2px solid #999;
+	border-bottom: 2px solid #999;
+	line-height: 1.5em;
+	padding: 3px 1em;
+	overflow: auto;
+	white-space: nowrap;
+	/* Show a scrollbar after about 24 lines. */
+	max-height: 24em;
+}
+
+/* The "Quote:" and "Code:" header parts... */
+.codeheader {
+	color: #666;
+	font-size: x-small;
+	font-weight: bold;
+	padding: 0 0.3em;
+}
+
+/* For links to change the code stuff... */
+.codeoperation {	font-weight: normal; }
+
+/* Styling for BBC tags */
+.bbc_link:link, .bbc_link:visited {	border-bottom: 1px solid #A8B6CF; }
+.bbc_link:hover {
+	text-decoration: none;
+	border-bottom: 1px solid #346;
+}
+.bbc_size {	line-height: 1.4em; }
+.bbc_color a {	color: inherit; }
+.bbc_img {	border: 0; }
+.bbc_table {
+	font: inherit;
+	color: inherit;
+}
+.bbc_table td {
+	font: inherit;
+	color: inherit;
+	vertical-align: top;
+}
+.bbc_u {	text-decoration: underline; }
+.bbc_list {	text-align: left; }
+.bbc_tt {	font-family: "dejavu sans mono", "monaco", "lucida console", "courier new", monospace; }
+
+/* Generally, those [?] icons.  This makes your cursor a help icon. */
+.help {	cursor: help; }
+
+/* /me uses this a lot. (emote, try typing /me in a post.) */
+.meaction {	color: red; }
+
+/* Highlighted text - such as search results. */
+.highlight {
+	font-weight: bold;
+	color: #ff7200 !important;
+	font-size: 1.1em;
+}
+
+/* A more discreet highlight color, for selected membergroups etc. */
+.highlight2 {
+	background-color: #D1E1EF;
+	color: #000 !important;
+}
+
+/* Generic, mostly color-related, classes.
+------------------------------------------------------- */
+#calendar .cat_bar,#calendar .title_bar { 	overflow: hidden; min-height: 3.6em; }
+.titlebg, .titlebg2, tr.titlebg th, tr.titlebg td, tr.titlebg2 td,
+.catbg, .catbg2, tr.catbg td, tr.catbg2 td, tr.catbg th, tr.catbg2 th {
+	background: #5d5a5a;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: 0.7em 1em;
+	overflow: hidden;
+	font-weight: normal;
+}
+.titlebg, .titlebg2, .catbg, .catbg2 {
+	clear: both;
+	overflow: hidden;
+}
+.titlebg a, .titlebg2 a, .catbg a, .catbg2 a {
+	color: #fff;
+}
+.catbg img.icon, .titlebg img.icon { position: relative; vertical-align: -10%;  margin-right: 1em; }
+
+/* adjust the table versions of headers */
+tr.titlebg th, tr.titlebg2 th, td.titlebg, td.titlebg2, tr.catbg th, tr.catbg2 th, td.catbg, td.catbg2 {	padding: 4px 6px; font-size: 90%; }
+tr.titlebg th a:link, tr.titlebg th a:visited, tr.titlebg2 td a:link, tr.titlebg2 td a:visited {	color: #222; }
+tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:visited {	color: #fff; }
+
+
+.windowbg,.windowbg2,.windowbg3,.approvebg, .approvebg2,.approvetbg,.approvetbg2,.lockedbg,.lockedbg2, #preview_body { overflow: hidden; padding: 1em; }
+.windowbg, #preview_body { 	background-color: #f8f8f8; }
+.windowbg2 {  background-color: #fbfbfb; }
+.windowbg3 { background-color: #fff; }
+
+/* the page navigation area */
+.pagesection {
+	font-size: 0.9em;
+	padding: 0.2em;
+	overflow: hidden;
+	margin-bottom: 1px;
+	clear: both;
+}
+.pagelinks {	padding: 0.6em 0 0.4em 0; }
+
+/* Colors for background of posts requiring approval */
+.approvebg { color: #000; background-color: #ffeaea; }
+.approvebg2 { color: #000; background-color: #fff2f2; }
+
+/* Color for background of *topics* requiring approval */
+.approvetbg { 	color: #000; background-color: #e4a17c; }
+.approvetbg2 {color: #000; background-color: #f3bd9f; }
+
+/* Sticky topics get a different background */
+.stickybg, .stickybg2 {	
+	background: #f6f6f6; /* Old browsers */
+	background: -moz-vertical-gradient(top,  #f6f6f6 0%, #f6f6f6 97%, #f6f6f6 97%, #bfbd10 98%); /* FF3.6+ */
+	background: -webkit-gradient(vertical, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(97%,#f6f6f6), color-stop(97%,#f6f6f6), color-stop(98%,#bfbd10)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f6f6f6 0%,#f6f6f6 97%,#f6f6f6 97%,#bfbd10 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f6f6f6 0%,#f6f6f6 97%,#f6f6f6 97%,#bfbd10 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f6f6f6 0%,#f6f6f6 97%,#f6f6f6 97%,#bfbd10 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f6f6f6 0%,#f6f6f6 97%,#f6f6f6 97%,#bfbd10 98%); /* W3C */
+}
+/* Locked posts get a different shade, too! */
+.lockedbg {	
+	background: #f2f2f2; font-style: italic; color: #aaa;
+}
+.lockedbg2 { 
+	background: #f2f2f2; font-style: italic; color: #aaa;
+}
+.lockedbg a, .lockedbg2 a{	 color: #aab; }
+
+/* Posts and personal messages displayed throughout the forum. */
+.post, .personalmessage {
+	overflow: auto;
+	line-height: 1.4em;
+	padding: 0.1em 0;
+}
+
+/* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
+.signature, .attachments {
+	width: 98%;
+	overflow: hidden;
+	clear: right;
+	padding: 1em 0 3px 0;
+	border-top: 1px solid #aaa;
+	line-height: 1.4em;
+	font-size: 0.85em;
+	box-sizing: border-box;
+}
+.custom_fields_above_signature {
+	width: 98%;
+	clear: right;
+	padding: 1em 0 3px 0;
+	border-top: 1px solid #aaa;
+	line-height: 1.4em;
+	font-size: 0.85em;
+}
+.error {	color: red; }
+.alert {	color: red; }
+.birthday {	color: #920ac4; }
+.event {	color: #078907; }
+.holiday {	color: #000080; }
+.warn_mute {	color: red; }
+.warn_moderate {	color: #ffa500; }
+.warn_watch, .success {	color: green; }
+a.moderation_link, a.moderation_link:visited {
+	color: red;
+	font-weight: bold;
+}
+.openid_login {
+	background: white url(../images/openid.gif) no-repeat;
+	padding-left: 18px;
+}
+
+/* a descriptive style */
+.description, .description_board, .plainbox {
+	padding: 0.5em 1em;
+	font-size: 0.9em;
+	line-height: 1.4em;
+	border: 1px solid #bbb;
+	background: #f5f5f0;
+	margin: 0.2em 1px 1em 1px;
+}
+.description_board {	margin: 1em 1px 0 1px; }
+/* an informative style */
+.information {
+	padding: 0.5em 1em;
+	font-size: 0.9em;
+	line-height: 1.3em;
+	border: 1px solid #bbb;
+	background: #f0f6f0;
+	margin: 0.2em 1px 1em 1px;
+}
+.information p {
+	padding: 1em;
+	margin: 0;
+}
+p.para2 {
+	padding: 1em 0 3.5em 0;
+	margin: 0;
+}
+/* AJAX notification bar
+------------------------------------------------------- */
+#ajax_in_progress {
+	background: url(../images/theme/loadingbar.png) repeat-x;
+	color: #f96f00;
+	text-align: center;
+	font-size: 16pt;
+	padding: 8px;
+	width: 100%;
+	height: 66px;
+	line-height: 25px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#ajax_in_progress a {
+	color: orange;
+	text-decoration: underline;
+	font-size: smaller;
+	float: right;
+	margin-right: 20px;
+}
+
+/* Lists with settings use these a lot.
+------------------------------------------------------- */
+dl.settings {
+	clear: right;
+	overflow: auto;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+dl.settings dt {
+	width: 40%;
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+	clear: both;
+}
+dl.settings dt.settings_title {
+	width: 100%;
+	float: none;
+	margin: 0 0 10px 0;
+	padding: 5px 0 0 0;
+	font-weight: bold;
+	clear: both;
+}
+dl.settings dt.windowbg {
+	width: 98%;
+	float: left;
+	margin: 0 0 3px 0;
+	padding: 0 0 5px 0;
+	clear: both;
+}
+dl.settings dd {
+	width: 56%;
+	float: right;
+	margin: 0 0 3px 0;
+	padding: 0;
+}
+dl.settings img {	margin: 0 10px 0 0; }
+/* help icons */
+dl.settings dt a img {
+	position: relative;
+	top: 2px;
+}
+
+/* Styles for rounded headers.
+------------------------------------------------------- */
+#upshrinkHeaderIC p.pminfo {
+	margin: 0;
+	padding: 0.5em;
+}
+img#upshrink_ic, img#newsupshrink {
+	float: right;
+	margin: 0px 5px 0 0;
+}
+table.table_list a.unreadlink, table.table_list a.collapse {	float: right; }
+table.table_list a.collapse {
+	margin: 0px 5px 0 1em;
+}
+
+/* a general table class */
+table.table_grid {
+	border-collapse: collapse;
+	margin-top: 0.1em;
+}
+table.table_grid td {
+	margin: 2px;
+	padding: 0.5em 1em;
+	border: 1px solid #ddd; 
+	border-top: 1px solid #fff; 
+	border-left: 1px solid #ddd;
+}
+
+/* GenericList */
+.additional_row {	padding: 0.5em 0 0.5em 0; }
+table.table_grid thead tr.catbg th {	white-space: nowrap; }
+
+/* table_grid styles for Profile > Show Permissions. */
+#permissions table.table_grid  td {
+	padding: 0.4em 0.8em;
+	cursor: default;
+} 
+
+.postbg {
+}
+
+/* Used for sections that need somewhat larger corners.
+----------------------------------------------------------- */
+.roundframe {
+	padding: 1em;
+	background: #fff;
+	border: 1px solid #ddd;
+	clear: both;
+}
+.roundframe dl, .roundframe dt, .roundframe p {	margin: 0; }
+.roundframe p {	padding: 0.5em; }
+
+/* The main content area.
+------------------------------------------------------- */
+.content {
+	padding: 0.5em 1.2em;
+	margin: 0;
+	border: none;
+}
+.content p {	margin: 0 0 0.5em 0; }
+
+/* Styles used by the auto suggest control.
+------------------------------------------------------- */
+.auto_suggest_div {
+	border: 1px solid #000;
+	position: absolute;
+	visibility: hidden;
+}
+.auto_suggest_item {	background-color: #ddd; }
+.auto_suggest_item_hover {
+	background-color: #888;
+	cursor: pointer;
+	color: #eee;
+}
+#themefame { margin: -50px 0 0 0; position: relative; }
+.wrapper {
+	height:100%; 
+	left:0; 
+	top:0; 
+	position: relative; 
+}
+/* Styles for the standard button lists.
+------------------------------------------------------- */
+.buttonlist ul {
+	z-index: 100;
+	padding: 0;
+	margin: 5px 0;
+}
+.buttonlist ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+.buttonlist ul li a {
+	display: block;
+	font-size: 0.9em;
+	color: #666;
+	padding: .4em;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-top: solid 1px transparent;
+}
+.buttonlist ul li a:hover {
+	text-decoration: none;
+	border-top: solid 1px #aaa;
+	color: #666;
+}
+/* the active one */
+.buttonlist ul li a.active {
+	font-weight: bold;
+}
+.buttonlist ul li a.active span {	
+}
+.buttonlist input[type=checkbox] { float: right; }
+.buttonlist ul li a.active {	font-weight: bold; }
+.align_top ul li a, .align_bottom ul li a {	margin: 0 12px 0 0; }
+
+/* the navigation list */
+ul#navigation {
+	margin: 0;
+	font-size: 0.9em;
+	padding: 1em 0.4em;
+}
+ul#navigation li {
+	float: none;
+	font-size: 0.95em;
+	display: inline;
+}
+
+#adm_submenus {
+	padding-left: 2em;
+	overflow: hidden;
+}
+
+/* Styles for the general looks for the Curve theme.
+------------------------------------------------------- */
+
+/* The navigation list (i.e. linktree) */
+.navigate_section {
+	overflow: hidden;
+}
+.navigate_section ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+.navigate_section ul li { float: left; 	padding: 0 0.5em 0 0; }
+.navigate_section ul li a {	white-space: pre; color: #777; }
+.navigate_section ul li a:hover {	color: #000; }
+
+/* Styles for a typical table.
+------------------------------------------------------- */
+table.table_list {	width: 100%; border-collapse: collapse; }
+table.table_list p {
+	padding: 0;
+	margin: 0;
+}
+table.table_list td, table.table_list th {	padding: 10px; }
+table.table_list td {	border: 1px solid #ddd; border-top: 1px solid #fff; border-left: 1px solid #ddd;}
+table.table_list tbody.header td {	padding: 0; }
+table.table_list tbody.content td.stats {
+	width: 15%;
+	text-align: right;
+	color: #888;
+}
+table.table_list tbody.content td.lastpost {
+	line-height: 1.3em;
+	font-size: 85%;
+	width: 24%;
+}
+table.table_list tbody.content td.icon {
+	text-align: center;
+	width: 4%;
+}
+
+/* the board title! */
+.table_list tbody.content td.info a.subject {
+	font-weight: bold;
+	font-size: 110%;
+	color: #666;
+}
+.table_list tbody.content td.children {
+	color: #555;
+	font-size: 85%;
+}
+p.moderators {
+	font-size: 0.8em;
+	font-family: verdana, sans-serif;
+}
+/* hide the table header/footer parts - but its here for those needing to style it */
+#boardindex_table .table_list thead, #boardindex_table .table_list tbody.divider , #boardindex_table .table_list tfoot {	display: none; }
+#boardindex_table { margin-bottom: 1em; }
+
+/* the posting icons */
+#posting_icons {
+	padding: 0 1em 0.5em 1em;
+	margin: 0 0 1em 0;
+	line-height: 1em;
+}
+#posting_icons ul {	font-size: 0.8em; }
+#posting_icons img {
+	vertical-align: middle;
+	margin: 0 0 0 4ex;
+}
+#postbuttons_upper ul li a span {
+	line-height: 19px;
+	padding: 0 0 0 6px;
+}
+.nextlinks {
+	text-align: right;
+	margin-top: -1px;
+}
+.nextlinks_bottom {
+	clear: right;
+	text-align: right;
+}
+.mark_read {	padding: 0 0.5em; }
+
+/* the newsfader */
+#newsfader {	margin: 0 2px; }
+#smfFadeScroller {
+	text-align: center;
+	padding: 0 2em;
+	overflow: auto;
+	margin: 1em 0;
+	color: #575757; /* shouldn't be shorthand style due to a JS bug in IE! */
+}
+
+/* Styles for the info center on the board index.
+---------------------------------------------------- */
+
+#upshrinkHeaderIC {	margin-top: 4px; }
+dl#ic_recentposts {
+	margin: 0 0 0.5em 0;
+	padding: 0.5em;
+	line-height: 1.3em;
+}
+dl#ic_recentposts dt {	float: left; }
+dl#ic_recentposts dd {	text-align: right; }
+#upshrinkHeaderIC p {
+	margin: 0 0 0.5em 0;
+	padding: 0.5em;
+}
+#upshrinkHeaderIC p.last {
+	margin: 0;
+	padding: 0.5em;
+	border-top: 2px dotted #bbb;
+}
+#upshrinkHeaderIC p.inline {
+	border: none;
+	margin: 0;
+	padding: 0.2em 0.5em 0.2em 0.5em;
+}
+#upshrinkHeaderIC p.stats {
+	font-size: 1.1em;
+	padding-top: 8px;
+}
+form#ic_login {
+	padding: 0.5em;
+	height: 2em;
+}
+form#ic_login ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+form#ic_login ul li label {	display: block; }
+
+/* the small stats */
+#index_common_stats {
+	display: block;
+	margin: 0 0 0.5em 0;
+	text-align: right;
+	font-size: 0.9em;
+	position: relative;
+	top: -20px;
+	line-height: 1px;
+}
+
+img.new_posts {	padding: 0 0.1em; }
+/* Styles for the message (topic) index.
+---------------------------------------------------- */
+div.table_frame .table_list {
+	border-collapse: collapse;
+	margin: 1px 0;
+}
+.table_frame .table_list td.icon, .table_frame .table_list td.info, .table_frame .table_list td.stats {	border: 1px solid #ddd; border-top: 1px solid #fff; border-left: 1px solid #ddd; }
+#messageindex {	clear: both; }
+/* the page navigation area */
+.childboards {	margin-bottom: 0.2em; }
+#childboards h3 {	padding-bottom: 0; }
+#childboards .table_list thead {	display: none; }
+#childboards .table_list {	margin-bottom: 1em; }
+.lastpost img {
+	float: right;
+	padding: 4px;
+}
+
+/* Styles for the display template (topic view).
+---------------------------------------------------- */
+
+#postbuttons div.buttons {
+	padding: 0.5em;
+	width: 40%;
+	float: right;
+}
+#postbuttons div.middletext {	width: 60%; }
+#postbuttons span {
+	display: block;
+	text-align: right;
+}
+#postbuttons span.lower {	clear: right; }
+#postbuttons .buttonlist {	float: right; }
+#postbuttons #pagelinks {	padding-top: 1em; }
+#moderationbuttons {	overflow: hidden; }
+/* Events */
+.linked_events {
+	padding: 1em 0;
+}
+.edit_event {
+	margin: 0 1em;
+	vertical-align: middle;
+}
+/* Poll question */
+#poll {	overflow: hidden; }
+#poll .content {	padding: 0 1em; }
+h4#pollquestion {	padding: 0 0 0.5em 2em; }
+
+/* Poll vote options */
+#poll_options ul.options {
+	border-top: 1px solid #9999aa;
+	padding: 1em 2.5em 0 2em;
+	margin: 0 0 1em 0;
+}
+#poll_options div.submitbutton {
+	border-bottom: 1px solid #9999aa;
+	clear: both;
+	padding: 0 0 1em 2em;
+	margin: 0 0 1em 0;
+}
+
+/* Poll results */
+#poll_options dl.options {
+	border: solid #9999aa;
+	border-width: 1px 0;
+	padding: 1em 2.5em 1em 2em;
+	margin: 0 1em 1em 0;
+	line-height: 1.1em !important;
+}
+
+#poll_options dl.options dt {
+	padding: 0.3em 0;
+	width: 30%;
+	float: left;
+	margin: 0;
+	clear: left;
+}
+
+#poll_options dl.options .voted {	font-weight: bold; }
+#poll_options dl.options dd {
+	margin: 0 0 0 2em;
+	padding: 0.1em 0 0 0;
+	width: 60%;
+	max-width: 450px;
+	float: left;
+}
+
+#poll_options dl.options .percentage {
+	display: block;
+	float: right;
+	padding: 0.2em 0 0.3em 0;
+}
+
+/* Poll notices */
+#poll_options p {
+	margin: 0 1.5em 0.2em 1.5em;
+	padding: 0 0.5em 0.5em 0.5em;
+}
+
+div#pollmoderation {
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+/* onto the posts */
+#forumposts {	clear: both; }
+#forumposts .cat_bar {	margin: 0 0 2px 0; }
+/* author and topic information */
+#forumposts h3 span#author {	margin: 0 7.7em 0 0; }
+#forumposts h3 img {
+	float: left;
+	margin: 4px 0.5em 0 0;
+}
+#forumposts h3.catbg {	margin-bottom: 3px; }
+p#whoisviewing {
+	margin: 0;
+	padding: 0.5em;
+}
+/* poster and postarea + moderation area underneath */
+.post_wrapper {
+	float:left;
+	width:100%;
+}
+.poster {
+	float: left;
+	width: 15em;
+}
+.postarea, .moderatorbar {	margin: 0 0 0 16em; }
+.postarea div.flow_hidden {	width: 100%; }
+.moderatorbar {	clear: right; }
+/* poster details and list of items */
+.poster h4, .poster ul {
+	padding: 0;
+	margin: 0 1em 0 1.5em;
+}
+.poster h4 {
+	margin: 0.2em 0 0.4em 1.1em;
+	font-size: 120%;
+}
+.poster h4, .poster h4 a {	color: #c06002; }
+.poster ul ul {
+	margin: 0.3em 1em 0 0;
+	padding: 0;
+}
+.poster ul ul li {	display: inline; }
+.poster li.stars, .poster li.avatar, .poster li.blurb, li.postcount, li.im_icons ul {	margin-top: 0.5em; }
+.poster li.avatar {	overflow: hidden; }
+.poster li.warning {
+	line-height: 1.2em;
+	padding-top: 1em;
+}
+.poster li.warning a img {
+	vertical-align: bottom;
+	padding: 0 0.2em;
+}
+.messageicon {
+	float: left;
+	margin: 0 0.5em 0 0;
+}
+.messageicon img {	padding: 6px 3px; }
+.keyinfo {
+	float: left;
+	width: 50%;
+}
+.modifybutton {
+	clear: right;
+	float: right;
+	margin: 6px 20px 10px 0;
+	text-align: right;
+	font: bold 0.85em arial, sans-serif;
+	color: #334466;	
+}
+
+/* The quick buttons */
+div.quickbuttons_wrap {
+	padding: 0.2em 0;
+	width: 100%;
+	float: left;
+}
+
+ul.quickbuttons {
+	margin: 0.9em 11px 0 0;
+	clear: right;
+	float: right;
+	text-align: right;
+	font: bold 0.85em arial, sans-serif;
+}
+ul.quickbuttons li {
+	float: left;
+	display: inline;
+	margin: 0;
+}
+
+ul.quickbuttons li a {
+	display: block;
+	font-size: 0.9em;
+	color: #666;
+	padding: .4em;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-top: solid 1px transparent;
+}
+ul.quickbuttons li a:hover {
+	text-decoration: none;
+	border-top: solid 1px #aaa;
+	color: #666;
+}
+ul.quickbuttons li.inline_mod_check {	margin: 0 0 0 5px; }
+.post {
+	margin-top: 0.5em;
+	clear: right;
+}
+.inner {
+	padding: 1em 1em 2px 0;
+	margin: 0 1em 0 0;
+	border-top: 1px solid #99a;
+}
+img.smiley {	vertical-align: bottom; }
+#forumposts .modified {	float: left; }
+#forumposts .reportlinks {
+	margin-right: 1.5em;
+	text-align: right;
+	clear: right;
+}
+#forumposts .signature, .post .signature {	margin: 1em 0 0 0; }
+#forumposts span.botslice {	clear: both; }
+.attachments hr {
+	clear: both;
+	margin: 1em 0 1em 0;
+}
+.attachments {	padding: 1em 0 2em 0; box-sizing: border-box; overflow: hidden;  }
+.attachments div { padding: 1em 0.5em; }
+.attachments div img { margin: 8px 0 2px 0; vertical-align: -30%; }
+
+/* Styles for the quick reply area.
+---------------------------------------------------- */
+#quickreplybox {	padding-bottom: 1px; }
+#quickReplyOptions .roundframe {	padding: 0 10%; }
+#quickReplyOptions form textarea {
+	height: 100px;
+	width: 635px;
+	max-width: 100%;
+	min-width: 100%;
+	margin: 0.25em 0 1em 0;
+}
+/* The jump to box */
+#display_jump_to {
+	clear: both;
+	padding: 5px;
+	margin-top: 6px;
+	text-align: right;
+}
+
+/* Separator of posts. More useful in the print stylesheet. */
+#forumposts .post_separator {	display: none; }
+
+/* Styles for edit post section
+---------------------------------------------------- */
+form#postmodify .roundframe {	padding: 0 12%; }
+#post_header, .postbox {
+	padding: 0.5em;
+	overflow: hidden;
+}
+#post_header dt, .postbox dt {
+	float: left;
+	padding: 0;
+	width: 15%;
+	margin: .5em 0 0 0;
+	font-weight: bold;
+}
+#post_header dd, .postbox dd {
+	float: left;
+	padding: 0;
+	width: 83%;
+	margin: .3em 0;
+}
+#post_header img {	vertical-align: middle; }
+ul.post_options {
+	margin: 0 0 0 1em;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+ul.post_options li {
+	margin: 0.2em 0;
+	width: 49%;
+	float: left;
+}
+#postAdditionalOptionsHeader {	margin-top: 1em; }
+#postMoreOptions {
+	border-bottom: 1px solid #cacdd3;
+	padding: 0.5em;
+}
+#postAttachment, #postAttachment2 {
+	overflow: hidden;
+	margin: .5em 0;
+	padding: 0;
+	border-bottom: 1px solid #cacdd3;
+	padding: 0.5em;
+}
+#postAttachment dd, #postAttachment2 dd {	margin: .3em 0 .3em 1em; }
+#postAttachment dt, #postAttachment2 dt {	font-weight: bold; }
+#postAttachment3 {	margin-left: 1em; }
+#post_confirm_strip, #shortcuts {	padding: 1em 0 0 0; }
+.post_verification {	margin-top: .5em; }
+.post_verification #verification_control {	margin: .3em 0 .3em 1em; }
+/* The BBC buttons */
+#bbcBox_message {	margin: 0.75em 0.5em; }
+#bbcBox_message div {
+	margin: 0.2em 0;
+	vertical-align: top;
+}
+#bbcBox_message div img {
+	margin: 0 1px 0 0;
+	vertical-align: top;
+}
+#bbcBox_message select {	margin: 0 2px; }
+/* The smiley strip */
+#smileyBox_message {	margin: 0.5em; }
+
+/* Styles for edit event section
+---------------------------------------------------- */
+#post_event #event_main input {
+	margin: 0 0 1em 0;
+	float: left;
+}
+#post_event #event_main div.smalltext {
+	width: 33em;
+	float: right;
+}
+#post_event div.event_options {	float: right; }
+#post_event ul.event_main, ul.event_options {
+	padding: 0;
+	overflow: hidden;
+}
+#post_event ul.event_main li {
+	list-style-type: none;
+	margin: 0.2em 0;
+	width: 49%;
+	float: left;
+}
+#post_event ul.event_options {
+	margin: 0;
+	padding: 0 0 .7em .7em;
+}
+#post_event ul.event_options li {
+	list-style-type: none;
+	margin: 0;
+	float: left;
+}
+#post_event #event_main select, #post_event ul.event_options li select, #post_event ul.event_options li .input_check {	margin: 0 1em 0 0; }
+
+/* Styles for edit poll section.
+---------------------------------------------------- */
+
+#edit_poll {	overflow: hidden; }
+#edit_poll ul.poll_main li {	padding-left: 1em; }
+#edit_poll ul.poll_main input {	margin-left: 1em; }
+#edit_poll ul.poll_main, dl.poll_options {
+	overflow: hidden;
+	padding: 0 0 .7em .7em;
+	list-style: none;
+}
+#edit_poll ul.poll_main li {	margin: 0.2em 0; }
+#edit_poll dl.poll_options dt {
+	width: 33%;
+	padding: 0 0 0 1em;
+}
+#edit_poll dl.poll_options dd {	width: 65%; }
+#edit_poll dl.poll_options dd input {	margin-left: 0;  }
+
+/* Styles for the recent messages section.
+---------------------------------------------------- */
+
+#readbuttons_top .pagelinks, #readbuttons .pagelinks {
+	padding-bottom: 1em;
+	width: 60%;
+}
+#readbuttons .pagelinks {	padding-top: 1em; }
+#recent {	clear: both; }
+
+/* Styles for the move topic section.
+---------------------------------------------------- */
+
+#move_topic dl {	margin-bottom: 0; }
+#move_topic dl.settings dt {	width: 40%; }
+#move_topic dl.settings dd {	width: 59%; }
+.move_topic {
+	width: 710px;
+	margin: auto;
+	text-align: left;
+}
+
+/* Styles for the send topic section.
+---------------------------------------------------- */
+
+dl.send_topic {	margin-bottom: 0; }
+dl.send_mail dt {	width: 35%; }
+dl.send_mail dd {	width: 64%; }
+
+/* Styles for the report topic section.
+---------------------------------------------------- */
+
+#report_topic dl {	margin-bottom: 0; }
+#report_topic dl.settings dt {	width: 20%; }
+#report_topic dl.settings dd {	width: 79%; }
+
+/* Styles for the split topic section.
+---------------------------------------------------- */
+
+div#selected, div#not_selected {	width: 49%; }
+ul.split_messages li.windowbg, ul.split_messages li.windowbg2 {	margin: 1px; }
+ul.split_messages li a.split_icon {	padding: 0 0.5em; }
+ul.split_messages div.post {
+	padding: 1em 0 0 0;
+	border-top: 1px solid #fff;
+}
+
+/* Styles for the merge topic section.
+---------------------------------------------------- */
+ul.merge_topics li {	list-style-type: none; }
+dl.merge_topic dt {	width: 25%; }
+dl.merge_topic dd {	width: 74%; }
+.custom_subject {	margin: 0.5em 0; }
+
+/* Styles for the login areas.
+------------------------------------------------------- */
+.login {
+	width: 540px;
+	margin: 0 auto;
+}
+.login dl {
+	overflow: auto;
+	clear: right;
+}
+.login dt, .login dd {
+	margin: 0 0 0.4em 0;
+	width: 44%;
+	padding: 0.1em;
+}
+.login dt {
+	float: left;
+	clear: both;
+	text-align: right;
+	font-weight: bold;
+}
+.login dd {
+	width: 54%;
+	float: right;
+	text-align: left;
+}
+.login p {	text-align: center; }
+
+/* Styles for the registration section.
+------------------------------------------------------- */
+.register_error {
+	border: 1px dashed red;
+	padding: 5px;
+	margin: 0 1ex 1ex 1ex;
+}
+.register_error span {	text-decoration: underline; }
+
+/* Additional profile fields */
+dl.register_form {
+	margin: 0;
+	clear: right;
+}
+
+dl.register_form dt {
+	font-weight: normal;
+	float: left;
+	clear: both;
+	width: 50%;
+	margin: 0.5em 0 0 0;
+}
+
+dl.register_form dt strong {	font-weight: bold; }
+dl.register_form dt span {	display: block; }
+dl.register_form dd {
+	float: left;
+	width: 49%;
+	margin: 0.5em 0 0 0;
+}
+
+#confirm_buttons {
+	text-align: center;
+	padding: 1em 0;
+}
+
+.coppa_contact {
+	padding: 4px;
+	width: 32ex;
+	background-color: #fff;
+	color: #000;
+	margin-left: 5ex;
+	border: 1px solid #000;
+}
+
+.valid_input {	background-color: #f5fff0; }
+.invalid_input {	background-color: #fff0f0; }
+
+/* Styles for maintenance mode.
+------------------------------------------------------- */
+#maintenance_mode {
+	width: 75%;
+	min-width: 520px;
+	text-align: left;
+}
+#maintenance_mode img.floatleft {	margin-right: 1em; }
+
+/* common for all admin sections */
+h3.titlebg img {
+	vertical-align: middle;
+	margin-right: 0.5em;
+	margin-top: -1px;
+}
+tr.titlebg td {	padding-left: 0.7em; }
+#admin_menu {
+	min-height: 2em;
+	padding-left: 0;
+}
+#admin_content {
+	clear: left;
+	padding-top: 0.5em;
+}
+/* Custom profile fields like to play with us some times. */
+#admin_content .custom_field {	margin-bottom: 15px; }
+#admin_login .centertext {	padding: 1em; }
+#admin_login .centertext .error {	padding: 0 0 1em 0; }
+
+/* Styles for sidebar menus.
+------------------------------------------------------- */
+.left_admmenu, .left_admmenu ul, .left_admmenu li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#left_admsection {
+	width: 170px;
+	float: left;
+	padding-top: 1em;
+}
+.adm_section h4.catbg {
+	font-size: 85%;
+	margin-bottom: 5px;
+	border-radius: 2em 0 0 2em;
+	padding-left: 1.5em;
+}
+#main_container {	position: relative; }
+.left_admmenu li {	padding: 0.2em 0.2em 0.2em 1.5em; }
+.left_admmenu {	margin-bottom: 0.5em; }
+#main_admsection {
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+	margin-top: 10px;
+	padding: 1.5em 2em;
+	border: solid 1px #ccc;
+}
+#credits p {
+	padding: 0;
+	font-style: italic;
+	margin: 0;
+}
+
+/* Styles for generic tables.
+------------------------------------------------------- */
+.topic_table table {	width: 100%; }
+.topic_table .icon1, .topic_table .icon2, .topic_table .stats {	text-align: center; }
+#topic_icons {	margin: 1em 0 0 0; }
+#topic_icons p img {	margin: 0 1em 0 1em; }
+#topic_icons .description {	margin: 0; }
+.topic_table table thead {	border-bottom: 1px solid #ddd; }
+/* the subject column */
+.topic_table td {	font-size: 1em; padding: 1em; border: 1px solid #ddd; border-top: 1px solid #fff; border-left: 1px solid #ddd; }
+.topic_table td.subject {	font-size: 1.1em; }
+.topic_table td.subject p, .topic_table td.stats {
+	font-size: 0.85em;
+	margin: 0;
+}
+.topic_table td.lastpost {
+	font-size: 0.85em;
+	line-height: 1.3em;
+}
+.topic_table td.lastpost {	}
+
+/* Styles for (fatal) errors.
+------------------------------------------------- */
+
+#fatal_error {
+	width: 80%;
+	margin: auto;
+}
+
+.errorbox {
+	padding: 1em;
+	border: 1px solid #cc3344;
+	color: #000;
+	background-color: #ffe4e9;
+	margin-bottom: 1em;
+}
+.errorbox h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 1.1em;
+	text-decoration: underline;
+}
+.errorbox p {
+	margin: 1em 0 0 0;
+}
+.errorbox p.alert {
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 1em;
+	font-size: 1.5em;
+}
+
+/* Styles for the profile section.
+------------------------------------------------- */
+
+dl {
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/* The basic user info on the left */
+#basicinfo {
+	width: 20%;
+	float: left;
+}
+#basicinfo .windowbg .content {	padding-left: 20px; }
+#detailedinfo {
+	width: 79.5%;
+	float: right;
+}
+#basicinfo h4 {
+	font-size: 135%;
+	font-weight: 100;
+	line-height: 105%;
+	white-space: pre-wrap;
+	overflow: hidden;
+}
+#basicinfo h4 span.position {
+	font-size: 80%;
+	font-weight: 100;
+	display: block;
+}
+#basicinfo img.avatar {
+	display: block;
+	margin: 10px 0 0 0;
+}
+#basicinfo ul {
+	list-style-type: none;
+	margin: 10px 0 0 0;
+}
+#basicinfo ul li {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	height: 20px;
+}
+#basicinfo span#userstatus {
+	display: block;
+	clear: both;
+}
+#basicinfo span#userstatus img {	vertical-align: middle; }
+#detailedinfo div.content dl, #tracking div.content dl {
+	clear: right;
+	overflow: auto;
+	margin: 0 0 18px 0;
+	padding: 0 0 15px 0;
+	border-bottom: 1px #ccc solid;
+}
+#detailedinfo div.content dt, #tracking div.content dt {
+	width: 35%;
+	float: left;
+	margin: 0 0 3px 0;
+	padding: 0;
+	font-weight: bold;
+	clear: both;
+}
+#detailedinfo div.content dd, #tracking div.content dd {
+	width: 65%;
+	float: left;
+	margin: 0 0 3px 0;
+	padding: 0;
+}
+#detailedinfo div.content dl.noborder {	border-bottom: 0; }
+#detailedinfo div.content dt.clear {	width: 100%; }
+.signature, .custom_fields_above_signature {	border-top: 1px #ccc solid; }
+.signature h5 {
+	font-size: 0.85em;
+	margin-bottom: 10px;
+}
+#personal_picture {
+	display: block;
+	margin-bottom: 0.3em;
+}
+#avatar_server_stored div {	float: left; overflow: auto; }
+#themeframe #avatar_server_stored select#cat,#themeframe #avatar_server_stored select#file { 
+    height: 10em;
+    min-height: 2em;
+    max-height: 10em;
+    font-size: 0.9em; 
+    -moz-box-sizing: auto;
+    box-sizing: auto;
+    vertical-align: middle;
+	overflow: auto;
+	border: solid 1px #aaa;
+	width: 12em;
+}
+#avatar_upload {	overflow: auto; }
+#main_admsection #basicinfo, #main_admsection #detailedinfo {	width: 100%; }
+#main_admsection #basicinfo h4 {
+	float: left;
+	width: 35%;
+}
+#main_admsection #basicinfo img.avatar {
+	float: right;
+	vertical-align: top;
+}
+#main_admsection #basicinfo ul {	clear: left; }
+#main_admsection #basicinfo span#userstatus {	clear: left; }
+#main_admsection #basicinfo p#infolinks {
+	display: none;
+	clear: both;
+}
+#main_admsection #basicinfo .botslice {	clear: both; }
+
+/* Simple feedback messages */
+div#profile_error, div#profile_success {
+	margin: 0 0 1em 0;
+	padding: 1em 2em;
+	border: 1px solid;
+}
+div#profile_error {
+	border-color: red;
+	color: red;
+	background: #fee;
+}
+
+div#profile_error span {	text-decoration: underline; }
+
+div#profile_success {
+	border-color: green;
+	color: green;
+	background: #efe;
+}
+
+/* Profile statistics */
+#generalstats div.content dt {
+	width: 50%;
+	float: left;
+	margin: 0 0 3px 0;
+	padding: 0;
+	font-weight: bold;
+	clear: both;
+}
+#generalstats div.content dd {
+	width: 50%;
+	float: left;
+	margin: 0 0 3px 0;
+	padding: 0;
+}
+
+/* Activity by time */
+#activitytime {	margin: 6px 0; }
+.activity_stats {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.activity_stats li {
+	margin: 0;
+	padding: 0;
+	width: 4.16%;
+	float: left;
+}
+.activity_stats li span {
+	display: block;
+	border: solid #000;
+	border-width: 1px 1px 0 0;
+	text-align: center;
+}
+.activity_stats li.last span {	border-right: none; }
+.activity_stats li div.bar {
+	margin: 0 auto;
+	width: 15px;
+}
+.activity_stats li div.bar div {	background: #bfbd10; }
+.activity_stats li div.bar span {
+	position: absolute;
+	top: -1000em;
+	left: -1000em;
+}
+
+/* Most popular boards by posts and activity */
+#popularposts {
+	width: 49.5%;
+	float: left;
+}
+#popularactivity {
+	width: 49.5%;
+	float: right;
+}
+
+#popularposts div.content dt, #popularactivity div.content dt {
+	width: 65%;
+	float: left;
+	margin: 0 0 3px 0;
+	padding: 0;
+	font-weight: bold;
+	clear: both;
+}
+#popularposts div.content dd, #popularactivity div.content dd {
+	width: 35%;
+	float: left;
+	margin: 0 0 3px 0;
+	padding: 0;
+}
+
+.profile_pie {
+	background-image: url(../images/stats_pie.png);
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin: 0 1em 0 0;
+	padding: 0;
+	text-indent: -1000em;
+}
+
+/* View posts */
+.topic .time {	float: right; }
+
+.counter {
+	margin: 0 0 0 0;
+	padding: 0.2em 0.5em 0.1em 0.2em;
+	font-size: 2.2em;
+	font-weight: bold;
+	color: #3f3f3f;
+	float: left;
+}
+.list_posts {
+	border-top: 2px solid #b3b3bf;
+	padding-top: 12px;
+	margin-top: 6px;
+	overflow: auto;
+}
+
+.core_posts {	margin-bottom: 3px; }
+.topic h4 {	margin: 3px 0; }
+
+.topic .post {
+	margin: 0 1em;
+	min-height: 80px;
+	height: auto !important;
+	height: 80px;
+}
+
+.topic .mod_icons {
+	text-align: right;
+	margin-right: 1em;
+}
+
+#tracking div.content dl {
+	border-bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#creator dl {	margin: 0; }
+#creator dt {
+	width: 40%;
+	float: left;
+	clear: both;
+	margin: 0 0 10px 0;
+}
+#creator dd {
+	float: right;
+	width: 55%;
+	margin: 0 0 10px 2px;
+	overflow: hidden;
+	padding: 0 0 4px 0;
+}
+
+.ignoreboards {
+	margin: 0 2%;
+	padding: 0;
+	width: 45%;
+}
+.ignoreboards a {
+	font-weight: bold;
+	border-bottom: 1px solid #c4c4c4;
+	padding: 0.1em 0;
+}
+.ignoreboards a:hover {
+	text-decoration: none;
+	border-bottom: 1px solid #334466;
+}
+.ignoreboards ul {
+	margin: 0;
+	padding: 0;
+}
+.ignoreboards li {
+	list-style: none;
+	float: left;
+	clear: both;
+}
+.ignoreboards li.category {
+	margin: 0.7em 0 0 0;
+	width: 100%;
+}
+.ignoreboards li ul {	margin: 0.2em 0 0 0; }
+.ignoreboards li.category ul li.board {	width: 93%; }
+
+#theme_settings {
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#theme_settings li {
+	list-style: none;
+	margin: 10px 0;
+	padding: 0;
+}
+/* Paid Subscriptions */
+#paid_subscription {	width: 100%; }
+#paid_subscription dl.settings {	margin-bottom: 0; }
+#paid_subscription dl.settings dd, #paid_subscription dl.settings dt {	margin-bottom: 4px; }
+/* Pick theme */
+#pick_theme {
+	width: 100%;
+	float: left;
+}
+/*Issue a warning*/
+#warn_bod {
+	width: 80%;
+	font-size: 0.9em;
+}
+
+/* Styles for the statistics center.
+------------------------------------------------- */
+#statistics {	padding: 0.5em 0; }
+#statistics div.title_bar {	margin: 4px 0 -2px 0; }
+#statistics h3.catbg {	text-align: center; }
+#statistics div.content {	min-height: 210px; }
+#statistics div.top_row {	min-height: 150px; }
+#stats_left, #top_posters, #top_topics_replies, #top_topics_starter {
+	float: left;
+	width: 49.5%;
+}
+#stats_right, #top_boards, #top_topics_views, #most_online {
+	float: right;
+	width: 49.5%;
+}
+dl.stats {
+	clear: both;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+dl.stats dt {
+	width: 49%;
+	float: left;
+	margin: 0 0 4px 0;
+	line-height: 16px;
+	padding: 0;
+	clear: both;
+	font-size: 1em;
+}
+dl.stats dd {
+	text-align: right;
+	width: 50%;
+	font-size: 1em;
+	float: right;
+	margin: 0 0 4px 0;
+	line-height: 16px;
+	padding: 0;
+}
+.statsbar div.bar {
+	float: left;
+	background: #f0f0f0;
+	display: block;
+	margin: 0 4px;
+	height: 16px;
+	border-radius: 3px;
+}
+.statsbar div.bar div {
+	border-radius: 3px;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	background: #bfbd10;
+	height: 16px;
+}
+tr.windowbg2 th.stats_month {
+	width: 25%;
+	padding: 0 2em;
+	text-align: left;
+}
+tr.windowbg2 td.stats_day {
+	padding: 0 3.5em;
+	text-align: left;
+}
+
+/* Styles for the personal messages section.
+------------------------------------------------- */
+
+#personal_messages h3 span#author, #personal_messages h3 span#topic_title {	float: left; }
+#personal_messages h3 span#author {	margin: 0 0 0 0.5em; }
+#personal_messages h3 span#topic_title {	margin: 0 0 0 9em; }
+#personal_messages div.labels {	padding: 0 1em 0 0; }
+#personal_messages .capacity_bar {
+	background: #f0f4f7;
+	display: block;
+	margin: 0.5em 0 0 1em;
+	height: 1em;
+	border: 1px solid #adadad;
+	width: 10em;
+}
+#personal_messages .capacity_bar span {
+	border-right: 1px solid #adadad;
+	display: block;
+	height: 1em;
+}
+#personal_messages .capacity_bar span.empty {	background: #a6d69d; }
+#personal_messages .capacity_bar span.filled {	background: #eea800; }
+#personal_messages .capacity_bar span.full {	background: #f10909; }
+#personal_messages .reportlinks {	padding: 0.5em 1.3em; }
+#searchLabelsExpand li {	padding: 0.3em 0.5em; }
+#manrules div.righttext {	padding: 0.3em 0.1em; }
+dl.addrules dt.floatleft {
+	width: 15em;
+	color: #333;
+	padding: 0 1.25em 0.5em 1.25em;
+}
+
+/* Styles for the calendar section.
+------------------------------------------------- */
+.calendar_table {	margin-bottom: 0.7em; }
+
+/* Used to indicate the current day in the grid. */
+.calendar_today {	background-color: #fff; }
+
+#month_grid {
+	width: 200px;
+	text-align: center;
+	float: left;
+}
+#month_grid div.cat_bar {	height: 25px; }
+#month_grid h3.catbg {
+	height: 25px;
+	line-height: 27px;
+}
+#month_grid table {	width: 200px; }
+#main_grid table {
+	width: 100%;
+	padding-bottom: 4px;
+}
+#main_grid table h3.catbg {
+	text-align: center;
+	height: 29px;
+	border-top: 2px solid #fff;
+	border-bottom: none;
+}
+#main_grid table.weeklist td.windowbg {
+	text-align: center;
+	height: 49px;
+	width: 25px;
+	font-size: large;
+	padding: 0 7px;
+	border-bottom: 2px solid #fff;
+}
+#main_grid table.weeklist td.weekdays {
+	height: 49px;
+	width: 100%;
+	padding: 4px;
+	text-align: left;
+	vertical-align: middle;
+	border-bottom: 2px solid #fff;
+}
+#main_grid h3.weekly {
+	text-align: center;
+	padding-left: 0;
+	font-size: large;
+	height: 29px;
+}
+#main_grid h3 span.floatleft, #main_grid h3 span.floatright {
+	display: block;
+	font-weight: bold;
+}
+#main_grid table th.days {
+	width: 14%;
+	padding: 4px 0;
+}
+#main_grid table.weeklist h4.titlebg {
+	margin: 0 0 0 0;
+	height: 23px;
+	line-height: 27px;
+}
+#main_grid table td.weeks {
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	font-size: large;
+}
+#main_grid table td.days {
+	vertical-align: top;
+	text-align: center;
+}
+
+a.modify_event {	color: red; }
+span.hidelink {	font-style: italic; }
+#calendar_navigation {	text-align: center; }
+#calendar .catbg { clear: right; }
+#calendar .titlebg2 .days { color: #bbb; }
+
+/* Styles for the memberlist section.
+------------------------------------------------- */
+#mlist_search {
+	margin: auto;
+	width: 500px;
+}
+
+/* Styles for the basic search section.
+------------------------------------------------- */
+#searchform, #simple_search p {
+	padding: 0.5em;
+	margin: 0;
+}
+#simple_search, #simple_search p, #advanced_search {
+	text-align: center !important;
+	margin: 0;
+}
+#search_error {
+	font-style: italic;
+	padding: 0.3em 1em;
+}
+#search_term_input {
+	font-size: 115%;
+	margin: 0 0 1em;
+}
+
+/* Styles for the advanced search section.
+------------------------------------------------- */
+#advanced_search dl#search_options {
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 1em;
+	overflow: hidden;
+}
+#advanced_search dl dd input, #advanced_search dl dd select { margin-left: 0.5em;  }
+.enhanced strong, #advanced_search dt {
+	clear: both;
+	float: left;
+	padding: 0.2em;
+	text-align: right;
+	width: 20%;
+}
+.enhanced strong { display: block; margin-right: 1.5em;}
+.enhanced input, #advanced_search dd {
+	width: 75%;
+	float: left;
+	padding: 0.2em 0.2em 0.2em 1em;
+	margin: 0 0 0 0.5em;
+	text-align: left;
+}
+.enhanced input { width: 50%; }
+.enhanced select { clear: left; width: 15%; float: left; display: inline-block; margin: 0.5em 0.2em .5em 25%; }
+#searchform p.clear {	clear: both; }
+#advanced_search em.smalltext { float: left; clear: right; margin: 0.5em 0 0 2em; }
+
+/* Styles for the search results page.
+------------------------------------------------- */
+.topic_table td blockquote, .topic_table td .quoteheader {	margin: 0.5em; }
+.search_results_posts {	overflow: hidden; }
+.search_results_posts .buttons {	padding: 5px 1em 0 0; }
+
+/* Styles for the help section.
+------------------------------------------------- */
+
+#help_container {
+	margin: 4px 0 0 0;
+	padding: 0 0 8px 0;
+}
+#helpmain {
+	padding: 0 1em;
+}
+#helpmain p {
+	margin: 0 0 1.5em 0;
+	line-height: 1.5em;
+}
+#helpmain ul {	line-height: 1.5em; }
+
+/* Styles for print media.
+------------------------------------------------------- */
+@media print {
+}
+
+.forumwidth { width: 1200px; margin: 0 auto; }
+
+/* trimming this a bit on different screens*/
+@media only screen and (max-width: 1200px), only screen and (min-resolution: 190dpi) {
+	.forumwidth { width: 100%; margin: 0 auto; }
+}
+
+/* Styles for the standard dropdown menus.
+------------------------------------------------------- */
+#main_menu, #sub_menu { float: left; margin: 0; padding: 0; z-index: 5; }
+.dropmenu { position: relative; }
+.dropmenu, .dropmenu ul {
+	list-style: none;
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+}
+#main_menu ,#sub_menu  { display: table;  table-layout: fixed; width: 100%; position: relative; margin-bottom: 0;}
+#main_menu .dropmenu,#sub_menu .dropmenu { display: table-row; width: 100%;}
+#main_menu .dropmenu li.first, #sub_menu .dropmenu li.first { display: table-cell; float: none;  }
+.dropmenu a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	white-space: nowrap;
+}
+/* the background's first level only */
+.dropmenu li a.firstlevel {	
+	color: #777;
+	margin: 0; 
+	background: #fff;
+	border: solid 1px #333;
+	border-top: solid 1px #333;
+	border-left: solid 1px #333;
+	text-transform: uppercase;
+}
+.dropmenu li.first a.active {	
+	color: #777;
+	border-top: solid 1px #dfdfdf;
+	background: #e3e3e3; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e3e3e3 0%, #f8f8f8 10%, #f8f8f8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3e3e3), color-stop(10%,#f8f8f8), color-stop(100%,#f8f8f8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e3e3e3 0%,#f8f8f8 10%,#f8f8f8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e3e3e3 0%,#f8f8f8 10%,#f8f8f8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e3e3e3 0%,#f8f8f8 10%,#f8f8f8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e3e3e3 0%,#f8f8f8 10%,#f8f8f8 100%); /* W3C */
+}
+.dropmenu li.first a.firstlevel:hover, .dropmenu li.first a.active:hover {	
+	color: #777;
+	border: solid 1px #c7d0c1;
+	border-right: solid 1px #dde8d6;
+	border-bottom: solid 1px #dde8d6;
+	background: #c7d0c1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c7d0c1 0%, #dde8d6 10%, #dde8d6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c7d0c1), color-stop(10%,#dde8d6), color-stop(100%,#dde8d6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c7d0c1 0%,#dde8d6 10%,#dde8d6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c7d0c1 0%,#dde8d6 10%,#dde8d6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c7d0c1 0%,#dde8d6 10%,#dde8d6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c7d0c1 0%,#dde8d6 10%,#dde8d6 100%); /* W3C */
+}
+.dropmenu li a.firstlevel span {	 display: block; padding: 1em 2em; 	border-bottom: solid 3px transparent; }
+.dropmenu li li a span {	 padding: .5em 2em; }
+#sub_menu { position: relative; margin-top: -1px; background: #333; padding: 0.5em 0 0 0;}
+#sub_menu .dropmenu  {	display: inline-block; margin: 0; padding: 0;}
+#sub_menu .dropmenu li {	margin: 0; padding: 0;}
+#sub_menu .dropmenu li a.firstlevel {	  background: #333; border: none; color: #999; font-size: 90%;}
+#sub_menu .dropmenu li a.firstlevel:hover { color: #ff8; 	}
+#sub_menu .dropmenu li a.firstlevel span { padding: 0.6em 2em;  }
+
+
+.dropmenu li.first a.active span {	 border-bottom: solid 3px #bfbd10; }
+.dropmenu li li {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.dropmenu li li a {
+	display: block;
+	padding: 0.75em 2em;
+	border-right: solid 1px #ddd;
+}
+.dropmenu li li:last-child a { border-right: solid 1px #fff; }
+
+/* the active button */
+.dropmenu li a.active {
+	font-weight: bold;
+}
+.dropmenu li a.active span.firstlevel {	 }
+/* the hover effects */
+.dropmenu li a.firstlevel:hover, .dropmenu li:hover a.firstlevel , .dropmenu li li a:hover{	
+	border: solid 1px #c7d0c1;
+	border-right: solid 1px #dde8d6;
+	border-bottom: solid 1px #dde8d6;
+	background: #c7d0c1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c7d0c1 0%, #dde8d6 10%, #dde8d6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c7d0c1), color-stop(10%,#dde8d6), color-stop(100%,#dde8d6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #c7d0c1 0%,#dde8d6 10%,#dde8d6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #c7d0c1 0%,#dde8d6 10%,#dde8d6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #c7d0c1 0%,#dde8d6 10%,#dde8d6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #c7d0c1 0%,#dde8d6 10%,#dde8d6 100%); /* W3C */
+}
+.dropmenu li li a:hover{	border: none; 	border-right: solid 1px #ccc; }
+span.pre_divider {
+	display: block;
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px 0 5px 5px;
+	border-color: transparent transparent transparent #aaaaaa;
+	margin: 2px 0 0 -15px;
+}
+.dropmenu li li a:hover span.pre_divider, .dropmenu li li:hover>a span.pre_divider { opacity: 1; }
+/* the hover effects on level2 and 3 */
+.dropmenu li li a, .dropmenu li li>a { color: #777;  }
+.dropmenu li li li a:hover, .dropmenu li li li:hover>a { color: #fff; background: #999; }
+.dropmenu li li.additional_items {	background-color: #fff; }
+
+li.show_before_this { display: none; }
+
+.css_table_table { display: table; width: 100%; }
+.css_table_row { display: table-row; }
+.css_table_cell { display: table-cell; padding: 0 1em;}
+
+#full_content fieldset.major { border: solid 1px #cfcac0; background: #fffaf0; }
+fieldset.major legend {
+	color: #dfdad0;
+	font-weight: bold;
+	background: #862;
+}
+.css_table_grid_header {display: table; width: 100%; }
+.css_table_grid_header div.catbg  { display: table-row;}
+.css_table_grid_header div.catbg div {display: table-cell; padding: 0.5em; }
+#full_titlebox, #full_menubox { background: #000; border: none; }
+#full_newsbox { background: url(../images/theme/midbg.jpg) 50% 50%; border: none; }
+#full_linktreebox { background: #000; color: #bbb; border: none; border-top: solid 1px #444;}
+#full_linktreebox a { color: #bbb; }
+#full_menubox { border: none; }
+#top_content { background: #222; }
+#full_content { border: none; }
+#full_footer { background: #000; color: #aaa; }
+#full_footer a { color: #aaadb0; }
+#search_form { border: solid 1px #444; background: #000; color: #aaa; }
+#search_form input { color: #aaa; }
+#search_form input.button_submit {
+	background: url(../images/theme/searchformbg_dark.png) no-repeat top right;
+}
+
+#main_menu { float: left; margin: 0; padding: 0; z-index: 5; border: none; }
+.dropmenu { position: relative; }
+.dropmenu, .dropmenu ul {
+	list-style: none;
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+}
+#main_menu  { display: table;  width: 100%; position: relative; margin-bottom: 0; background: #000; }
+#pushdown #main_menu  { margin-bottom: 3em; }
+#main_menu .dropmenu { display: table-row; width: 100%;}
+#main_menu .dropmenu { margin: 1em 2em; background: #000; }
+.dropmenu a {
+	color: #ccc;
+}
+/* the background's first level only */
+.dropmenu li a.firstlevel {	
+	color: #888;
+	background: #000;
+	border: none;
+	border-right: 1px solid #000;
+	text-transform: lowercase;
+}
+#main_menu .dropmenu li.first a.active, #main_menu .dropmenu li a.active {	
+	color: #aaa;
+	border: none;
+	border-right: 1px solid #000;
+	background: none; 
+	background: -moz-linear-gradient(top,  #000 0%, #000 10%, #333 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000), color-stop(10%,#000), color-stop(100%,#333)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #000 0%,#000 10%,#333 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #000 0%,#000 10%,#333 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #000 0%,#000 10%,#333 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #000 0%,#000 10%,#333 100%); /* W3C */
+}
+#main_menu .dropmenu li a.active span {	
+	background: none; 
+}
+.dropmenu li.first a.firstlevel:hover, .dropmenu li.first a.active:hover {	
+	color: #aa9;
+	border: none;
+	border-right: 1px solid #111;
+	background: none; 
+}
+.dropmenu li.first a.active span {	 border-bottom: solid 3px transparent; }
+.dropmenu li ul {
+	border: none;
+	background: none;
+}
+.dropmenu li li a {
+	border-right: solid 1px #111;
+}
+.dropmenu li li:last-child a { border-right: solid 1px #333; }
+.dropmenu li ul ul {	
+	border: 1px solid #111;
+	border-top: 5px solid #111;
+}
+.dropmenu li a.firstlevel:hover, .dropmenu li:hover a.firstlevel , .dropmenu li li a:hover{	
+	border: none;
+	background: none; 
+}
+.dropmenu li li a:hover{	border: none; 	border-right: solid 1px #111; }
+.dropmenu li li a, .dropmenu li li>a { color: #777;  }
+.dropmenu li li li a:hover, .dropmenu li li li:hover>a { color: #fff; background: none; }
+.dropmenu li li.additional_items {	background: none; }
+
+@media only screen and (max-width: 860px) {
+	.trigger label { margin-top: 0px; background: url(../images/menu-icon_dark.png) -5px -15px no-repeat; } 
+}
+@media only screen and (max-width: 1160px) {
+	.menuHolder {
+		top:0px; 
+	}
+}
+
+.titlebg, .titlebg2, tr.titlebg th, tr.titlebg td, tr.titlebg2 td,
+.catbg, .catbg2, tr.catbg td, tr.catbg2 td, tr.catbg th, tr.catbg2 th {
+	background: #ddd;
+	color: #777;
+	font-weight: bold;
+	text-transform: none;
+}
+.titlebg a, .titlebg2 a, .catbg a, .catbg2 a {
+	color: #778;
+}
+tr.catbg th a:link, tr.catbg th a:visited, tr.catbg2 td a:link, tr.catbg2 td a:visited {	color: #667; }
+
+
+
+@media only screen and (max-width: 1200px), only screen and (min-resolution: 200dpi) {
+	#sub_menu  { display: block;  }
+	#sub_menu .dropmenu  { display: block;  }
+	#main_menu .dropmenu li.first a span { display: none; }
+	#main_menu .dropmenu li.first { height: 50px; padding-top: 5px; background: #f9f9f9; }
+	#main_menu .dropmenu li.first a { opacity: 0.4; height: 40px; border: none; background: url(../images/theme/menubuttons.png) no-repeat 50% 0; }
+
+	#main_menu .dropmenu li.first a#but_help { background: url(../images/theme/menubuttons.png) no-repeat 50% -40px; }
+	#main_menu .dropmenu li.first a#but_calendar { background: url(../images/theme/menubuttons.png) no-repeat 50% -80px; }
+	#main_menu .dropmenu li.first a#but_search { background: url(../images/theme/menubuttons.png) no-repeat 50% -120px; }
+	#main_menu .dropmenu li.first a#but_admin	 { background: url(../images/theme/menubuttons.png) no-repeat 50% -160px; }
+	#main_menu .dropmenu li.first a#but_profile { background: url(../images/theme/menubuttons.png) no-repeat 50% -200px; }
+	#main_menu .dropmenu li.first a#but_login { background: url(../images/theme/menubuttons.png) no-repeat 50% -240px; }
+	#main_menu .dropmenu li.first a#but_members { background: url(../images/theme/menubuttons.png) no-repeat 50% -280px; }
+	#main_menu .dropmenu li.first a#but_logout { background: url(../images/theme/menubuttons.png) no-repeat 50% -320px; }
+	#main_menu .dropmenu li.first a#but_pm { background: url(../images/theme/menubuttons.png) no-repeat 50% -360px; }
+	#main_menu .dropmenu li.first a#but_home { background: url(../images/theme/menubuttons.png) no-repeat 50% -400px; }
+	#main_menu .dropmenu li.first a#but_register { background: url(../images/theme/menubuttons.png) no-repeat 50% -440px; }
+	#main_menu .dropmenu li.first a#but_moderate { background: url(../images/theme/menubuttons.png) no-repeat 50% -480px; }
+	#main_menu .dropmenu li.first a.active,#main_menu .dropmenu li.first a:hover { opacity: 1;  }
+
+	#sub_menu .dropmenu li.first { float: left;  }
+}
+@media only screen and (max-width: 800px), only screen and (min-resolution: 300dpi) {
+	.floatleft, .floatright { float: none; }
+	
+	body { background: #cfcec8 url(../images/theme/backdrop_small.jpg) repeat-x top right fixed;  padding-top: 40px; }
+	#socialbox { position: absolute; top: -40px; width: 50%; right: 0; }
+	#socialbox a {	opacity: 1;	}
+	#socialbox a#fb {	 background: url(../images/theme/social_23.png) no-repeat 0 -5px; }
+	#socialbox a#pi {	background: url(../images/theme/social_23.png) no-repeat -70px -5px; }
+	#socialbox a#tw { background: url(../images/theme/social_23.png) no-repeat -140px -5px; }
+	#socialbox a#rs { background: url(../images/theme/social_23.png) no-repeat -208px -5px; }
+
+	#search_form { display: block; float: none; width: 100%; margin: 10px 0;}
+	#search_form input.input_text { 
+		width: 80%; 
+		padding: 3px 1em 5px 1em; 
+		float: left; 
+		-webkit-transition: all 200ms ease;
+		-moz-transition: all 200ms ease;
+		-ms-transition: all 200ms ease;
+		-o-transition: all 200ms ease;
+		transition: all 200ms ease;
+	}
+	#search_form input.input_text:focus { 
+		-webkit-transition: all 200ms ease;
+		-moz-transition: all 200ms ease;
+		-ms-transition: all 200ms ease;
+		-o-transition: all 200ms ease;
+		transition: all 200ms ease;
+		width: 80%; 
+	}
+	#search_form input.button_submit {
+		width: 20%;
+		background: url(../images/theme/searchformbg.png) no-repeat top right;
+	}
+	table.table_list tbody.content td.stats, table.table_list tbody.content td.lastpost 
+	{
+		display: none;
+	}
+	table.table_list tbody.content td.icon { text-align: center; 	width: 20%; }
+	table.table_list tbody.content td.info{ padding: 0;	}
+	table.table_list tbody.content td.info a, table.table_list tbody.content td.info p { display: none;	}
+	table.table_list tbody.content td.info a.subject { display: block; min-height: 60px; line-height: 60px; padding-left: 2em; text-decoration: none; }
+
+	ul.quickbuttons, .buttonlist ul, ul.quickbuttons li, .buttonlist ul li {
+		float: none;
+		display: block;
+	}
+	ul.quickbuttons li, .buttonlist ul li {
+		float: left;
+		display: block;
+		width: 25%;
+	}
+	ul.quickbuttons li { width: 20%; 	}
+	.mark_read .buttonlist li { float: none; 	display: block; width: 80%; margin: 0.5em auto 1em auto; 	}
+	ul.quickbuttons li a, .buttonlist ul li a, ul.quickbuttons li a:hover, .buttonlist ul li a:hover , .reportlinks a , .nextlinks a , .nextlinks_bottom a {
+		border: none;
+		float: none;
+		padding: 0.4em 1.4em;
+		background: #fff;
+		text-align: center;
+		color: #555;
+		margin: 2px 0;
+		border-radius: 4px;
+		border: solid 1px #ddd;
+		background: #ffffff; 
+		background: -moz-linear-gradient(top,  #ffffff 0%, #f4f4f4 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#f4f4f4 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#f4f4f4 100%); /* W3C */
+	}
+	.nextlinks, .nextlinks_bottom { padding: 10px 0; clear: both; display: block; margin: auto; text-align: left; text-transform: uppercase; }
+	.reportlinks a {
+		float: left;
+		display: block;
+		text-decoration: none;
+	}
+	#upshrinkHeaderIC .titlebg a {
+		float: none;
+		padding: 0;
+		background: none;
+		display: inline;
+		border-radius: 0px;
+		margin:  0;
+		font-size: 90%;
+	}
+	.pagelinks, #full_content .navigate_section { clear: both; margin: 0 1em; }
+	.pagelinks { padding: 1em 0; margin: 0; }
+	#full_content .navigate_section { display: none; }
+	#maintitle img { max-width: 100%; }
+	#userbox { width: 100%; text-align: left; padding: 0; color: #888; display: table; }
+	.roundframe { 	padding: 0; border: 0; clear: both; 	background: none; }
+	.unreadlink, #posting_icons, .table_grid tr th, .table_grid tbody tr.titlebg,
+	.table_grid tr td.icon1, .table_grid tr td.stats, .table_grid tr td.lastpost, .table_grid tr td.moderation,
+	#topic_icons, 	.catbg #author, #forumposts .catbg img, .postarea .keyinfo .messageicon, #forumposts li.inline_mod_check
+ 	{
+		display: none; 
+	}
+	.table_grid tr td.icon2 { width: 20px; }
+	.table_grid tr td.subject span a { display: block; padding: 5px 10px; text-decoration: none;  }
+	.table_grid tr td.subject p { display: block; padding: 5px 10px; margin: 0; }
+
+	.enhanced strong, #advanced_search dl, #advanced_search dt, .enhanced input, #advanced_search dd { float: none; width: 100%; text-align: left; margin: .5em 0; padding: 0; }
+	.poster { float: none; width: 100%; padding: 0; margin: 0; position: relative; }
+	.poster li { display: none;  }
+	.poster h4 { float: left; clear: none; display: block; margin: 0 0 5px 0; font-size: 1.4em; }
+	.poster li.avatar { padding: 0; float: right; clear: left; display: block; margin: -5px 0 0 0;  position: absolute; right: 5px; }
+	.poster li.avatar img { height: 45px; width: 45px; border-radius: 45px; border: solid 4px #fff;    }
+	.postarea { width: 100%; float: none; clear: both; margin: 0; padding-top: 0;  }
+	.postarea .keyinfo .smalltext { display: none; }
+	.postarea .keyinfo { display: block; width: 100%; margin: 10px 0; }
+	.postarea .keyinfo h5 { display: block; padding: 0.7em 1em; background: #eee; border-radius: 5px; }
+	.attachments div { display: block; padding: 5px 10px; border: groove #fff 2px; margin: 4px 0; background: #fff; }
+	.attachments { border: none; }
+	.attachments hr { display: none; }
+	.moderatorbar { display: none; }
+	.moderatorbar div { display: inline; width: 100%; float: none; }
+	.moderatorbar img { display: none; }
+	#full_content #detailedinfo div.content dl.settings, dl.settings, #full_content dl { margin: 0; }
+	#full_content .windowbg2 .content,#full_content .windowbg .content { padding: 0; }
+	#full_content #detailedinfo div.content dl.settings dt, dl.settings dt, #full_content dl dt {
+		box-sizing: border-box;
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
+		clear: both;
+	}
+	#full_content #detailedinfo div.content dl.settings dt span label, dl.settings dt span label, #full_content dl dt span label{
+		margin: 0;
+		padding: 0;
+		line-height: 1.2em;
+	}
+	#full_content  #detailedinfo div.content dl.settings dt, dl.settings dd, #full_content dl dd {
+		width: 100%;
+		float: none;
+		overflow: hidden;
+		padding: 8px 0 5px 0;
+		margin:0;
+	}
+	#detailedinfo div.content dl dd input, #detailedinfo div.content dl dd select, #detailedinfo div.content dl dd textarea, #full_content dl.settings dd input, #full_content dl.settings dd select , #full_content dl.settings dd textarea {	width: 80%; 	line-height: 1.1em; box-sizing: border-box; }
+	dl.settings dd input[type=checkbox], #full_content div.content dl dd input[type=checkbox], #full_content dl dd input[type=checkbox] {	width: auto; margin: 0px 5px 0 0; padding: 0;	}
+	dl.settings dt a img, #detailedinfo div.content dl dt a img { display: none; }
+	dl.settings dt.settings_title {
+		width: 100%;
+		float: none;
+		margin: 0 0 10px 0;
+		padding: 5px 0 0 0;
+		font-weight: bold;
+		clear: both;
+	}
+	#personal_messages .avatar { width: 30px; height: 30px; margin-top: -3px; }
+	.list_bbc .input_check { margin: 0 3em 0 0; display: inline-block; position: relative; }
+	.activity_stats span.stats_hour { overflow: hidden; white-space: nowrap;margin-right: 5px; }
+	#popularposts, #popularactivity { width: 100%; }
+	#personal_messages .table_grid { display: none; }
+	small a.navPages, a.navPages { display: inline-block; padding: 0; width: 20px; height: 20px; border-radius: 20px; line-height: 19px; text-align: center; background: #808485; color: #fff; text-decoration: none; }
+	a.navPages { width: 20px; height: 20px; border-radius: 20px; line-height: 19px;  }
+	.inner {
+		padding: 1em 0;
+		margin: 0;
+		border: none;
+	}
+	#full_content li.show_before_this { display: block; position: absolute; width: 20%; }
+	#full_content li.first_show { width: 77%; margin-left: 23%; }
+	
+	#full_content .first_show4, #full_content .first_show5, #full_content .first_show6, #full_content .first_show7,#full_content .first_show8, #full_content .first_show9,#full_content .first_show10 { display: none; } 
+	
+	#full_content .css_table_table,  #full_content .css_table_row { display: block; clear: both; }
+	#full_content .css_table_cell { display: block; float: left; padding: 0 1em; width: 40%; clear: none; text-align: left; }
+	#mlist table td { display: none;  }
+	#mlist table td:first-of-type,#mlist table td:nth-of-type(2) { display: table-cell; }
+	#memberlist .catbg span.floatright a { background: #888; display: inline-block; width: 30px; height: 30px; border-radius: 30px; line-height: 28px; text-align: center; margin: 2px 0;  }
+	
+	/* admin section menus */
+	#left_admsection {
+		width: 100%;
+		float: none;
+		clear: both;
+		overflow: hidden;
+	}
+	.adm_section h4.catbg {
+		font-size: 85%;
+		margin-bottom: 5px;
+		border-radius: .5em .5em 0 0;
+		margin-bottom: 0;
+	}
+	.left_admmenu li { padding: 0; margin: 1px 0; }
+	.left_admmenu li a { text-decoration: none; display: block; padding: 0.5em; background: #fff; margin: 1px 0; 	border-radius: 0; }
+	.left_admmenu {	margin-bottom: 0.5em; }
+	#main_admsection {
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		padding: 1.5em 2em;
+		border: solid 1px #ccc;
+	}
+}
+@media only screen and (max-width: 580px) {
+	.reportlinks a, .buttonlist ul li { width: 50%; 	}
+	ul.quickbuttons li { width: 50%; }
+	.nextlinks a { width: 49%;  }
+}
+@media only screen and (max-width: 400px), only screen and (min-resolution: 300dpi) {
+	.buttonlist ul li {
+		width: 100%;
+	}
+	#full_content .css_table_cell { display: block; float: left; padding: 0 1em; width: 40%; clear: none; text-align: left; }
+}
+
+/* ########################## */
+/* the GRIDS! Seriously, this NEEDS to be here! */
+/* ########################## */
+	.bwgrid { overflow: hidden; width: 100%; }
+	.bwcell1,.bwcell2,.bwcell3,.bwcell4,.bwcell5,.bwcell6,.bwcell7,.bwcell8,.bwcell9,.bwcell10,.bwcell11,.bwcell12,.bwcell13,
+	.bwcell14,.bwcell15,.bwcell16,.bwcell1428 , 
+	.doublecell_first,.doublecell_second, 
+	.triplecell, .triplecell_first, .triplecell_third, 
+	.quadrocell, .quadrocell_first, .quadrocell_fourth, 
+	.fifthcell , .fifthcell_first , .fifthcell_fifth { float: left; }
+	.bwcell1{ width: 6.25%; }
+	.bwcell2 {	width: 12.5%; }
+	.bwcell3 {	width: 18.75%; }
+	.bwcell4 {	width: 25%; }
+	.bwcell5 {	width: 31.25%; }
+	.bwcell6 {	width: 37.5%; }
+	.bwcell7 {	width: 43.75%; }
+	.bwcell8 {	width: 50%; }
+	.bwcell9 {	width: 56.25%; }
+	.bwcell10 { width: 62.5%; }
+	.bwcell11 { width: 68.75%; }
+	.bwcell12 { width: 75%; }
+	.bwcell13 { width: 81.25%; }
+	.bwcell14 { width: 87.5%; }
+	.bwcell15 { width: 93.75%; }
+	.bwcell16 { width: 100%; }
+	.bwcell33 { width: 33%; float: left;}
+	.bwcell50 { width: 50%; float: left;}
+	.bwtable { 	width: 100%; display: table; }
+	.bwrow{ display: table-row; }
+	.bwcol { display: table-cell; vertical-align: top; }
+	.w33 { width: 33%; }
+	.w8 { width: 50%; }
+	.bwcell1428 { width: 14.28%; }
+	.bwcell0 { display: none; }
+
+	/* cells with gutters, to overcome the need for padding */
+	.bwgrid .doublecell_first {width: 48%; margin: 0 2% 0 0;	}
+	.bwgrid .doublecell_second { width: 48%; margin: 0 0 0 2%; }
+
+	.bwgrid .triplecell {width: 31%; margin: 0 1% 0 1%;	}
+	.bwgrid .triplecell_first { width: 31%; margin: 0 2% 0 0; }
+	.bwgrid .triplecell_third { width: 31%; margin: 0 0 0 2%; }
+
+	.bwgrid .quadrocell {width: 23%; margin: 0 1% 0 1%;	}
+	.bwgrid .quadrocell_first { width: 23%; margin: 0 2% 0 0; }
+	.bwgrid .quadrocell_fourth { width: 23%; margin: 0 0 0 2%; }
+
+	.bwgrid .fifthcell {width: 18%; margin: 0 1% 0 1%;	}
+	.bwgrid .fifthcell_first { width: 18%; margin: 0 2% 0 0; }
+	.bwgrid .fifthcell_fifth { width: 18%; margin: 0 0 0 2%; }
+
+	.inner_right { padding-left: 3em; }
+	.inner_left { padding-right: 3em; }
+	.inner_right_thin { padding-left: 4px; }
+	.inner_left_thin { padding-right: 4px; }
+	.right_align { text-align: right; }
+	.left_align { text-align: right; }
+
+	@media only screen and (max-width: 760px) {
+		.bwcell1, .bwcell2, .bwcell3, .bwcell4, .bwcell5, .bwcell6, .bwcell7, .bwcell8, .bwcell9, .bwcell10, .bwcell11, .bwcell12, .bwcell13, .bwcell14, .bwcell15, .bwcell16, .bwcell33, .bwcell50,
+		 .w33,.w8, .bwcell1428 {
+			width: 100%;
+			float: none;
+		 }
+		.bwtable, .bwrow, .bwcol {
+			display: block;
+			width: 100%;
+		}
+	}

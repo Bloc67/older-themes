@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<theme-info xmlns="http://www.simplemachines.org/xml/theme-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>bhkristiansen:shelflife</id>
+	<version>2.0.14</version>
+	<name>ShelfLife</name>
+	<author name="BHKristiansen">colby.underhill@gmail.com</author>
+	<website>http://www.bjornhkristiansen.com/smf2</website>
+	<layers>html,body</layers>
+	<templates>index</templates>
+	<based-on></based-on>
+</theme-info>

@@ -1,0 +1,47 @@
+/* theme specific css */
+.colortext{
+	color: #a31f1f;
+}
+.mynav{
+	background: url(../images/_orange/breadbg.png) repeat-x;
+}
+.mynav li span.oute{
+	background: url(../images/_orange/breadbg.png) repeat-x;
+}
+.mynav li:hover span.oute{
+	background: url(../images/_orange/breadselect.png) repeat-x;
+}
+.mynav li.last{
+	background: url(../images/_orange/breadselect.png) repeat-x top center;
+}
+.mynav li.last span.oute{
+	background: url(../images/_orange/breadselect2.png) no-repeat top center;
+}
+#footersection{
+	background: url(../images/_orange/footerbg.png) repeat-x;
+}
+
+
+#mainmenu,
+#admin_menudrop
+{
+	background: url(../images/_orange/menubg.png) repeat-x;	
+}
+.dropmenu
+{
+	background: url(../images/_orange/menubg_menu.png) repeat-x;	
+}
+.dropmenu li.activefirst a.firstlevel,
+.dropmenu li a.firstlevel:hover,
+.dropmenu li.activefirst a.firstlevel:hover
+{
+	background: url(../images/_orange/menubg_selected.png) repeat-x;
+}
+.dropmenu li ul
+{
+	background: url(../images/_orange/menubg_extra.png)  #fff no-repeat;
+}
+.dropmenu li a.firstlevel:hover, .dropmenu li:hover a.firstlevel
+{
+	background: url(../images/_orange/menubg_selected.png) repeat-x;
+}

@@ -1,0 +1,387 @@
+/* Based partially on Matthew Carroll's keyboard accessible flavor of Suckerfish 
+ * Dropdowns by Patrick Griffiths and Dan Webb. 
+ * http://carroll.org.uk/sandbox/suckerfish/bones2.html
+ */
+
+/* ----[ LINKS ]----*/
+
+/* all menu links */
+#nav a, #subMenusContainer a{
+	text-decoration:none;
+	display:block;
+	padding:6px;
+}
+#menu_container
+{
+	min-height: 28px;
+	padding-right: 25px;
+	margin: 0 10px;
+	overflow: hidden;
+}
+/* Just main menu links --[for non-javascript users this applies to submenu links as well]*/
+#nav a{
+	font-weight: bold;
+	margin:0;
+	float:left;
+	font-weight: bold;
+	color: #555;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+/* Just sub menu links */
+#subMenusContainer a, #nav li li a{
+	font-size: 0.8em;
+	text-align:left;
+	text-transform: uppercase;
+}
+
+/* All menu links on hover or focus */
+#nav a.chosen,#nav a:hover, #nav a:focus, #subMenusContainer a:hover, #subMenusContainer a:focus, #nav a.mainMenuParentBtnFocused, #subMenusContainer a.subMenuParentBtnFocused{
+	color:#f60;
+}
+
+/* sub menu links on hover or focus */
+#subMenusContainer a:hover, 
+#subMenusContainer a:focus, 
+#nav a.mainMenuParentBtnFocused, 
+#subMenusContainer a.subMenuParentBtnFocused,
+#nav li a:hover,
+#nav li a:focus{
+	color: #000;
+}
+#nav a.firstlevel
+{
+	line-height: 33px;
+	display: block;
+	float: left;
+	padding: 0 1em 0 0;
+}
+#nav a.firstlevel span
+{
+}
+#nav li a.active:hover,
+#nav li a:hover,
+#nav a.mainMenuParentBtnFocused, 
+#nav li.liactive a.mainMenuParentBtnFocused 
+{
+}
+#nav li a.active:hover span,
+#nav li a:hover span,
+#nav a.mainMenuParentBtnFocused span,
+#nav li.liactive a.mainMenuParentBtnFocused span
+{
+	display: block;
+}
+#nav li a.active
+{
+	color: #f60;
+}
+#nav li a.active span
+{
+	display: block;
+	background: none;	
+}
+/* Parent Sub Menu Links ---[javascript users only]*/
+.subMenuParentBtn{ 
+}
+
+/* Parent Sub Menu Links on hover or focus ---[javascript users only]*/
+.subMenuParentBtnFocused{ 
+}
+
+/* Parent Main Menu Links ---[javascript users only]*/
+.mainMenuParentBtn{	
+}
+
+/* Parent Main Menu Links on hover or focus ---[javascript users only]*/
+.mainMenuParentBtnFocused{	
+}
+
+/* ----[ OLs ULs, LIs, and DIVs ]----*/
+
+/* Submenu Outer Wrapper - each submenu is inside a div with this class - javascript users only */
+.smOW{ 
+	display:none; 
+	position: absolute; 
+	overflow:hidden; 
+	/*the 2px left & right padding lets you have a 1px border 
+	  on the ul or ol inside since overflow is set to hidden*/
+	padding:2px 2px;
+	margin:0 0 0 -2px;
+}
+
+
+/* All ULs and OLs */
+#nav, #nav ul, #nav ol, #subMenusContainer ul, #subMenusContainer ol { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1em;
+}
+
+/* All submenu OLs and ULs */
+#nav ol, #nav ul, #subMenusContainer ul, #subMenusContainer ol {	
+	left: 0px;
+	padding: 0;
+}
+#subMenusContainer ul.first
+{	
+	background: #fff;
+}
+#subMenusContainer ul.first li,
+#subMenusContainer ul.second li
+{	
+}
+#subMenusContainer ul.first li
+{	
+	padding-left: 10px;
+}
+#subMenusContainer ul.first a.active,
+#subMenusContainer ul.second
+{	
+	background: #fff;
+}
+#subMenusContainer ul.first li:hover
+{	
+	background: #dde;
+}
+#subMenusContainer ul.second a
+{	
+	color: #555;
+	font-weight: bold;
+}
+#subMenusContainer ul.second a:hover
+{	
+	color: #fff;
+	background: #1d1d1d;
+}
+#nav ol a, #nav ul a, #subMenusContainer ul a, #subMenusContainer ol a{	
+	padding: 10px 25px 10px 10px;
+	white-space: nowrap;
+	display: block;
+	color: #333;
+}
+
+/* List items in main menu --[for non-javascript users this applies to submenus as well]  */
+#nav li { 
+	/*great place to use a background image as a divider*/
+	display:block;
+	list-style:none;
+	position:relative;
+	float:left;
+}
+
+#subMenusContainer li{
+	list-style: none;
+}
+
+/* main menu ul or ol elment */
+#nav{
+	display:block;
+	list-style:none;
+	margin: 0;
+	padding-left: 25px;
+	z-index:5;
+	min-height: 35px;
+}
+
+#subMenusContainer{	display:block; 	position:absolute;	top:0px;	left:-10px;	width:100%;	height:0;	overflow:visible;	z-index:1000000000; }
+
+
+/* --------------------------[ The below is just for non-javscript users ]--------------------------*/
+#nav li li{	float:none; }
+
+#nav li li a{ /* Just submenu links*/	
+	position:relative;
+	float:none;
+}
+#nav .SubMenuBtn
+{
+}
+#nav li ul { /* second-level lists */
+	position: absolute;
+	width: 16em;
+	margin-left: -1000em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	margin-top:2.2em;
+}
+
+/* third-and-above-level lists */
+#nav li ul ul { margin: -1em 0 0 -1000em; }
+#nav li:hover ul ul {	margin-left: -1000em; }
+
+ /* lists nested under hovered list items */
+#nav li:hover ul{	margin-left: 0; }
+#nav li li:hover ul {	margin-left: 8em; margin-top:-2.5em;}
+
+/* extra positioning rules for limited noscript keyboard accessibility */
+#nav li a:focus + ul {  margin-left: 0; margin-top:2.2em; }
+#nav li li a:focus + ul { left:0; margin-left: 1010em; margin-top:-2.2em;}
+#nav li li a:focus {left:0;  margin-left:1000em; width:10em;  margin-top:0;}
+#nav li li li a:focus {left:0; margin-left: 2010em; width: 10em;  margin-top:-1em;}
+#nav li:hover a:focus{ margin-left: 0; }
+#nav li li:hover a:focus + ul { margin-left: 10em; }
+#nav a.active
+{
+	font-weight: bold;
+}
+
+/* admin menus! */
+/* ----[ LINKS ]----*/
+
+/* all menu links */
+#admnav a, #admsubMenus a{
+	text-decoration:none;
+	display:block;
+	padding:6px;
+}
+
+/* Just main menu links --[for non-javascript users this applies to submenu links as well]*/
+#admnav a{
+	margin:0;
+	float:left;	
+	color: #000;
+	font-size: 1.1em;
+	font-family: arial, sans-serif;
+}
+
+/* Just sub menu links */
+#admsubMenus a, #admnav li li a{
+	text-align:left;
+}
+
+/* All menu links on hover or focus */
+#admnav a.chosen,#admnav a:hover, #admnav a:focus, #admsubMenus a:hover, #admsubMenus a:focus, #admnav a.mainMenuParentBtnFocused, #admsubMenus a.subMenuParentBtnFocused{
+	color:#FFF;
+}
+
+/* sub menu links on hover or focus */
+#admsubMenus a:hover, 
+#admsubMenus a:focus, 
+#admnav a.mainMenuParentBtnFocused, 
+#admsubMenus a.subMenuParentBtnFocused,
+#admnav li a:hover,
+#admnav li a:focus{
+	color: orange;
+}
+
+/* Parent Sub Menu Links ---[javascript users only]*/
+.subMenuParentBtn{ 
+}
+
+/* Parent Sub Menu Links on hover or focus ---[javascript users only]*/
+.subMenuParentBtnFocused{ 
+}
+
+/* Parent Main Menu Links ---[javascript users only]*/
+.mainMenuParentBtn{	
+}
+
+/* Parent Main Menu Links on hover or focus ---[javascript users only]*/
+.mainMenuParentBtnFocused{	
+}
+
+/* ----[ OLs ULs, LIs, and DIVs ]----*/
+
+/* Submenu Outer Wrapper - each submenu is inside a div with this class - javascript users only */
+.smOW{ 
+	display:none; 
+	position: absolute; 
+	overflow:hidden; 
+	/*the 2px left & right padding lets you have a 1px border 
+	  on the ul or ol inside since overflow is set to hidden*/
+	padding:0 2px;
+	margin:0 0 0 -2px;
+}
+
+
+/* All ULs and OLs */
+#admnav, #admnav ul, #admnav ol, #admsubMenus ul, #admsubMenus ol { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1em;
+}
+
+/* All submenu OLs and ULs */
+#admnav ol, #admnav ul, #admsubMenus ul, #admsubMenus ol {	
+	left: 0px;
+	padding: 0;
+	background: white;
+	border: solid 1px #aaa;
+}
+#admnav ol a, #admnav ul a, #admsubMenus ul a, #admsubMenus ol a{	
+	padding: 10px;
+	font-size: 0.9em;
+	display: block;
+	color: #000;
+}
+#admnav ol a:hover, #admnav ul a:hover, #admsubMenus ul a:hover, #admsubMenus ol a:hover{	
+	background: #ccc;
+	color: black;
+}
+
+
+/* List items in main menu --[for non-javascript users this applies to submenus as well]  */
+#admnav li { 
+	/*great place to use a background image as a divider*/
+	display:block;
+	list-style:none;
+	position:relative;
+	float:left;
+}
+
+#admsubMenus li{
+	list-style: none;
+}
+
+/* main menu ul or ol elment */
+#admnav{
+	display:block;
+	list-style:none;
+	margin:0 0 0 9px;
+	z-index:5;
+	margin-top:15px;
+}
+
+#admsubMenus{	display:block; 	position:absolute;	top:0;	left:0;	width:100%;	height:0;	overflow:visible;	z-index:1000000000; }
+
+
+/* --------------------------[ The below is just for non-javscript users ]--------------------------*/
+#admnav li li{	float:none; }
+
+#admnav li li a{ /* Just submenu links*/	
+	position:relative;
+	float:none;
+}
+#admnav .SubMenuBtn
+{
+}
+#admnav li ul { /* second-level lists */
+	position: absolute;
+	width: 10em;
+	margin-left: -1000em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	margin-top:2.2em;
+}
+
+/* third-and-above-level lists */
+#admnav li ul ul { margin: -1em 0 0 -1000em; }
+#admnav li:hover ul ul {	margin-left: -1000em; }
+
+ /* lists nested under hovered list items */
+#admnav li:hover ul{	margin-left: 0; }
+#admnav li li:hover ul {	margin-left: 8em; margin-top:-2.5em;}
+
+/* extra positioning rules for limited noscript keyboard accessibility */
+#admnav li a:focus + ul {  margin-left: 0; margin-top:2.2em; }
+#admnav li li a:focus + ul { left:0; margin-left: 1010em; margin-top:-2.2em;}
+#admnav li li a:focus {left:0;  margin-left:1000em; width:10em;  margin-top:0;}
+#admnav li li li a:focus {left:0; margin-left: 2010em; width: 10em;  margin-top:-1em;}
+#admnav li:hover a:focus{ margin-left: 0; }
+#admnav li li:hover a:focus + ul { margin-left: 10em; }
+/* admin menus! */
+
+
+
+
+

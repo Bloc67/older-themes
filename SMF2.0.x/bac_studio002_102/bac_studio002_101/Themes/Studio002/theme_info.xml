@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<theme-info xmlns="http://www.simplemachines.org/xml/theme-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>blocthemes:studio002</id>
+	<btversion>102</btversion>
+	<version>2.0.7</version>
+	<name>Studio002</name>
+	<author name="Blocthemes">colby.underhill@gmail.com</author>
+	<website>http://www.bjornhkristiansen.com/</website>
+	<layers>html,body</layers>
+	<templates>index</templates>
+	<based-on></based-on>
+</theme-info>

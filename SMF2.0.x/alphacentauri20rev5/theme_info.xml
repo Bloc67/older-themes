@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<theme-info xmlns="http://www.simplemachines.org/xml/theme-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>bhkristiansen:alphacentauri</id>
+	<version>2.0.9</version>
+	<name>AlphaCentauri</name>
+	<author name="BHKristiansen">bjornhkristiansen@outlook.com</author>
+	<website>http://www.bjornhkristiansen.com/smf</website>
+	<layers>html,body</layers>
+	<templates>index</templates>
+	<based-on></based-on>
+</theme-info>

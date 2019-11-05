@@ -1,0 +1,19 @@
+html {  
+	background: url(../images/theme/greybg.png) repeat-x #e3e3e3; 
+}
+body, #fwidth, .ftopfixed #fheader, .ftop #fheader { 	background: none;  }
+
+a:link, a:visited { text-decoration: none; color: #458; }
+
+.ftop #fheader { background: #444; color: #fff; }
+.ftop #fheader a { color: #fff; }
+#fheader { background: none;  border: none; }
+#ftop { background: #444; }
+.ftopfixed { 	background: #444; 	 }
+.ftopfixed #fheader { color: #fff;	background: #444;  }
+.ftopfixed #fheader a { 	color: #fff;  }
+#mmenu_desktop .toplist li li a {color: #222; }
+ul.roundlist li a { background: #777; }
+ul.roundlist li a.active { background: #8a8; }
+.pushup {	border: solid 1px #222; 	box-shadow: 0 1px 10px 0 rgba(0,0,0,0.7); }
+.greytext { opacity: 0.75; color: #444; }

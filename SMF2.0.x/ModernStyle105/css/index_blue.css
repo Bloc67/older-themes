@@ -1,0 +1,16 @@
+html {  
+	font-family: 'Arimo', sans-serif;-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; 
+}
+a:link, a:visited { text-decoration: none; color: #458; }
+
+.ftop #fheader { background: #69c; color: #fff; }
+.ftop #fheader a { color: #fff; }
+#fheader { background: none;  border: none; }
+#ftop { background: #69c; }
+.ftopfixed { 	background: #69c; 	box-shadow: 0 15px 25px 0 rgba(254,254,254,0.9); }
+.ftopfixed #fheader { color: #fff;	background: #69c;  }
+.ftopfixed #fheader a { 	color: #fff;  }
+#mmenu_desktop .toplist li li a {color: #222; }
+ul.roundlist li a { background: #7ad; }
+ul.roundlist li a.active { background: #7cc; }
+

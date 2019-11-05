@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<theme-info xmlns="http://www.simplemachines.org/xml/theme-info" xmlns:smf="http://www.simplemachines.org/">
+<!-- For the id, always use something unique - put your name, a colon, and then the package name. -->
+<id>bloc:lithium</id>
+<!-- The theme's version, please try to use semantic versioning. -->
+<version>1.0</version>
+<!-- Install for, the SMF versions this theme was designed for. Uses the same wildcards used in the packager manager. This field is mandatory. -->
+<install for="2.1 - 2.1.99, 2.1 Beta 3" />
+<!-- Theme name, used purely for aesthetics. -->
+<name>Lithium</name>
+<!-- Author: your email address or contact information. The name attribute is optional. -->
+<author name="Bloc">admin@bjornhkristiansen.com</author>
+<!-- Website... where to get updates and more information. -->
+<website>https://www.bjornhkristiansen.com/smf21/</website>
+<!-- Template layers to use, defaults to "html,body". -->
+<layers>html,body</layers>
+<!-- Templates to load on startup. Default is "index". -->
+<templates>index</templates>
+<!-- Base this theme off another? Default is blank, or no. It could be "default". -->
+<based-on></based-on>
+</theme-info>

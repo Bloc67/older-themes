@@ -1,0 +1,23 @@
+/* theme specific css */
+.colortext{
+	color: #a31f1f;
+}
+.mynav{
+	background: url(../images/_red/breadbg.png) repeat-x;
+}
+.mynav li span.oute{
+	background: url(../images/_red/breadbg.png) repeat-x;
+}
+.mynav li:hover span.oute{
+	background: url(../images/_red/breadselect.png) repeat-x;
+}
+.mynav li.last{
+	background: url(../images/_red/breadselect.png) repeat-x top center;
+}
+.mynav li.last span.oute{
+	background: url(../images/_red/breadselect2.png) no-repeat top center;
+}
+#footersection{
+	background: url(../images/_red/footerbg.png) repeat-x;
+}
+

@@ -1,0 +1,74 @@
+#subheader
+{
+	background: url(../images/theme/headerbg_dioxide.jpg) #000 no-repeat top center;
+}
+.titlebg, .titlebg2, tr.titlebg th, tr.titlebg td, tr.titlebg2 td
+{
+	color: #222;
+	font-family: "Trebuchet MS",arial, helvetica, sans-serif;
+	font-size: 0.9em;
+	background: #e3e9ef url(../images/theme/main_block_dioxide.png) no-repeat -10px -380px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.catbg, .catbg2, tr.catbg td, tr.catbg2 td, tr.catbg th, tr.catbg2 th
+{
+	color: #fff;
+	font-family: "Trebuchet MS",arial, helvetica, sans-serif;
+	font-size: 0.9em;
+	background: #a7b9cd url(../images/theme/main_block_dioxide.png) no-repeat -10px -280px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h4.catbg, h4.catbg2 , h3.catbg , h3.catbg2 , .table_list tbody.header td.catbg
+{
+	background: url(../images/theme/main_block_dioxide.png) no-repeat 100% -160px;
+	padding-right: 9px;
+}
+
+h4.titlebg, h3.titlebg
+{
+	background: url(../images/theme/main_block_dioxide.png) no-repeat 100% -200px;
+}
+
+div.cat_bar
+{
+	background: #99abbf url(../images/theme/main_block_dioxide.png) no-repeat 0 -160px;
+}
+div.title_bar
+{
+	background: #e3e9ef url(../images/theme/main_block_dioxide.png) no-repeat 0 -200px;
+}
+div.roundframe div.cat_bar
+{
+	background: #99abbf url(../images/theme/main_block_dioxide.png) no-repeat 0 -240px;
+}
+div.roundframe div.cat_bar h3.catbg
+{
+	background: url(../images/theme/main_block_dioxide.png) no-repeat 100% -240px;
+}
+div.title_barIC
+{
+	background: #dadfe6 url(../images/theme/main_block_dioxide.png) no-repeat 0 -120px;
+}
+div.title_barIC h4.titlebg
+{
+	background: url(../images/theme/main_block_dioxide.png) no-repeat 100% -120px;
+}
+
+tr.catbg th.first_th
+{
+	background: #a7b9cd url(../images/theme/main_block_dioxide.png) no-repeat 0 -280px;
+}
+tr.catbg th.last_th
+{
+	background: #a7b9cd url(../images/theme/main_block_dioxide.png) no-repeat 100% -280px;
+}
+tr.titlebg th.first_th
+{
+	background: #e3e9ef url(../images/theme/main_block_dioxide.png) no-repeat 0 -380px;
+}
+tr.titlebg th.last_th
+{
+	background: #e3e9ef url(../images/theme/main_block_dioxide.png) no-repeat 100% -380px;
+}
