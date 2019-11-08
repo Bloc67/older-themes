@@ -1,0 +1,164 @@
+#content
+{
+	background: none;
+}
+#leftsection
+{
+	float: none;
+	width: 249px;
+	padding: 0;
+}
+#rightsection
+{
+	margin: 0;
+}
+h1#mainheader a
+{
+	font-family: Garamond, serif;
+	font-size: 30px;
+	color: #def8cb;
+	padding: 0 0 0 40px;
+	margin: 0;
+	font-style: italic;
+}
+#leftsection .top .content
+{
+	background: url(images/themeie6/left2.gif) repeat-y;
+	padding: 0 15px 0 50px;
+}
+#leftsection .middle .content
+{
+	background: url(images/themeie6/left4.gif) repeat-y;
+	padding: 0 15px 0 130px;
+}
+#leftsection .bottom .content
+{
+	background: url(images/themeie6/left6.gif) repeat-y;
+	padding: 0 15px 0 50px;
+}
+
+#rightsection .top .left
+{
+	display: block;
+	float: none;
+	width: 34px;
+	height: 36px;
+	background: url(images/themeie6/top_left.gif) no-repeat;
+}
+#rightsection .top .right
+{
+	display: block;
+	float: none;
+	width: 51px;
+	height: 36px;
+	background: url(images/themeie6/top_right.gif) top right no-repeat;
+}
+#rightsection .top .mid
+{
+	display: block;
+	height: 36px;
+	background: url(images/themeie6/top_mid.gif) repeat-x;
+	margin: 0;
+}
+#top2 div.l
+{
+	background: url(images/themeie6/top2_left.gif) repeat-y top left;
+}
+#top2 div.r
+{
+	background: url(images/themeie6/top2_right.gif) repeat-y top right;
+	padding: 0 51px 0 34px;
+}
+#top2 div.text
+{
+	background: url(images/themeie6/top2_mid.gif) ;
+}
+
+#search
+{
+	background: url(images/themeie6/top2_left_bot.gif) no-repeat top left;
+}
+#search div
+{
+	background: url(images/themeie6/top2_right_bot.gif) no-repeat top right;
+	padding: 0 110px 0 34px;
+}
+#search div div
+{
+	background: url(images/themeie6/top2_mid_bot.gif);
+	padding: 0;
+	height: 70px;
+}
+
+#midsection
+{
+	background: url(images/themeie6/mid_left.gif) repeat-y top left;
+}
+#midsection div.rs
+{
+	background: url(images/themeie6/mid_right.gif) repeat-y top right;
+	padding: 0 40px 0 34px;
+}
+#midsection div.ms
+{
+	background: url(images/themeie6/mid_mid.gif);
+	padding: 0;
+}
+
+#rightsection .bot span.left
+{
+	display: block;
+	float: left;
+	width: 34px;
+	height: 28px;
+	background: url(images/themeie6/bot_left.gif) no-repeat;
+}
+#rightsection .bot span.right
+{
+	display: block;
+	float: right;
+	width: 51px;
+	height: 28px;
+	background: url(images/themeie6/bot_right.gif) top right no-repeat;
+}
+#rightsection .bot .mid
+{
+	display: block;
+	height: 28px;
+	background: url(images/themeie6/bot_mid.gif) repeat-x;
+	margin: 0 40px 0 34px;
+}
+#dropdiv1 .content
+{
+	margin: 20px;
+	background: url(images/themeie6/news.jpg) no-repeat;
+	padding: 40px;
+}
+
+
+.windowbg3
+{
+	background: url(images/themeie6/windowbg3.gif);
+}
+
+/* the today container in calendar */
+.calendar_today
+{
+	background-color: #666;
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+.titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td
+{
+	background: url(images/themeie6/windowbg.gif);
+}
+/* This is used for categories, page indexes, and several other areas in the forum.
+.catbg and .catbg2 is for boardindex, while .catbg3 is for messageindex and display headers*/
+.catbg , tr.catbg td , .catbg3 , tr.catbg3 td
+{
+	background: url(images/themeie6/windowbg.gif);
+}
+.catbg2 , tr.catbg2 td
+{
+	background: url(images/themeie6/windowbg.gif);
+}

@@ -1,0 +1,1178 @@
+/* Normal, standard links. */
+a
+{
+	color: #040;
+	text-decoration: none;
+}
+a:visited
+{
+	color: #040;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+
+/* Navigation links - for the link tree. */
+.nav, .nav:link, .nav:visited
+{
+	text-decoration: none;
+}
+a.nav:hover
+{
+	text-decoration: underline;
+}
+a
+{
+	outline: 0;
+}
+/* Tables should show empty cells. */
+table
+{
+	empty-cells: show;
+}
+
+/* By default (td, body..) use verdana in black. */
+body, td, th , tr
+{
+	color: #333;
+	font-size: 1em;
+	font-family: arial, sans-serif;
+}
+html
+{
+	background: #000;
+	padding: 0;
+	margin: 0;
+}
+
+/* The main body of the entire forum. */
+body
+{
+	background: #000;
+	margin: 0;
+	padding: 0;
+}
+div#mainframe
+{
+	background: url(theme2/top_mid.jpg) #fff repeat-x;
+	margin: 0 5% 0 5%;
+	min-width: 800px;
+	padding: 0;
+}
+div#mainframe #p1
+{
+}
+div#mainframe #p2
+{
+	background: url(theme2/left_mid.jpg) top left repeat-y;
+}
+div#mainframe #p3
+{
+	background: url(theme2/right_mid.jpg) top right repeat-y;
+}
+
+div#mainframe #p4
+{
+	background: url(theme2/left_bottom.jpg) no-repeat bottom left;
+}
+div#mainframe #p5
+{
+	background: url(theme2/right_bottom.jpg) bottom right no-repeat;
+}
+div#mainframe #p6
+{
+	background: url(theme2/right.jpg) top right no-repeat;
+}
+div#mainframe #p7
+{
+	background: url(theme2/left.jpg) top left no-repeat;
+	padding: 0 46px 0 53px;
+	min-height: 800px;
+}
+
+div#bodyframe
+{
+	padding: 18px 10px 10px 10px;
+	font-size: 85%;
+}
+
+/* Input boxes - just a bit smaller than normal so they align well. */
+input, textarea, button
+{
+	color: #000000;
+	font-family: arial, sans-serif;
+}
+input, button
+{
+	font-size: 90%;
+}
+
+textarea
+{
+	font-size: 90%;
+	color: #000000;
+	font-family: arial, sans-serif;
+}
+
+/* All input elements that are checkboxes or radio buttons. */
+input.check
+{
+}
+
+/* Selects are a bit smaller, because it makes them look even better 8). */
+select
+{
+	font-size: 90%;
+	font-weight: normal;
+	border-width: 1px;
+	padding: 2px;
+	font-family: arial, sans-serif;
+}
+
+/* Standard horizontal rule.. ([hr], etc.) */
+hr, .hrcolor
+{
+	height: 1px;
+	border: 0;
+	color: #bbb;
+	background-color: #bbb;
+}
+
+/* No image should have a border when linked */
+a img
+{
+	border: 0;
+}
+/* A quote, perhaps from another post. */
+.quote
+{
+	color: #000000;
+	background: #fff;
+	padding: 10px;
+	line-height: 1.4em;
+	border-left: solid 8px #a0e0a0;
+	font-style: italic;
+	margin: 0 1em 0 0;
+}
+
+/* A code block - maybe even PHP ;). */
+.code
+{
+	color: #000000;
+	background: #fff;
+	padding: 10px;
+	border-left: solid 3px #e0a0a0;
+	white-space: nowrap;
+	overflow: auto;
+	min-height: 3em;
+	font-family: "Courier New", monospace;
+}
+
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader, .codeheader
+{
+	display: block;
+	padding: 2px 10px 2px 10px;
+	background: #e0e0e0;
+	color: #000000;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 0.9em;
+	border-bottom: solid 2px #ccc;
+}
+.codeheader
+{
+	background: url(images/tinyportal/code.gif) no-repeat 5px 50% #e0e0e0;
+	padding-left: 26px;
+	border-left: solid 3px #e0a0a0;
+}
+.quoteheader
+{
+	background: url(images/tinyportal/quote.gif) no-repeat 5px 50% #e0e0e0;
+	border-left: solid 3px #a0e0a0;
+	padding-left: 26px;
+	margin: 1em 1em 0 0;
+}
+.attach
+{
+	background: url(images/bz14icons/attachment.gif) no-repeat 5px 50% #e0e0e0;
+	padding: 8px 8px 8px 26px;
+	margin-bottom: 8px;
+}
+
+/* Generally, those [?] icons.  This makes your cursor a help icon. */
+.help
+{
+	cursor: help;
+}
+
+/* /me uses this a lot. (emote, try typing /me in a post.) */
+.meaction
+{
+	color: red;
+}
+
+/* The main post box - this makes it as wide as possible. */
+.editor
+{
+	width: 96%;
+}
+
+/* Highlighted text - such as search results. */
+.highlight
+{
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+}
+
+/* Alternating backgrounds for posts, and several other sections of the forum. */
+.windowbg
+{
+	background: #eee;
+}
+.windowbg2, #preview_body
+{
+	background: #fdfdfd;
+}
+.windowbg3
+{
+	background: #e9e9ea;
+}
+/* the today container in calendar */
+.calendar_today
+{
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+.titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td
+{
+	color: #D6DAE1;
+	font-style: normal;
+	background: #535353;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.titlebg, .titlebg a:link, .titlebg a:visited, tr.titlebg td a.navPages, td.titlebg table td
+{
+	font-weight: bold;
+	color: #D6DAE1;
+	font-style: normal;
+}
+
+.titlebg a:hover
+{
+	color: #f6fAE1;
+}
+/* same as titlebg, but used where bold text is not needed */
+.titlebg2 a:link, .titlebg2 a:visited
+{
+	color: #D6DAE1;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+.titlebg2 a:hover
+{
+	text-decoration: underline;
+}
+
+/* This is used for categories, page indexes, and several other areas in the forum.
+.catbg and .catbg2 is for boardindex, while .catbg3 is for messageindex and display headers*/
+.catbg , tr.catbg td , .catbg3 , tr.catbg3 td
+{
+	background: #000 url(images/catbg.jpg) repeat-x;
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.catbg2 , tr.catbg2 td
+{
+	background: #000 url(images/catbg.jpg) 0 -10px repeat-x;
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.catbg, .catbg2, .catbg3
+{
+	border-bottom: solid 1px #aaa;
+}
+.catbg, .catbg2
+{
+	font-weight: bold;
+}
+.catbg3, tr.catbg3 td, .catbg3 a:link, .catbg3 a:visited
+{
+	color: white;
+	font-size: 95%;
+	text-decoration: none;
+}
+.catbg a:link, .catbg a:visited , .catbg2 a:link, .catbg2 a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+.catbg a:hover, .catbg2 a:hover, .catbg3 a:hover
+{
+	color: orange;
+}
+/* This is used for tables that have a grid/border background color (such as the topic listing.) */
+.bordercolor
+{
+	background-color: #ccc;
+	padding: 0px;
+}
+
+/* This is used on tables that should just have a border around them. */
+.tborder
+{
+}
+
+/* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
+.smalltext
+{
+	font-size: 0.8em;
+}
+.middletext
+{
+	font-size: 0.9em;
+}
+.normaltext
+{
+	font-size: 1em;
+}
+.largetext
+{
+	font-size: 1.6em;
+}
+
+
+/* Posts and personal messages displayed throughout the forum. */
+.post, .personalmessage
+{
+	width: 100%;
+	overflow: auto;
+	line-height: 1.3em;
+}
+
+/* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
+.signature
+{
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 3px;
+	line-height: 1.3em;
+}
+
+/* Sometimes there will be an error when you post */
+.error
+{
+	color: red;
+}
+
+
+/* definitions for the main tab, active means the tab reflects which page is displayed */
+.maintab_first, .maintab_back, .maintab_last, .maintab_active_first, .maintab_active_back, .maintab_active_last
+{
+	color: #a1a1a1;
+	text-transform: lowercase;
+	vertical-align: top;
+}
+.maintab_back, .maintab_active_back
+{
+	color: #a1a1a1;
+	text-decoration: none;
+	font-size:  11px;
+	vertical-align: top;
+	padding: 6px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+}
+
+.maintab_first
+{
+	display: none;
+}
+.maintab_back
+{
+}
+.maintab_last
+{
+	display: none;
+}
+.maintab_active_first
+{
+	display: none;
+}
+.maintab_active_back
+{
+	background: #555;
+}
+.maintab_active_last
+{
+	display: none;
+}
+
+/* how links behave in main tab. */
+.maintab_back a:link , .maintab_back a:visited
+{
+	color: #a1a1a1;
+	text-decoration: none;
+}
+.maintab_active_back a:link , .maintab_active_back a:visited
+{
+	color: #87f2fD;
+	text-decoration: none;
+}
+
+.maintab_back a:hover, .maintab_active_back a:hover
+{
+	text-decoration: overline;
+}
+/* definitions for the main tab, active means the tab reflects which page is displayed */
+.mirrortab_first, .mirrortab_back, .mirrortab_last, .mirrortab_active_first, .mirrortab_active_back, .mirrortab_active_last
+{
+	color: #a1a1a1;
+	text-transform: lowercase;
+	vertical-align: top;
+}
+.mirrortab_back, .mirrortab_active_back
+{
+	color: #a1a1a1;
+	text-decoration: none;
+	font-size:  11px;
+	vertical-align: top;
+	padding: 6px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+}
+
+.mirrortab_first
+{
+	display: none;
+}
+.mirrortab_back
+{
+}
+.mirrortab_last
+{
+	display: none;
+}
+.mirrortab_active_first
+{
+	display: none;
+}
+.mirrortab_active_back
+{
+	background: #555;
+}
+.mirrortab_active_last
+{
+	display: none;
+}
+
+/* how links behave in main tab. */
+.mirrortab_back a:link , .mirrortab_back a:visited
+{
+	color: #a1a1a1;
+	text-decoration: none;
+}
+.mirrortab_active_back a:link , .mirrortab_active_back a:visited
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.mirrortab_back a:hover, .mirrortab_active_back a:hover
+{
+	text-decoration: overline;
+}
+
+/* The AJAX notifier */
+#ajax_in_progress
+{
+	background: #32CD32;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+	padding: 3px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#outer
+{
+	height: 46px;
+	background: url(theme2/menu.jpg) repeat-x;
+}
+
+#container
+{
+	height: 46px;
+	z-index: 100;
+}
+#container ul#topnav
+{
+	list-style: none;
+	padding: 0;
+	margin: 0 1em 0 1em;
+	height: 46px;
+}
+#topnav 
+{
+	float: left;
+	height: 46px;
+	padding-left: 0px;
+	margin: 0px;
+	z-index: 100;
+}
+
+#topnav ul 
+{
+	margin: 0;
+	padding: 0;
+}
+
+#topnav li 
+{
+	float: left;
+	display: inline;
+	width: auto;
+	margin: 0;
+	padding: 0px;
+	position: relative;
+	padding-right: 1px;
+}
+
+#topnav li a 
+{
+	color: #ccc;
+	display: block;
+	float: left;
+	height: 33x;
+	line-height: 30px;
+	padding: 0 10px 3px 10px;
+	font-size: 100%;
+	font-family: Arial Narrow, Arial, sans-serif;
+	font-weight: bold;
+}
+
+#topnav li a:hover, #topnav .chosen a:hover, #topnav li:hover a, #topnav li.sfhover a 
+{
+	background: #243644;
+	color: #efefef;
+	text-decoration: none;
+}
+
+#topnav .chosen a 
+{
+	background: #000;
+}
+
+#topnav .chosen a, #topnav .chosen a:hover, #topnav li li a:hover 
+{
+	color: #efefef;
+}
+
+#topnav li li 
+{
+	background: #042634;
+	width: 10em;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	border-top: none;
+	border-left: 1px solid #5E7E93;
+	border-bottom: 0;
+	border-right: 1px solid #3E5E73;
+}
+
+#topnav li li a, #topnav .chosen li a, #topnav li:hover li a, #topnav li.sfhover li a 
+{
+	background: #042634;
+	display: block;
+	height: 30px;
+	line-height: 30px;	
+	padding: 0 0 0 0.7em;
+	width: 10.4em;
+	float: none;
+	color: #eee;
+	font-weight: normal;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 90%;
+}
+
+#topnav li li a:hover, #topnav .chosen li a:hover, #topnav li a.chosen:hover  
+{
+	background-color: #000;
+	color: #fd8;
+}
+
+#topnav li ul {
+	background: #042634;
+	clear: both;
+	position: absolute;
+	height: auto;
+	width: 10em;
+	top: 33px;
+	left: -999em;
+	z-index: 100;
+	padding-bottom: 0;
+}
+
+#topnav li:hover ul, #topnav li.sfhover ul {
+	left: auto;
+}
+
+.tp_articletext h2
+{
+	border-bottom: solid 1px #aaa;
+	background: none;
+	margin: 1em 0 0 0;
+	padding: 0 0 10px 0px;
+	color: #464;
+	font-size: 1.6em;
+	height: 0.8em;
+	line-height: 0.8em;
+}
+.bloczone h2
+{
+	font-size: 1.5em;
+	border-bottom: dotted 1px #555;
+	padding: 0.4em;
+	margin-top: 0;
+}
+.avatar2
+{
+	margin-top: 5px;
+}
+p
+{
+	padding: 1em 0 1em 0;
+}
+
+/* styles from added layers */
+#bugtracker_layer dl
+{
+	padding: 1em;
+	margin: 0;
+}
+#bugtracker_layer dt
+{
+	float: left;
+	width: 10em;
+}
+#bugtracker_layer .windowbg
+{
+	background: none;
+}
+#bugtracker_layer .tborder
+{
+	border: solid 1px #fff;
+	border-right: solid 1px #999;
+	border-bottom: solid 1px #999;
+}
+#bugtracker_layer dd
+{
+	margin-left: 11em;
+}
+#bugtracker_layer .titlebg, #bugtracker_layer .catbg
+{
+	padding: 5px 10px 5px 10px;
+}
+#bugtracker_layer h3.catbg
+{
+	margin: 0;
+	font-size: 1em;
+}
+#themeshop h2
+{
+	margin: 0;
+	color: grey;
+	background: none;
+	padding: 0;
+	display: inline;
+	line-height: 1em;
+	font-size: 1.2em;
+}
+.hoveritems. .hoveritems li
+{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+.hoveritems li a, .hoveritems li a.active:hover
+{
+	display: block;
+	padding: 5px;
+	background: #5a5a5a;
+	color: white;
+	border-top: solid 1px #fff;
+}
+.hoveritems li a.active:hover
+{
+	background: #000;
+}
+.hoveritems li a:hover, .hoveritems li a.active
+{
+	background: #95f720;
+	color: black;
+	text-decoration: none;
+}
+
+
+#tp_dlmanager .hoveritems li a,#tp_dlmanager .hoveritems li a.active:hover
+{
+	background: #e0e6e0;
+	color: black;
+}
+#tp_dlmanager .hoveritems li a.active:hover
+{
+	background: #000;
+	color: white;
+}
+#tp_dlmanager .hoveritems li a:hover,#tp_dlmanager .hoveritems li a.active
+{
+	background: #558940;
+	text-decoration: none;
+	color: white;
+}
+
+#tp_dlmanager .hoveritems li.sub a
+{
+	padding-left: 1em;
+}
+#tp_dlmanager .hoveritems li.sub a,#tp_dlmanager .hoveritems li.sub a.active:hover
+{
+	background: #d8d8d8;
+	color: black;
+}
+#tp_dlmanager .hoveritems li.sub a.active:hover
+{
+	background: #666;
+	color: white;
+}
+#tp_dlmanager .hoveritems li.sub a:hover,#tp_dlmanager .hoveritems li.sub a.active
+{
+	background: #90a090;
+	text-decoration: none;
+	color: white;
+}
+#controls
+{
+	padding: 10px;
+}
+
+#roadmap ul
+{
+	padding-left: 4em;
+	list-style: disc;
+}
+#roadmap ul ul
+{
+	padding-left: 1em;
+	list-style: circle;
+}
+#roadmap h3
+{
+	font-weight: bold;
+	list-style: none;
+	padding: 0.5em;
+	color: #008000;
+	font-size: 1.2em;
+}
+#roadmap h2
+{
+	padding: 0.5em;
+	font-size: 1.2em;
+	border: none;
+}
+#mainarea
+{
+	font-size: 0.85em;
+	line-height: 1em;
+}
+#mainarea .smalltext
+{
+	font-size: 10px;
+}
+small.mynumbers a
+{
+	border: solid 1px #BCBCC4;
+	background: #FFFBF8;
+	margin-right: 2px;
+	padding: 3px;
+}
+#footerframe
+{
+	font-size: 0.7em;
+	text-align: center;
+	background: white;
+	margin: 0;
+}
+.inline_text
+{
+	float: right;
+	padding: 1em;
+	background: #D8E5EB;
+	margin-left: 1em;
+	border: solid 1px #888;
+}
+.inline_text ul
+{
+	list-style: square;
+}
+.titlebg2 .smalltext
+{
+	color: white;
+}
+
+
+#linktree
+{
+	font-size: 0.8em; 
+	margin-top: -1em;
+	padding: 0.5em 7em 0.5em 1em;
+	clear: both;
+}
+/* for the frontapge */
+#userbox
+{
+	float: right;
+	font-size: 0.8em;
+	padding: 60px 1em 0 0;
+	font-weight: bold;
+	color: #889;
+}
+#userbox a
+{
+	color: #987;
+}
+#paidtable .titlebg
+{
+	background: none;
+}
+#paidtable 
+{
+	margin: 0 1em 0 1em;;
+}
+#paidtable h4
+{
+	margin: 0;
+	font-size: 1.2em;
+	color: #750;
+}
+#paidtable p
+{
+	margin: 0;
+	padding: 2px;
+}
+h1
+{
+	padding: 0;
+	margin: 0;
+}
+h1 a
+{
+	line-height: 84px;
+	color: #f0f8ff;
+	display: block;
+	height: 84px;
+	background: url(theme2/top.jpg) no-repeat;
+}
+h1 a:hover,h1 a:hover span
+{
+	color: #d0d0ff;
+	text-decoration: none;
+}
+h1 a span
+{
+	font-weight: normal;
+	font-size: 1.2em;
+	font-family: Trebuchet, sans-serif;
+	letter-spacing: -2px;
+	color: #f0f8ff;
+}
+
+html,body
+{
+	height: 101.1%;
+}
+
+.arial
+{
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+} 
+.times
+{
+	font-family: Cambria, Georgia, Times, Times New Roman, serif;
+}
+.arialnarrow
+{
+	font-family: Franklin Gothic Medium, Arial Narrow Bold, Arial, sans-serif;
+}
+.futura
+{
+	font-family: Futura, Century Gothic, AppleGothic, sans-serif;
+}
+.georgia
+{
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+}
+.tahoma
+{
+	font-family: Tahoma, Geneva, Verdana;
+}
+.trebuchet
+{
+	font-family: Trebuchet, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
+}
+.verdana
+{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* frontpage */
+#front ul, #front li
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#front ul.floated ul li
+{
+	float: left;
+	width: 50%;
+}
+#front ul.floated ul li img
+{
+	float: left;
+	margin: 0 20px 10px 10px;
+	border: solid 1px #aaa;
+	background: #fff;
+	padding: 2px;
+}
+#front ul.floated ul
+{
+	clear: left;
+}
+#front h3
+{
+	margin: 0;
+	padding: 5px 5px 0 5px;
+	color: #a70;
+	font-size: 1.2em;
+}
+#front ul.floated ul li p
+{
+	margin: 0;
+	padding: 0 5px 5px 5px;
+}
+#front h2
+{
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+	background: url(../../tp-images/h2gradient.jpg) repeat-x;
+	color: #b82;
+	font-family: Arial, sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+	border: none;
+}
+#front p#ingress
+{
+	margin: 0;
+	padding: 20px;
+	background: url(../../tp-images/pgradient.jpg) 0 -50px repeat-x;
+	border-top: solid 1px white;
+	border-bottom: 2px #999;
+	font-style: italic;
+	padding: 20px 50px 30px 50px;
+}
+#front p#ingress em
+{
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: bold;
+	color: #620;
+	display: block;
+	text-align: center;
+	padding: 0 0 5px 0;
+}
+#front p#ingress acronym
+{
+	border: none;
+	font-weight: bold;
+}
+#front .floated,#front .floated2
+{
+	padding: 10px 30px 10px 30px;
+}
+#front .notice
+{
+	padding: 5px;
+	background: #eee;
+	display: block;
+	margin: 5px 0 5px 0;
+	font-weight: normal;
+}
+#front .quicklinks
+{
+	padding: 0 10px 10px 10px;
+}
+#front ul.floated .quicklinks
+{
+	margin: 10px 0 0 0;
+	padding-left: 5px;
+	font-size: 90%;
+}
+#front .imgcaption
+{
+	float: right;
+	text-align: center;
+	margin-left: 20px;
+}
+#front .imgcaption img
+{
+	background: white;
+	padding: 2px;
+	border: solid 1px #888;
+	margin: 5px;
+}
+#front .imgcaption div
+{
+	color: #600;
+	font-family: tahoma;
+	font-size: 90%;
+	font-weight: bold;
+}
+#front ul.floated li.noborder img
+{
+	border: none;
+}
+/* team page */
+
+#team li ul li.noborder .avatar
+{
+	height: 110px;
+	position: relative;
+}
+#team li ul li.noborder img
+{
+	float: none;
+	margin:0 0 5px 5px;
+	position: absolute;
+	bottom: 0;
+}
+#team li ul li.noborder
+{
+	width: 33%;
+	font-size: 0.9em;
+	line-height: 1.1em;
+}
+#rightcol
+{
+	float: right;
+	width: 200px;
+}
+#leftcol
+{
+}
+#front .floated2 p
+{
+	background: #EAEFF3;
+	padding: 1.5em;
+	line-height: 1.4em;
+}
+#front .noborder
+{
+	float: left;
+	width: 24%;
+	height: 300px;
+}
+#front .noborder .avatar
+{
+	height: 100px;
+	line-height: 100px;
+}
+#front .noborder .avatar img
+{
+}
+
+#spellview
+{
+	background: #f0f0f0;
+}
+
+#bz22 h2
+{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #a60;
+	font-size: 1.6em;
+	font-family: Georgia, serif;
+}
+#bz22 h3
+{
+	margin-bottom: 5px;
+	padding-bottom: 3px;
+	border-bottom: solid 1px #aaa;
+	font-weight: normal;
+	font-size: 1.3em;
+}
+#bz22 h4
+{
+	margin: 0;
+	padding: 10px 0 3px 0;
+	font-weight: bold;
+	font-size: 1.1em;
+	color: #840;
+}
+#bz22 h5
+{
+	margin: 0;
+	padding: 10px 0 3px 0;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1em;
+	color: #005;
+}
+#bz22 p
+{
+	margin: 0;
+	line-height: 1.4em;
+	padding: 0 0 8px 0;
+	font-size: 0.9em;
+}
+#bz22 .body
+{
+	line-height: 1.2em;
+	padding: 0 0 8px 0;
+	font-size: 0.9em;
+}
+#bz22 img#featured
+{
+	float: left;
+	margin: 10px 0 0 0;
+
+}
+ul.globaltags
+{
+	padding-top: 0;
+	margin-top: 0;
+	padding-left: 15px;
+	margin-left: 0;
+}
+ul.globaltags li a
+{
+	font-size: 0.9em;
+}

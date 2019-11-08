@@ -1,0 +1,51 @@
+/* Set a fontsize that will look the same in all browsers. */
+body
+{
+	background: #E1DCD9 url(../images/theme/brown/back.jpg) repeat-x;
+}
+
+/* the Minerva frame */
+#midside .wtop {	background: url(../images/theme/brown/mid.jpg) repeat-x top right; }
+#midside .wbot {	background: white; }
+#midside .wleft {	background: url(../images/theme/brown/left3mid.jpg) repeat-y top left; }
+#midside .wright {	background: url(../images/theme/brown/right3mid.jpg) repeat-y top right; }
+#midside .wbotleft {	background: url(../images/theme/brown/left3bot.jpg) no-repeat bottom left; }
+#midside .wbotright {	background: url(../images/theme/brown/right3bot.jpg) no-repeat bottom right; }
+#midside .wtopleft {	background: url(../images/theme/brown/left3top.jpg) no-repeat top left; }
+#midside .wtopright 
+{	
+	background: url(../images/theme/brown/right3top.jpg) no-repeat top right; 
+	padding: 1em;
+	min-height: 900px;
+}
+
+
+#leftie .wtop {	background: url(../images/theme/brown/left2top.jpg) repeat-x top right; }
+#leftie .wbot {	background: url(../images/theme/brown/left2bot.jpg) repeat-x bottom right #D2C5B5; }
+#leftie .wleft {	background: url(../images/theme/brown/leftmid.jpg) repeat-y top left; }
+#leftie .wright {	background: url(../images/theme/brown/left25mid.jpg) repeat-y top right; }
+#leftie .wbotleft {	background: url(../images/theme/brown/leftbot.jpg) no-repeat bottom left; }
+#leftie .wbotright {	background: url(../images/theme/brown/left25bot.jpg) no-repeat bottom right; }
+#leftie .wtopleft {	background: url(../images/theme/brown/lefttop.jpg) no-repeat top left; }
+#leftie .wtopright 
+{	
+	background: url(../images/theme/brown/left25top.jpg) no-repeat top right; 
+	padding: 109px 20px 20px 20px;
+	min-width: 10px;
+	min-height: 700px;
+}
+
+#rightie .wtop {	background: url(../images/theme/brown/right2top.jpg) repeat-x top right; }
+#rightie .wbot {	background: url(../images/theme/brown/right2bot.jpg) repeat-x bottom right #D2C5B5; }
+#rightie .wleft {	background: url(../images/theme/brown/right25mid.jpg) repeat-y top left; }
+#rightie .wright {	background: url(../images/theme/brown/rightmid.jpg) repeat-y top right; }
+#rightie .wbotleft {	background: url(../images/theme/brown/right25bot.jpg) no-repeat bottom left; }
+#rightie .wbotright {	background: url(../images/theme/brown/rightbot.jpg) no-repeat bottom right; }
+#rightie .wtopleft {	background: url(../images/theme/brown/right25top.jpg) no-repeat top left; }
+#rightie .wtopright 
+{	
+	background: url(../images/theme/brown/righttop.jpg) no-repeat top right; 
+	padding: 109px 20px 20px 20px;
+	min-width: 10px;
+	min-height: 700px;
+}

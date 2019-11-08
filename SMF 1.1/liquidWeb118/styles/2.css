@@ -1,0 +1,49 @@
+body
+{
+	background: url(../images/backgrounds/shimmer.jpg) no-repeat;
+}
+#menubox a
+{
+	color: white;
+	padding-left: 7px;
+	padding-right: 7px;
+	border-left: solid 1px #ccc;
+}
+#menubox li#chosen a
+{
+	color: white;
+	font-weight: bold;
+}
+#mainframe h1
+{
+	margin: 10px 0 20px 10px;
+}
+#mainframe h1	a
+{
+	color: white;
+}
+#mainframe #linktree
+{
+	padding: 0px 10px 18px 10px;
+}
+#mainframe #linktree a
+{
+	color: white;
+}
+#mainframe #linktree a:hover
+{
+	text-decoration: underline;
+}
+#upshrinkHeader
+{
+	padding: 0 0 1em 10px;
+	color: white;
+}
+#upshrinkHeader a
+{
+	color: #fffff0;
+}
+#content
+{
+	background: url(../images/theme/content2.png);
+}

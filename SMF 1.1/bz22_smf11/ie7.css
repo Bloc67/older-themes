@@ -1,0 +1,5 @@
+#bodyframe #topnav li li a, #bodyframe #outer #topnav .chosen li a, #bodyframe #outer #topnav li:hover li a, #bodyframe #outer #topnav li.sfhover li a 
+{
+	padding: 0 0 0 0.2em;
+	width: 10.4em;
+}

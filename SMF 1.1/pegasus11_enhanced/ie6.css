@@ -1,0 +1,24 @@
+#menubox ul a span
+{
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	margin: 69px 0 0 -25%;
+	padding: 6px 0;
+	width: 70px;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.greybutton
+{
+	width: 100px;
+}
+#linktree
+{
+	width: 100%;
+}
+#usera
+{
+	overflow: hidden;
+}

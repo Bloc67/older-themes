@@ -1,0 +1,362 @@
+/* Normal, standard links. */
+a:link
+{
+	color: #dfd;
+	text-decoration: none;
+}
+a:visited
+{
+	color: #ddd;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+
+/* Navigation links - for the link tree. */
+.nav, .nav:link, .nav:visited
+{
+	color: #dfd;
+	text-decoration: none;
+}
+a.nav:hover
+{
+	color: #ddd;
+	text-decoration: underline;
+}
+
+/* Tables should show empty cells. */
+table
+{
+	empty-cells: show;
+}
+
+/* By default (td, body..) use verdana in black. */
+body
+{
+	color: #aaa;
+	font-size: small;
+	font-family: verdana, sans-serif;
+}
+/* The main body of the entire forum. */
+html
+{
+	background: url(images/theme/footer.jpg) left bottom repeat-x #000;
+}
+body
+{
+	margin: 0;
+	padding: 0 40px 0 40px;
+}
+
+/* Input boxes - just a bit smaller than normal so they align well. */
+input, textarea, button
+{
+	color: #aaa;
+	background: #222;
+	border: solid 1px #555;
+	font-family: verdana, sans-serif;
+	padding: 1px;
+}
+input, button
+{
+}
+
+textarea
+{
+	color: #fff;
+	background: #222;
+	border: solid 1px #555;
+	color: #aaa;
+	font-family: verdana, sans-serif;
+	padding: 1px;
+	font-size: small;
+}
+
+/* All input elements that are checkboxes or radio buttons. */
+input.check
+{
+}
+
+/* Selects are a bit smaller, because it makes them look even better 8). */
+select
+{
+	font-weight: normal;
+	color: #aaa;
+	background: #222;
+	border: solid 1px #555;
+	font-family: verdana, sans-serif;
+	padding: 1px;
+}
+fieldset
+{
+	border: none;
+}
+
+/* Standard horizontal rule.. ([hr], etc.) */
+hr, .hrcolor
+{
+	height: 1px;
+	border: 0;
+	color: #666666;
+	background-color: #666666;
+}
+
+/* No image should have a border when linked */
+a img
+{
+	border: 0;
+}
+/* A quote, perhaps from another post. */
+.quote
+{
+	color: #fcc;
+	border: 1px solid #800;
+	margin: 1px;
+	padding: 1px;
+	line-height: 1.4em;
+}
+
+/* A code block - maybe even PHP ;). */
+.code
+{
+	color: #ddd;
+	background-color: #555;
+	font-family: "courier new", "times new roman", monospace;
+	line-height: 1.3em;
+	/* Put a nice border around it. */
+	margin: 1px auto 1px auto;
+	padding: 1px;
+	width: 99%;
+	/* Don't wrap its contents, and show scrollbars. */
+	white-space: nowrap;
+	overflow: auto;
+	/* Stop after about 24 lines, and just show a scrollbar. */
+	max-height: 24em;
+}
+
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader, .codeheader
+{
+	color: #dfd;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+/* Generally, those [?] icons.  This makes your cursor a help icon. */
+.help
+{
+	cursor: help;
+}
+
+/* /me uses this a lot. (emote, try typing /me in a post.) */
+.meaction
+{
+	color: red;
+}
+
+/* The main post box - this makes it as wide as possible. */
+.editor
+{
+	width: 96%;
+}
+
+/* Highlighted text - such as search results. */
+.highlight
+{
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+}
+
+/* Alternating backgrounds for posts, and several other sections of the forum. */
+.windowbg, #preview_body
+{
+}
+.windowbg2
+{
+}
+.windowbg3
+{
+	background: url(images/theme/windowbg3.png);
+}
+
+/* the today container in calendar */
+.calendar_today
+{
+	background-color: #666;
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+.titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td
+{
+	background: url(images/theme/windowbg.png);
+	color: #fec;
+	font-style: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.titlebg, .titlebg a, .titlebg a:visited
+{
+	font-weight: bold;
+	color: #fec;
+	font-style: normal;
+}
+
+.titlebg a:hover
+{
+	color: #ff0;
+}
+/* same as titlebg, but used where bold text is not needed */
+.titlebg2 a, .titlebg2 a:visited, .titlebg2
+{
+	color: #fec;
+	font-style: normal;
+	text-decoration: underline;
+	font-size: 0.8em;
+}
+
+.titlebg2 a:hover
+{
+	text-decoration: underline;
+}
+
+/* This is used for categories, page indexes, and several other areas in the forum.
+.catbg and .catbg2 is for boardindex, while .catbg3 is for messageindex and display headers*/
+.catbg , tr.catbg td , .catbg3 , tr.catbg3 td
+{
+	background: url(images/theme/windowbg.png);
+	color: #efc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.catbg2 , tr.catbg2 td
+{
+	background: url(images/theme/windowbg.png);
+	color: #efc;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.catbg, .catbg2, .catbg3
+{
+	font-weight: bold;
+}
+.catbg3, tr.catbg3 td, .catbg3 a:link, .catbg3 a:visited
+{
+	font-size: 0.8em;
+	font-weight: normal;
+	text-decoration: none;
+}
+.catbg a:link, .catbg a:visited , .catbg2 a:link, .catbg2 a:visited
+{
+	color: #efc;
+	text-decoration: none;
+}
+.catbg a:hover, .catbg2 a:hover, .catbg3 a:hover
+{
+	color: #ff0;
+}
+/* This is used for tables that have a grid/border background color (such as the topic listing.) */
+.bordercolor
+{
+	padding: 0px;
+}
+
+/* This is used on tables that should just have a border around them. */
+.tborder
+{
+}
+
+/* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
+.smalltext
+{
+	font-size: 80%;
+	font-family: verdana, sans-serif;
+}
+.middletext
+{
+	font-size: 90%;
+}
+.normaltext
+{
+}
+.largetext
+{
+	font-size: 120%;
+}
+
+
+/* Posts and personal messages displayed throughout the forum. */
+.post, .personalmessage
+{
+	width: 100%;
+}
+
+/* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
+.signature
+{
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 3px;
+	line-height: 1.3em;
+}
+
+/* Sometimes there will be an error when you post */
+.error
+{
+	color: red;
+}
+
+
+.maintab_first
+{
+	display: none;
+}
+.maintab_last
+{
+	display: none;
+}
+.maintab_active_first
+{
+	display: none;
+}
+.maintab_active_last
+{
+	display: none;
+}
+
+.mirrortab_first
+{
+	display: none;
+}
+.mirrortab_last
+{
+	display: none;
+}
+.mirrortab_active_first
+{
+	display: none;
+}
+.mirrortab_active_last
+{
+	display: none;
+}
+
+/* The AJAX notifier */
+#ajax_in_progress
+{
+	background: #000;
+	color: orange;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+	padding: 3px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: solid 2px #888;
+}

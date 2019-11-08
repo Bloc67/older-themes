@@ -1,0 +1,10 @@
+#subMenusContainer li, #nav li{
+	margin-bottom:-0.99em;
+	line-height: 1.3em;
+}
+#subMenusContainer li a{
+	position:relative;
+}
+#nav ol, #nav ul, #subMenusContainer ul, #subMenusContainer ol {	
+	background: url(../images/theme/bz36/menudrop.gif) no-repeat left bottom;
+}

@@ -1,0 +1,610 @@
+/* Normal, standard links. */
+a:link, a:visited
+{
+	color: #605000;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #808000;
+}
+
+/* Navigation links - for the link tree. */
+.nav, .nav:link, .nav:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+a.nav:hover
+{
+	color: #cc3333;
+	text-decoration: underline;
+}
+
+/* Tables should show empty cells. */
+table
+{
+	empty-cells: show;
+}
+
+/* By default (td, body..) use verdana in black. */
+body
+{
+	color: #000000;
+	font-size: 9pt;
+	font-family: verdana, sans-serif;
+	background: #A3B0B4;
+}
+
+/* The main body of the entire forum. */
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Input boxes - just a bit smaller than normal so they align well. */
+input, textarea, button
+{
+	color: #000000;
+	font-family: verdana, sans-serif;
+}
+input, button
+{
+	font-size: 90%;
+}
+input,textarea
+{
+	background: #CAC4B3; 
+	font-size: small;
+	border-width: 1px;
+}
+input:focus
+{
+	background: #fff;
+	border: solid 1px black;
+}
+textarea
+{
+	font-family: verdana, sans-serif;
+}
+
+/* All input elements that are checkboxes or radio buttons. */
+input.check
+{
+}
+
+/* Selects are a bit smaller, because it makes them look even better 8). */
+select
+{
+	border: solid 1px black; 
+	background: #CAC4B3; 
+	font-size: x-small;
+	font-weight: normal;
+	color: #000000;
+	font-family: verdana, sans-serif;
+}
+
+/* Standard horizontal rule.. ([hr], etc.) */
+hr, .hrcolor
+{
+	height: 1px;
+	border: 0;
+	color: #666666;
+	background-color: #666666;
+}
+
+/* No image should have a border when linked */
+a img
+{
+	border: 0;
+}
+/* A quote, perhaps from another post. */
+.quote
+{
+	color: #000000;
+	background-color: #D7DAEC;
+	border: 1px solid #000000;
+	margin: 1px;
+	padding: 1px;
+	font-size: x-small;
+	line-height: 1.4em;
+}
+
+/* A code block - maybe even PHP ;). */
+.code
+{
+	color: #000000;
+	background-color: #dddddd;
+	font-family: "courier new", "times new roman", monospace;
+	font-size: x-small;
+	line-height: 1.3em;
+	/* Put a nice border around it. */
+	border: 1px solid #000000;
+	margin: 1px auto 1px auto;
+	padding: 1px;
+	width: 99%;
+	/* Don't wrap its contents, and show scrollbars. */
+	white-space: nowrap;
+	overflow: auto;
+	/* Stop after about 24 lines, and just show a scrollbar. */
+	max-height: 24em;
+}
+
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader, .codeheader
+{
+	color: #000000;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: x-small;
+	line-height: 1.2em;
+}
+
+/* Generally, those [?] icons.  This makes your cursor a help icon. */
+.help
+{
+	cursor: help;
+}
+
+/* /me uses this a lot. (emote, try typing /me in a post.) */
+.meaction
+{
+	color: red;
+}
+
+/* The main post box - this makes it as wide as possible. */
+.editor
+{
+	width: 96%;
+}
+
+/* Highlighted text - such as search results. */
+.highlight
+{
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+}
+
+/* Alternating backgrounds for posts, and several other sections of the forum. */
+.windowbg
+{
+}
+.windowbg2
+{
+}
+.windowbg3
+{
+}
+/* the today container in calendar */
+.calendar_today
+{
+	background-color: #000;
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+.titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td
+{
+	color: #FCEACA;
+	font-style: normal;
+	background: #505050;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.titlebg, .titlebg a:link, .titlebg a:visited
+{
+	color: #FCEACA;
+	font-style: normal;
+}
+
+.titlebg a:hover
+{
+	color: white;
+}
+/* same as titlebg, but used where bold text is not needed */
+.titlebg2 a:link, .titlebg2 a:visited
+{
+	color: #FCEACA;
+	font-style: normal;
+	text-decoration: underline;
+}
+.titlebg, .titlebg2
+{
+	font-size: 14pt;
+	font-family: tahoma, sans-serif;
+}
+.titlebg2 a:hover
+{
+	text-decoration: underline;
+}
+
+/* This is used for categories, page indexes, and several other areas in the forum.
+.catbg and .catbg2 is for boardindex, while .catbg3 is for messageindex and display headers*/
+.catbg , tr.catbg td , .catbg3 , tr.catbg3 td
+{
+	background: #424242;
+	color: #ECDABA;
+	padding-left: 30px;
+}
+.catbg2 , tr.catbg2 td
+{
+	background: #424242;
+	color: #ECDABA;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+.catbg, .catbg2, .catbg3
+{
+	font-size: 14pt;
+	font-family: tahoma, sans-serif;
+}
+.catbg, .catbg2
+{
+	background: url(images/catbg_back.gif) bottom left no-repeat #424242;
+}
+.catbg3, tr.catbg3 td, .catbg3 a:link, .catbg3 a:visited
+{
+	font-size: 95%;
+	color: #ECDABA;
+	text-decoration: none;
+}
+.catbg a:link, .catbg a:visited , .catbg2 a:link, .catbg2 a:visited
+{
+	color: #ECDABA;
+	text-decoration: none;
+}
+.catbg a:hover, .catbg2 a:hover, .catbg3 a:hover
+{
+	color: #ffe0e0;
+}
+/* This is used for tables that have a grid/border background color (such as the topic listing.) */
+.bordercolor
+{
+}
+
+/* This is used on tables that should just have a border around them. */
+.tborder
+{
+}
+
+/* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
+.smalltext
+{
+	font-size: 7pt;
+	font-family: verdana, sans-serif;
+}
+.middletext
+{
+	font-size: 8pt;
+}
+.normaltext
+{
+	font-size: 9pt;
+}
+.largetext
+{
+	font-size: 14pt;
+}
+
+
+/* Posts and personal messages displayed throughout the forum. */
+.post, .personalmessage
+{
+	width: 100%;
+	overflow: auto;
+	line-height: 1.3em;
+}
+
+/* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
+.signature
+{
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 3px;
+	line-height: 1.3em;
+}
+
+/* Sometimes there will be an error when you post */
+.error
+{
+	color: #ffffd0;
+	font-style: italic;
+}
+
+
+/* definitions for the main tab, active means the tab reflects which page is displayed */
+.maintab_first, .maintab_back, .maintab_last, .maintab_active_first, .maintab_active_back, .maintab_active_last
+{
+	color: white;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.maintab_back, .maintab_active_back
+{
+	text-decoration: none;
+	font-size:  0.9em;
+	padding: 4px;
+	font-family: arial, sans-serif;
+}
+
+.maintab_first
+{
+	display: none;
+}
+.maintab_back
+{
+}
+.maintab_last
+{
+	display: none;
+}
+.maintab_active_first
+{
+	display: none;
+}
+.maintab_active_back
+{
+	background: url(images/chosen.gif) top center no-repeat;
+}
+.maintab_active_last
+{
+	display: none;
+}
+
+/* how links behave in main tab. */
+.maintab_back a:link , .maintab_back a:visited, .maintab_active_back a:link , .maintab_active_back a:visited
+{
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 4px;
+}
+
+.maintab_back a:hover, .maintab_active_back a:hover
+{
+	color: white;
+	background: #F37800;
+}
+
+
+
+
+
+/* The AJAX notifier */
+#ajax_in_progress
+{
+	background: #32CD32;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+	padding: 3px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+/* ################  Exodus styles ################### */
+#maintable
+{
+	border-left: solid 7px #909EA2;
+	border-right: solid 7px #909EA2;
+	margin: auto;
+	background: white;
+}
+
+#brand
+{
+	text-align: right;
+	background: url(images/top.jpg) repeat-x;
+	padding-right: 40px;
+}
+#usersection, #extras
+{
+	overflow: auto;
+	_height: 1%;
+}
+#welcome
+{
+	font-size: 1.2em;
+	color: #928F8F;
+	font-family: tahoma, sans-serif;
+	float: right;
+	padding: 1em 2em 1em 1em;
+	font-weight: bold;
+}
+#logo
+{
+	font-size: 0.9em;
+	color: #928F8F;
+	font-family: tahoma, sans-serif;
+	padding: 0 2em 1em 2em;
+}
+#logo h1
+{
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+	color: #928F8F;
+	font-family: tahoma, sans-serif;
+}
+#mainmenu, #extras
+{
+	background: #CAC4B3;
+}
+#search
+{
+	float: right;
+	padding: 1em;
+	font-size: x-small;
+	text-align: right;
+}
+#news
+{
+	padding: 1em 1em 1em 5em;
+	background: url(images/news.jpg) no-repeat;
+	height: 50px;
+}
+#bodyarea
+{
+	padding: 1em 2em 2em 2em;
+	background: url(images/middle.gif) repeat-x #626262;
+	color: #CAC4B3;
+}
+#bodyarea a:link, #bodyarea a:visited
+{
+	color: #E6B484;
+	text-decoration: none;
+}
+#bodyarea a:hover
+{
+	color: #ffedcd;
+	text-decoration: none;
+}
+
+#bodyarea .maintab_back a:link, #bodyarea .maintab_back a:visited
+{
+	color: #fff;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: verdana;
+	background: url(images/expand2.gif) 0 50% no-repeat;
+	padding-left: 15px;
+}
+#bodyarea .maintab_back a:hover
+{
+	background: url(images/expand.gif) 0 50% no-repeat black;
+}
+
+/* definitions for the main tab, active means the tab reflects which page is displayed */
+.mirrortab_first, .mirrortab_back, .mirrortab_last, .mirrortab_active_first, .mirrortab_active_back, .mirrortab_active_last
+{
+	color: white;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.mirrortab_back, .mirrortab_active_back
+{
+	color: black;
+	text-decoration: none;
+	font-size:  0.9em;
+	padding: 4px;
+	font-family: arial, sans-serif;
+}
+
+.mirrortab_first
+{
+	display: none;
+}
+.mirrortab_back
+{
+}
+.mirrortab_last
+{
+	display: none;
+}
+.mirrortab_active_first
+{
+	display: none;
+}
+.mirrortab_active_back
+{
+	background: url(images/chosen.gif) top center #CAC4B3 no-repeat;
+}
+.mirrortab_active_last
+{
+	display: none;
+}
+
+/* how links behave in main tab. */
+.mirrortab_back a:link , .mirrortab_back a:visited, .mirrortab_active_back a:link , .mirrortab_active_back a:visited
+{
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 4px;
+}
+
+.mirrortab_back a:hover, .mirrortab_active_back a:hover
+{
+	color: white;
+	background: #F37800;
+}
+/* definitions for the main tab, active means the tab reflects which page is displayed */
+.menutab_first, .menutab_back, .menutab_last, .menutab_active_first, .menutab_active_back, .menutab_active_last
+{
+	color: white;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.menutab_back, .menutab_active_back
+{
+	color: black;
+	text-decoration: none;
+	font-size:  0.9em;
+	padding: 10px 4px;
+	font-family: verdana, sans-serif;
+}
+
+.menutab_first
+{
+	display: none;
+}
+.menutab_back
+{
+	background: #CAC4B3;
+}
+.menutab_last
+{
+	display: none;
+}
+.menutab_active_first
+{
+	display: none;
+}
+.menutab_active_back
+{
+	background: url(images/chosen.gif) top center #CAC4B3 no-repeat;
+}
+.menutab_active_last
+{
+	display: none;
+}
+
+/* how links behave in main tab. */
+.menutab_back a:link , .menutab_back a:visited, .menutab_active_back a:link , .menutab_active_back a:visited
+{
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 4px;
+}
+
+.menutab_back a:hover, .menutab_active_back a:hover
+{
+	color: white;
+	background: #F37800;
+}
+.biginput
+{
+	border: solid 1px black; 
+	background: white; 
+	padding: 5px; 
+	font-size: small;
+}
+.bigbutton
+{
+	border: solid 1px black; 
+	border-top: solid 1px white; 
+	border-left: solid 1px white; 
+	background: #f6f6ff; 
+	padding: 5px; 
+	font-size: small;
+}
+#footerarea
+{
+	background: #CAC4B3;
+	padding: 1em;
+}

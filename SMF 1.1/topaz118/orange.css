@@ -1,0 +1,17 @@
+/* Themes */
+/* ******************************************************* */
+html
+{
+	background: #A64707;
+}
+#topframe
+{
+	background: url(images/theme_orange/back_top.jpg) repeat-x top left;
+}
+#contentframe
+{
+}
+#botframe
+{
+	background: url(images/theme_orange/back_bot.jpg) repeat-x top left;
+}

@@ -1,0 +1,50 @@
+ul.menubox li a
+{
+	white-space: nowrap;
+	width: 1%;
+}
+
+#myuser,#myuser a:hover
+{
+
+	background: transparent;
+}
+#menudiv
+{
+	background: none;
+	padding-right: 0;
+}
+#menuinner
+{
+	background: url(images/img/bordersloganie6.gif) no-repeat top right;
+	height: 158px;
+	filter:alpha(opacity=70);
+}
+ul.menubox li a
+{
+	background: url(images/img/menu.gif) repeat-x;
+}
+ul.menubox li a:hover, ul.menubox li.chosen a, ul.menubox li.chosen a:hover
+{
+	background: url(images/img/menuhover.gif) repeat-x;
+	text-decoration: none;
+}
+ul.menubox li ul li a, ul.menubox li.chosen ul li a
+{
+	background: url(images/img/menu.gif) repeat-x;
+}
+
+h4.headertitle
+{
+	padding: 4px 8px 4px 100px;
+	margin: 0;
+}
+.maintab_back,.maintab_active_back
+{
+	white-space: nowrap;
+	padding: 0;
+}
+.maintab_back a:hover , .maintab_active_back a:hover
+{
+	text-decoration: none;
+}

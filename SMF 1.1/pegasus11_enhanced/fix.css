@@ -1,0 +1,17 @@
+.infocenter_section p.section
+{
+	width: 6%;
+}
+.infocenter_section div.sectionbody
+{
+	margin-left: 6%;
+	padding-left: 1em;
+}
+#moderationbuttons
+{
+	overflow: hidden;
+}
+#moderationbuttons table
+{
+	float: left;
+}

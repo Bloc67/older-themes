@@ -1,0 +1,17 @@
+#right 
+{ 
+	background: url(images/theme/purple/rightfull.jpg) no-repeat top right; 
+	min-width: 923px;
+}
+#left 
+{ 
+	background: url(images/theme/purple/leftfull.jpg) no-repeat top left; 
+	padding: 89px 11px 0 13px;
+	min-height: 520px;
+	min-width: 700px;
+}
+#footer 
+{ 
+	margin: 0 11px 0 13px;
+	background: url(images/theme/purple/bot.jpg) repeat-x #000; 
+}

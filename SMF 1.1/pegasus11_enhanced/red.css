@@ -1,0 +1,120 @@
+#back
+{
+	background: url(images/theme/red/middle.jpg) repeat-x;
+}
+#right 
+{ 
+	background: url(images/theme/red/right.jpg) no-repeat top right; 
+}
+#left 
+{ 
+	background: url(images/theme/red/left.jpg) no-repeat top left; 
+}
+#footer 
+{ 
+	background: url(images/theme/red/bot.jpg) repeat-x #000; 
+}
+#footer span.right 
+{ 
+	background: url(images/theme/red/comp.jpg) no-repeat 100% -450px; 
+}
+#footer span.left 
+{ 
+	background: url(images/theme/red/comp.jpg) no-repeat 0 -450px; 
+}
+a.bluebutton
+{
+	background: url(images/theme/red/comp.jpg) no-repeat 0 -561px; 
+}
+a.bluebutton span
+{
+	background: url(images/theme/red/comp.jpg) no-repeat 100% -561px; 
+}
+a.bluebutton:active, a.bluebutton:hover
+{
+	background: url(images/theme/red/comp.jpg) no-repeat 0 -691px; 
+}
+a.bluebutton:active span, a.bluebutton:hover span
+{
+	background: url(images/theme/red/comp.jpg) no-repeat 100% -691px; 
+}
+.greybutton
+{
+	background: url(images/theme/red/comp.jpg) no-repeat 0 -608px; 
+}
+.greybutton .inner
+{
+	background: url(images/theme/red/comp.jpg) no-repeat 100% -608px; 
+}
+.greybutton:active, .greybutton:focus
+{
+	background: url(images/theme/red/comp.jpg) no-repeat 0 -648px; 
+}
+.greybutton:active .inner,.greybutton:focus .inner
+{
+	background: url(images/theme/red/comp.jpg) no-repeat 100% -648px; 
+}
+a#home {	background: url(images/theme/red/comp.jpg) 0 -69px no-repeat; }
+a#home:hover, #menubox li.chosen a#home {	background: url(images/theme/red/comp.jpg) 0 0 no-repeat; }
+
+a#search {	background: url(images/theme/red/comp.jpg) -70px -69px no-repeat; }
+a#search:hover, #menubox li.chosen a#search {	background: url(images/theme/red/comp.jpg) -70px 0 no-repeat; }
+
+a#calendar {	background: url(images/theme/red/comp.jpg) -140px -69px no-repeat; }
+a#calendar:hover, #menubox li.chosen a#calendar {	background: url(images/theme/red/comp.jpg) -140px 0 no-repeat; }
+
+a#help {	background: url(images/theme/red/comp.jpg) -210px -69px no-repeat; }
+a#help:hover, #menubox li.chosen a#help {	background: url(images/theme/red/comp.jpg) -210px 0 no-repeat; }
+
+a#login {	background: url(images/theme/red/comp.jpg) -280px -69px no-repeat; }
+a#login:hover, #menubox li.chosen a#login {	background: url(images/theme/red/comp.jpg) -280px 0 no-repeat; }
+a#logout {	background: url(images/theme/red/comp.jpg) -280px -69px no-repeat; }
+a#logout:hover, #menubox li.chosen a#logout {	background: url(images/theme/red/comp.jpg) -280px 0 no-repeat; }
+a#profile {	background: url(images/theme/red/comp.jpg) -280px -69px no-repeat; }
+a#profile:hover, #menubox li.chosen a#profile {	background: url(images/theme/red/comp.jpg) -280px 0 no-repeat; }
+
+a#register {	background: url(images/theme/red/comp.jpg) -350px -69px no-repeat; }
+a#register:hover, #menubox li.chosen a#register {	background: url(images/theme/red/comp.jpg) -350px 0 no-repeat; }
+
+a#pm {	background: url(images/theme/red/comp.jpg) -420px -69px no-repeat; }
+a#pm:hover, #menubox li.chosen a#pm {	background: url(images/theme/red/comp.jpg) -420px 0 no-repeat; }
+
+a#member {	background: url(images/theme/red/comp.jpg) -490px -69px no-repeat; }
+a#member:hover, #menubox li.chosen a#member {	background: url(images/theme/red/comp.jpg) -490px 0 no-repeat; }
+
+a#forum {	background: url(images/theme/red/comp.jpg) -490px -69px no-repeat; }
+a#forum:hover, #menubox li.chosen a#forum {	background: url(images/theme/red/comp.jpg) -490px 0 no-repeat; }
+
+a#admin {	background: url(images/theme/red/comp.jpg) -560px -69px no-repeat; }
+a#admin:hover, #menubox li.chosen a#admin {	background: url(images/theme/red/comp.jpg) -560px 0 no-repeat; }
+
+#linktree div
+{
+	background: url(images/theme/red/comp.jpg) -40px -400px repeat-x;
+}
+#linktree
+{
+	background: url(images/theme/red/navbar.jpg) repeat-x;
+}
+.content
+{
+	background: url(images/theme/red/content.jpg) repeat-x #E8E8E8;
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+.titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td, #left .titlebg, #left .titlebg2
+{
+	background: url(images/theme/red/titlebg.jpg) #262f34 repeat-x;
+}
+.catbg , tr.catbg td , .catbg3 , tr.catbg3 td, #left .catbg, #left .catbg2, #left .catbg3
+{
+	background: url(images/theme/red/catbg.jpg) #000 repeat-x;
+}
+.catbg2 , tr.catbg2 td
+{
+	background: url(images/theme/red/catbg.jpg) #000 repeat-x;
+}
+a#forum {	background: url(images/theme/red/comp.jpg) -490px -69px no-repeat; }
+a#forum:hover, #menubox li.chosen a#forum {	background: url(images/theme/red/comp.jpg) -490px 0 no-repeat; }
+a#tpadmin {	background: url(images/theme/red/comp.jpg) -560px -69px no-repeat; }
+a#tpadmin:hover, #menubox li.chosen a#tpadmin {	background: url(images/theme/red/comp.jpg) -560px 0 no-repeat; }

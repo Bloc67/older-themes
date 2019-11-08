@@ -1,0 +1,61 @@
+#topnav li a 
+{
+	height: 31x;
+	line-height: 31px;
+}
+#topnav li li a, #topnav .chosen li a, #topnav li:hover li a, #topnav li.sfhover li a 
+{
+	height: 30px;
+	line-height: 30px;	
+	padding: 0 0 0 1.5em;
+}
+#container ul li a.hide, #container ul li a:visited.hide 
+{
+	display:none;
+}
+#container ul li a:hover ul li a.hide 
+{
+	display:none;
+}
+#container ul li a:hover 
+{
+}
+#container ul li a:hover ul 
+{
+	display:block; 
+	position:absolute; 
+	top:31px; 
+	left:0; 
+	width:105px;
+}
+#container ul li a:hover ul li a ul 
+{
+	visibility:hidden;
+}
+#container ul li a:hover ul li a:hover ul 
+{
+	visibility:visible; 
+	position:absolute; 
+	left:105px; 
+	top:0; 
+}
+#container ul li a:hover ul li a:hover ul.left 
+{
+	left: -105px;
+}
+#topframe, #botframe
+{
+	height: 1%;
+}
+.bframe
+{
+	background: #ddd;
+	padding-right: 3px;
+	padding-bottom: 2px; 
+	margin: 15px 0 15px 10px;
+}
+#mainframe h1 img
+{
+	position: absolute;
+	top: 30px;
+}

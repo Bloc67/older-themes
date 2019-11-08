@@ -1,0 +1,180 @@
+#mainarea
+{
+	min-width: 900px;
+	margin: auto;
+	background: url(theme/left.jpg) 0 -18px no-repeat;
+	padding: 40px;
+}
+#linktree
+{
+	font-family: arial, sans-serif;
+	color: black;
+	font-size: 0.9em;
+	padding: 8px 5px;
+	margin: 5px 0;
+}
+#linktree a
+{
+	color: black;
+	font-style: italic;
+	font-weight: bold;
+}
+#copywrite
+{
+	background: url(theme/footerlogo.jpg) 0 0 no-repeat;
+	color: black;
+	padding-top: 40px;
+	text-align: center;
+	height: 145px; 
+}
+#copywrite .smalltext a, #copywrite a
+{
+	color: #226;
+}
+#topsection2 .content
+{
+	text-align: right;
+}
+#toparea, #myavatar
+{
+	float: right;
+	text-align: right;
+	margin: 0 4px;
+}
+#toparea
+{
+	width: 50%;
+}
+#userarea
+{
+	padding-right: 25px;
+}
+span.shadow, h1#forum
+{
+	font-size: 26px;
+	font-family: arial, sans-serif;
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: relative;
+	z-index: 99;
+	line-height: 26px;
+}
+h1#forum a
+{
+	color: black;
+	text-decoration: none;
+}
+h1#forum a:hover
+{
+	color: #888;
+	text-decoration: none;
+}
+span.shadow
+{
+	position: absolute;
+	color: #ddd;
+	z-index: 1;
+	margin-top: -23px;
+	margin-left: 3px;
+}
+#logo
+{
+	padding: 20px 0 0 140px;
+	float: left;
+}
+.oldmenu a, .maintab_back a, .mirrortab_back a, .maintab_active_back a, mirrotab_active_back a
+{
+	display: block;
+	float: left;
+	padding: 5px;
+	background: #eee;
+	border-left: 2px white solid;
+	color: black;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+.oldmenu a:hover, .maintab_back a:hover, .mirrortab_back a:hover, .maintab_active_back a, mirrotab_active_back a
+{
+	background: #fd8;
+	text-decoration: none;
+}
+#footer
+{
+	background: url(theme/footer.jpg) repeat-x;
+}
+#mainarea #mainmenu
+{
+	margin: 25px 5px 0 5px;
+	height: 80px;
+	background: url(theme/menu_startcap.jpg) no-repeat;
+	padding-left: 13px;
+}
+#mainarea #mainmenu .inner
+{
+	padding-right: 15px;
+	height: 80px;
+	background: url(theme/menu_endcap.jpg) right top no-repeat;
+}
+#mainarea #mainmenu .inner ul
+{
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	background: url(theme/menu_back.jpg) repeat-x;
+}
+#mainarea #mainmenu .inner ul li
+{
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+#mainarea #mainmenu .inner ul li a
+{
+	height: 40px;
+	display: block;
+	line-height: 35px;
+	color: white;
+	padding: 0 5px;
+}
+#mainarea #mainmenu .inner ul li.chosen a
+{
+	background: url(theme/menu_active_back.jpg) repeat-x;
+	height: 40px;
+	display: block;
+	line-height: 35px;
+	color: white;
+	padding: 0;
+}
+#mainarea #mainmenu .inner ul li.chosen a span.left
+{
+	background: url(theme/menu_active_start.jpg) no-repeat;
+	height: 40px;
+	display: block;
+	line-height: 35px;
+}
+#mainarea #mainmenu .inner ul li.chosen a span.right
+{
+	background: url(theme/menu_active_end.jpg) top right no-repeat;
+	height: 40px;
+	display: block;
+	line-height: 35px;
+	padding: 0 10px;
+}
+
+#mainarea #mainmenu .inner ul li a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+#bodyarea
+{
+	position: relative;
+	top: -50px;
+	padding: 0 20px 0 20px;
+}

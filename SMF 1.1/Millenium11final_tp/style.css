@@ -1,0 +1,796 @@
+/* Millenium parts */
+
+#leftshrink{
+	position: absolute;
+	top: 192px;
+	left: 42px;
+	z-index: 99;
+}
+
+#rightshrink{
+	position: absolute;
+	top: 192px;
+	right: 42px;
+	z-index: 99;
+}
+#top{
+	height: 190px;
+}
+#slogan{
+	position: absolute;
+	top: 16px;
+	right: 38px;
+	z-index: 50;
+	color: #909BA9;
+	font-style: italic;
+	font: arial large;
+ }
+#greeting{
+	position: absolute;
+	top: 38px;
+	right: 38px;
+	z-index: 10;
+	color: #B1AFAF;
+	font-family: verdana, sans-serif;
+	font-size: x-small;
+	letter-spacing: 0.25em;
+}
+#smartword{
+	position: absolute;
+	top: 127px;
+	left: 50px;
+	z-index: 10;
+	color: #DDDDDD;
+	font-family: verdana, sans-serif;
+	font-size: x-small;
+	letter-spacing: 0.25em;
+}
+#mainmenu{
+	position: absolute;
+	top: 62px;
+	left: 120px;
+	z-index: 16;
+	text-transform:lowercase;
+	font-family: tahoma, san-serif;
+	color: #707070;
+}
+.tabs1{
+	font-size: 8pt;
+	font-weight: bold;
+}
+.tabs2{
+	font-size: 8pt;
+}
+.tabs1, .tabs1 a:link, .tabs1 a:visited, .tabs2, .tabs2 a:link, .tabs2 a:visited{
+	color: #B1AFAF;
+}
+#navbar{
+	position: absolute;
+	top: 158px;
+	left: 50px;
+	z-index: 16;
+	color: black;
+	font-family: verdana, sans-serif;
+	font-size: x-small;
+}
+
+#sizechanger{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	color: #B1AFAF;
+	font: verdana 10pt;
+}
+#leftcorner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(images/img/topl.jpg) no-repeat top left;
+	width: 143px;
+	height: 190px;
+	z-index: 8;
+}
+#rightcorner{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 478px;
+	height: 190px;
+	z-index: 5;
+}
+#leftbar{
+	padding: 8px;
+	background: #F7F7F7;
+}
+#rightbar{
+	padding: 8px;
+	background:  #F7F7F7;
+}
+#container{
+	padding: 0 40px 0 40px;
+}
+#footer{
+	padding: 8px 40px 10px 40px;
+	font-size: x-small;
+	color: white;
+	background: #495669;
+}
+#footer a:link , #footer a:visited{
+	color: #fff0d0;
+}
+#footer a:hover{
+	color: orange;
+}
+/* Normal, standard links. */
+a:link
+{
+	color: #476C8E;
+	text-decoration: none;
+}
+a:visited
+{
+	color: #476C8E;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+
+/* Navigation links - for the link tree. */
+.nav, .nav:link, .nav:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+a.nav:hover
+{
+	color: #cc3333;
+	text-decoration: underline;
+}
+
+/* Tables should show empty cells. */
+table
+{
+	empty-cells: show;
+}
+
+/* By default (td, body..) use verdana in black. */
+body, td, th , tr
+{
+	color: #000000;
+	font-size: small;
+	font-family: verdana, sans-serif;
+}
+
+/* The main body of the entire forum. */
+body
+{
+	background: url(images/img/topm.jpg) repeat-x top left white;
+	margin: 0;
+	padding: 0;
+}
+
+/* Input boxes - just a bit smaller than normal so they align well. */
+input, textarea, button
+{
+	color: #000000;
+	font-family: verdana, sans-serif;
+}
+input, button
+{
+	font-size: 90%;
+}
+
+textarea
+{
+	font-size: 100%;
+	color: #000000;
+	font-family: verdana, sans-serif;
+}
+
+/* All input elements that are checkboxes or radio buttons. */
+input.check
+{
+}
+
+/* Selects are a bit smaller, because it makes them look even better 8). */
+select
+{
+	font-size: 90%;
+	font-weight: normal;
+	color: #000000;
+	font-family: verdana, sans-serif;
+}
+
+/* Standard horizontal rule.. ([hr], etc.) */
+hr, .hrcolor
+{
+	height: 1px;
+	border: 0;
+	color: #d0d0d0;
+	background-color: #d0d0d0;
+}
+
+/* No image should have a border when linked */
+a img{
+border: 0;
+}
+/* A quote, perhaps from another post. */
+.quote
+{
+	color: #000000;
+	background-color: #D7DAEC;
+	border: 1px solid #000000;
+	margin: 1px;
+	padding: 1px;
+	font-size: x-small;
+	line-height: 1.4em;
+}
+
+/* A code block - maybe even PHP ;). */
+.code
+{
+	color: #000000;
+	background-color: #dddddd;
+	font-family: "courier new", "times new roman", monospace;
+	font-size: x-small;
+	line-height: 1.3em;
+	/* Put a nice border around it. */
+	border: 1px solid #000000;
+	margin: 1px auto 1px auto;
+	padding: 1px;
+	width: 99%;
+	/* Don't wrap its contents, and show scrollbars. */
+	white-space: nowrap;
+	overflow: auto;
+	/* Stop after about 24 lines, and just show a scrollbar. */
+	max-height: 24em;
+}
+
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader, .codeheader
+{
+	color: #000000;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: x-small;
+	line-height: 1.2em;
+}
+
+/* Generally, those [?] icons.  This makes your cursor a help icon. */
+.help
+{
+	cursor: help;
+}
+
+/* /me uses this a lot. (emote, try typing /me in a post.) */
+.meaction
+{
+	color: red;
+}
+
+/* The main post box - this makes it as wide as possible. */
+.editor
+{
+	width: 96%;
+}
+
+/* Highlighted text - such as search results. */
+.highlight
+{
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+}
+
+/* Alternating backgrounds for posts, and several other sections of the forum. */
+.windowbg
+{
+
+}
+.windowbg2
+{
+}
+.windowbg3
+{
+}
+/* the today container in calendar */
+.calendar_today
+{
+	background-color: #FFFFFF;
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+.titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td
+{
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: verdana, sans-serif;
+	border-bottom: solid 1px #dddddd;
+}
+.titlebg, .titlebg a:link, .titlebg a:visited
+{
+	color: black;
+	font-style: normal;
+}
+
+.titlebg a:hover
+{
+	color: #404040;
+}
+/* same as titlebg, but used where bold text is not needed */
+.titlebg2 a:link, .titlebg2 a:visited
+{
+	color: black;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+.titlebg2 a:hover
+{
+	text-decoration: underline;
+}
+
+/* This is used for categories, page indexes, and several other areas in the forum.
+.catbg and .catbg2 is for boardindex, while .catbg3 is for messageindex and display headers*/
+.catbg , tr.catbg td , .catbg3 , tr.catbg3 td
+{
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: verdana, sans-serif;
+	border-bottom: solid 1px #dddddd;
+ }
+.catbg2 , tr.catbg2 td
+{
+	font-family: "Garamond", serif;
+	font-size: x-large;
+}
+.catbg, .catbg2, .catbg3
+{
+}
+.catbg, .catbg2
+{
+}
+.catbg3, tr.catbg3 td, .catbg3 a:link, .catbg3 a:visited
+{
+	font-size: 95%;
+	text-decoration: none;
+}
+.catbg a:link, .catbg a:visited , .catbg2 a:link, .catbg2 a:visited
+{
+	text-decoration: none;
+}
+.catbg a:hover, .catbg2 a:hover, .catbg3 a:hover
+{
+	text-decoration: underline;
+}
+/* This is used for tables that have a grid/border background color (such as the topic listing.) */
+.bordercolor
+{
+}
+
+/* This is used on tables that should just have a border around them. */
+.tborder
+{
+}
+
+/* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
+.smalltext
+{
+	font-size: x-small;
+	font-family: verdana, sans-serif;
+}
+.middletext
+{
+	font-size: 90%;
+}
+.normaltext
+{
+	font-size: small;
+}
+.largetext
+{
+	font-size: large;
+}
+
+
+/* Posts and personal messages displayed throughout the forum. */
+.post, .personalmessage
+{
+	width: 100%;
+	overflow: auto;
+	line-height: 1.3em;
+}
+
+/* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
+.signature
+{
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 3px;
+	line-height: 1.3em;
+}
+
+/* Sometimes there will be an error when you post */
+.error{
+color: red;
+}
+
+.boards{
+	margin: 0 1em 1em 0em;
+	padding: 0 0 1em 0;
+	border-bottom: solid 1px #dddddd;
+}
+
+.boards2{
+	margin: 0 0 1em 0;
+	padding: 0 0 1em 0;
+	border-bottom: solid 1px #dddddd;
+}
+
+.category{
+	overflow: hidden;
+}
+.category h1{
+	margin: 0 0 0.5em 0;
+	padding: 0 0 0.5em 0;
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: verdana, san-serif;
+	border-bottom: solid 1px #dddddd;
+}
+.bigtitle{
+	font-size: 13pt;
+	font-weight: normal;
+	font-family: tahoma, serif;
+}
+.orangetext{
+	font-size: 90%;
+	color: #8E591A;
+ }
+.modbutton{
+	margin: 2em 0 1em 0;
+	padding: 1em;
+	border: solid 1px #dddddd;
+	background: #f0f0f0;
+	font-size: 85%;
+	font-weight: bold;
+}
+
+.modbutton a:hover{
+	color: red;
+}
+.bigblue{
+	padding: 1ex;
+	margin-top: 1ex;
+	background: url(images/img/topm.jpg) repeat-x top left white;
+}
+.bigblue, .bigblue a:link, .bigblue a:visited{
+	color: #f0f0f0;
+	overflow: hidden;
+}
+.viewbutton{
+	margin: 2em 0 1em 0;
+	padding: 1em;
+	border: solid 1px #ddeddd;
+	background: #f0f8f0;
+	font-size: 85%;
+}
+
+.viewbutton a:hover{
+	color: red;
+}
+.maintab_first, .maintab_back, .maintab_last, .maintab_active_first, .maintab_active_back, .maintab_active_last
+{
+	color: white;
+	text-transform: lowercase;
+	vertical-align: top;
+
+}
+.maintab_first{
+	background: url(images/mill_first.gif) no-repeat;
+	width: 6px;
+}
+.maintab_last{
+	background: url(images/mill_last.gif) no-repeat;
+	width: 6px;
+}
+.maintab_active_first{
+	background: url(images/mill_active_first.gif) no-repeat;
+	width: 6px;
+}
+.maintab_active_last{
+	background: url(images/mill_active_last.gif) no-repeat;
+	width: 7px;
+}
+.maintab_back
+{
+	text-decoration: none;
+	font-size:  x-small;
+	vertical-align: top;
+	padding: 15px 3px 10px 3px;
+	background: url(images/mill_back.gif) repeat-x;
+}
+ .maintab_active_back
+{
+	text-decoration: none;
+	font-size:  x-small;
+	font-weight: bold;
+	vertical-align: top;
+	padding: 15px 3px 10px 3px;
+	background: url(images/mill_active_back.gif) repeat-x;
+ }
+
+/* how links behave in main tab. */
+.maintab_back a:link , .maintab_back a:visited, .maintab_active_back a:link , .maintab_active_back a:visited
+{
+	color: white;
+	text-decoration: none;
+	padding: 4px;
+ }
+.maintab_active_back a:link , .maintab_active_back a:visited{
+	text-decoration: none;
+}
+
+.maintab_back a:hover, .maintab_active_back a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+
+.sitemap{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sitemap_topheader{
+	background: #f0f0ff;
+	border-bottom: solid 1px #ffffff;
+	padding: 4px;
+}
+
+.sitemap_header{
+	background: #f0f0f5;
+	border-bottom: solid 1px white;
+	padding: 4px 4px 4px 2ex;
+	display: block;
+	font-size: x-small;
+ }
+
+.sitemap_header_active{
+	background: #e5e4e0;
+	border-bottom: solid 1px white;
+	padding: 4px 4px 4px 2ex;
+	display: block;
+	font-weight: bold;
+	font-size: x-small;
+}
+.sitemap_header:link , .sitemap_header:visited{
+}
+.sitemap_header_active:link, .sitemap_header_active:visited{
+}
+.sitemap_header:hover , .sitemap_header_active:hover{
+	border-bottom: solid 1px #d0d0d0;
+	padding: 4px 4px 4px 2ex;
+	display: block;
+	text-decoration: none;
+ }
+
+ul#articlelist
+{
+	margin: 0 0 0 1ex;
+	padding: 0.5ex 0;
+	list-style: none;
+}
+ul#catlist
+{
+	margin: 0 0 0 0;
+	padding: 0;
+	border-top: dotted 1px;
+}
+
+ul#articlelist li
+{
+	display: block;
+	padding: 1ex 0 0 3ex;
+	background: url(images/divider.gif) no-repeat 1ex 1.5ex;
+}
+ul#catlist li
+{
+	display: block;
+	padding: 1ex 0 0 3ex;
+}
+.mirrortab_first, .mirrortab_back, .mirrortab_last, .mirrortab_active_first, .mirrortab_active_back, .mirrortab_active_last
+{
+	color: white;
+	text-transform: lowercase;
+	vertical-align: top;
+
+}
+.mirrortab_first{
+	background: url(images/mill_first.gif) no-repeat;
+	width: 6px;
+}
+.mirrortab_last{
+	background: url(images/mill_last.gif) no-repeat;
+	width: 6px;
+}
+.mirrortab_active_first{
+	background: url(images/mill_active_first.gif) no-repeat;
+	width: 6px;
+}
+.mirrortab_active_last{
+	background: url(images/mill_active_last.gif) no-repeat;
+	width: 7px;
+}
+.mirrortab_back
+{
+	text-decoration: none;
+	font-size:  x-small;
+	vertical-align: top;
+	padding: 15px 3px 10px 3px;
+	background: url(images/mill_back.gif) repeat-x;
+}
+ .mirrortab_active_back
+{
+	text-decoration: none;
+	font-size:  x-small;
+	font-weight: bold;
+	vertical-align: top;
+	padding: 15px 3px 10px 3px;
+	background: url(images/mill_active_back.gif) repeat-x;
+ }
+
+/* how links behave in main tab. */
+.mirrortab_back a:link , .mirrortab_back a:visited, .mirrortab_active_back a:link , .mirrortab_active_back a:visited
+{
+	color: white;
+	text-decoration: none;
+	padding: 4px;
+ }
+.mirrortab_active_back a:link , .mirrortab_active_back a:visited{
+	text-decoration: none;
+}
+
+.mirrortab_back a:hover, .mirrortab_active_back a:hover
+{
+	color: orange;
+	text-decoration: none;
+}
+
+
+/* display.css */
+
+
+/* container for the top part */
+div#topsection{
+	overflow: auto;
+	_height: 1%;
+}
+
+
+/* the top area of posts..where pageindex are etc. */
+div#topdisplay{
+	overflow: auto;
+}
+	.pageindex{
+		float: left;
+		width: 40%;
+		font-size: 90%;
+	}
+/* subject of the topic. */
+div#subjectarea{
+	background: url(catbg.jpg) repeat-x #F6F6F6;
+	border: solid 1px #ADADAD;
+}
+	div#subject{
+		vertical-align: middle;
+		border: solid 1px white;
+		padding: 6px;
+		color: white;
+		font-size: 90%;
+	}
+
+/* the actual posts */
+div#posts{
+}
+	/* alternate "boxes". */
+	.display1{
+		border-bottom: dotted 1px #e0e0e0;
+		margin: 0;
+		padding: 8px;
+		overflow: auto;
+	}
+	.display2{
+		border-top: 0;
+		margin: 0;
+		padding: 8px;
+		overflow: auto;
+	}
+		/* info about the poster */
+		.posterinfo{
+			float: left;
+			width: 20%;
+		}
+		/* ..made in a list */
+		.posterinfo ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			font-size: 85%;
+		}
+			.posterinfo ul li{
+			}
+			/* one of the list items is the "personaltext" option */
+			li.blurb{
+				padding-bottom: 0.5ex;
+			}
+			/* another is the "member link" */
+			li.memberlink{
+				font-size: 125%;
+				font-weight: bold;
+			}
+			/*..and online/offline buttons. */
+			li.onlinebuttons{
+				font-size: 125%;
+				padding-bottom: 0.5ex;
+				vertical-align: middle;
+			}
+			/* ..the count of the member too */
+			li.postnumber{
+				padding-bottom: 0.5ex;
+			}
+		/* the title and icon section */
+		.postsection{
+			float: right;
+			width: 80%;
+		}
+		/* here the attachments come... */
+		.attachmentarea{
+		}
+		/* the bottom things... */
+		.bottomdisplay{
+			clear: both;
+			font-size: 85%;
+		}
+			.lastedit{
+				text-align: center;
+			}
+			.reportmod{
+				text-align: right;
+			}
+		/* signature */
+		.signaturebody{
+			width: 80%;
+			float: right;
+		}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* The AJAX notifier */
+#ajax_in_progress
+{
+	background: #32CD32;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+	padding: 3px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */

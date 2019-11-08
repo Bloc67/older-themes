@@ -1,0 +1,119 @@
+#topsection #user .content
+{
+	background: url(themeie6/user_content.png) repeat-y;
+}
+#topsection #user .footer
+{
+	background: url(themeie6/user_footer.png) no-repeat;
+}
+#topsection2 .left
+{
+	float: none;
+	background: url(themeie6/top_left.png) no-repeat;
+}
+#topsection2 .right
+{
+	float: none;
+	background: url(themeie6/top_right.png) no-repeat;
+}
+#topsection2 .content
+{
+	background: url(themeie6/top_mid.png) repeat-x;
+}
+
+#topsection3 .left
+{
+	float: none;
+	background: url(themeie6/top2_left.png) no-repeat;
+}
+#topsection3 .right
+{
+	float: none;
+	background: url(themeie6/top2_right.png) no-repeat;
+}
+#topsection3 .content
+{
+	margin: 0;
+	background: url(themeie6/top2_mid.png) repeat-x;
+}
+
+#topmiddle .left
+{
+	background: url(themeie6/topmiddle_left.png) repeat-y;
+}
+#topmiddle .right
+{
+	background: url(themeie6/topmiddle_right.png) top right repeat-y;
+}
+#topmiddle .content
+{
+	background: white;
+}
+
+#middlesection .left
+{
+	float: none;
+	background: url(themeie6/middle_left.png) no-repeat;
+}
+#middlesection .right
+{
+	float: none;
+	background: url(themeie6/middle_right.png) no-repeat;
+}
+#middlesection .content
+{
+	margin: 0;
+	background: url(themeie6/middle_mid.png) repeat-x;
+}
+
+#footersection .left
+{
+	display: block;
+	float: none;
+	width: 321px;
+	height: 139px;
+	background: url(themeie6/footer_left.png) no-repeat;
+}
+#footersection .right
+{
+	display: block;
+	float: none;
+	width: 103px;
+	height: 139px;
+	background: url(themeie6/footer_right.png) no-repeat;
+}
+#footersection .fcontent
+{
+	width: 99%;
+	height: 139px;
+	background: url(themeie6/footer_mid.png) repeat-x;
+	margin: 0;
+}
+
+#content .left
+{
+	background: url(themeie6/left.png) repeat-y;
+	width: 172px;
+}
+#content .right
+{
+	width: 103px;
+	background: url(themeie6/right.png) top right repeat-y;
+}
+#content
+{
+	background: none;
+}
+#content .mid
+{
+	background: #eee;
+	margin: 0;
+	position: normal;
+}
+#ie6notice 
+{
+	padding-top: 10px;
+	font-style: italic;
+	font-size: 0.8em;
+	color: #500;
+}

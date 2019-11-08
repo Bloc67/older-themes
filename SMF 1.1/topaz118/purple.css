@@ -1,0 +1,17 @@
+/* Themes */
+/* ******************************************************* */
+html
+{
+	background: #795734;
+}
+#topframe
+{
+	background: url(images/theme_purple/back_top.jpg) repeat-x top left;
+}
+#contentframe
+{
+}
+#botframe
+{
+	background: url(images/theme_purple/back_bot.jpg) repeat-x top left;
+}

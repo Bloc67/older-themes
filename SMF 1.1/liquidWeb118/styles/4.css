@@ -1,0 +1,32 @@
+body
+{
+	background: url(../images/backgrounds/flowers.jpg) no-repeat;
+}
+#mainframe h1
+{
+	margin: 10px 0 20px 10px;
+}
+#mainframe h1	a
+{
+	color: red;
+}
+#mainframe #linktree
+{
+	padding: 10px;
+	margin-bottom: 3px;
+	background: url(../images/theme/content.png);
+}
+#mainframe #linktree a
+{
+	color: black;
+}
+#mainframe #linktree a:hover
+{
+	text-decoration: underline;
+}
+#upshrinkHeader
+{
+	padding: 10px;
+	background: url(../images/theme/content.png);
+	margin-bottom: 3px;
+}

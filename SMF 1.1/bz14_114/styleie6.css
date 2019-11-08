@@ -1,0 +1,201 @@
+ul.menubox li a
+{
+	white-space: nowrap;
+	width: 1%;
+}
+
+#myuser,#myuser a:hover
+{
+
+	background: transparent;
+}
+#menudiv
+{
+	background: none;
+	padding-right: 0;
+}
+#menuinner
+{
+	background: url(images/img/bordersloganie6.gif) no-repeat top right;
+	height: 158px;
+	filter:alpha(opacity=70);
+}
+ul.menubox li a
+{
+}
+ul.menubox li a:hover, ul.menubox li.chosen a, ul.menubox li.chosen a:hover
+{
+	text-decoration: none;
+}
+ul.menubox li ul li a, ul.menubox li.chosen ul li a
+{
+}
+ul.menubox li ul li
+{
+	width: 1%;
+}
+
+#mainframe
+{
+	width: 1000px;
+}
+
+
+/* a special version for IE6, borrowed from cssplay.co.uk */
+
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/drop_examples.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+/* commom style for all browsers */
+
+.menu5 
+{
+	margin: 0.5em 0 0 10px;
+	text-align:left; 
+	position:relative; 
+	font-size:0.9em;
+	height:2.5em; 
+	padding:0; 
+	list-style-type:none;
+}
+.menu5 ul 
+{
+	padding:0; 
+	margin:0; 
+	list-style-type:none; /* for Firefox */
+}
+.menu5 li 
+{
+	background: url(images/img3/mtab_first.jpg) repeat-x black;
+	float:left; position:relative;
+	height: 29px;
+}
+.menu5 li a, .menu5 li a:visited 
+{
+	display:block;	
+	text-decoration:none; 
+	width:100px; 
+	color:#fff; 
+	float:left; 
+	text-align: center;
+	height:29px; 
+	line-height:27px; 
+	background: url(images/img3/mtab_first.jpg) repeat-x;
+}
+* html .menu5 li a, .menu5 li a:visited 
+{
+	width: 100px; 
+	w\idth: 100px; /* hack for IE5.5 */
+	padding: 0 10px 0 10px;
+}
+.menu5 li a.drop, .menu5 li a.drop:visited 
+{
+	font-weight:bold;
+}
+.menu5 li ul 
+{
+	visibility:hidden; 
+	position:absolute; 
+	top:27px; 
+	left:0; 
+	height:0; 
+	overflow:hidden;
+}
+.menu5 table 
+{
+	margin:-1px; 
+	border-collapse:collapse; 
+	font-size:1em; /* font size for IE5.5 */
+}
+
+/* fist line style for IE7 and non-IE browsers and the second line for IE5.5 and IE6 */
+.menu5 li:hover a,.menu5 li a:hover 
+{
+	background: url(images/img3b/mtab.jpg) no-repeat;
+	text-decoration: none; 
+	border:0;
+}
+.menu5 li:hover ul,
+.menu5 li a:hover ul {
+	visibility:visible; 
+	height:auto; 
+	width:10em; 
+	background:#777; 
+	left:0; 
+	top:27px; 
+	overflow:visible;
+}
+.menu5 li:hover ul li a,
+.menu5 li a:hover ul li a 
+{
+	display:block; 
+	font-weight:normal; 
+	background: black; 
+	text-decoration:none; 
+	height:auto; 
+	line-height:1.0em; 
+	padding:0.5em; 
+	width:9em;
+	text-align: left;
+}
+* html .menu5 li a:hover ul li a 
+{
+	width:10em; 
+	w\idth:9em; /* hack for IE5.5 */
+}
+.menu5 li:hover ul li a.drop,
+.menu5 li a:hover ul li a.drop 
+{
+	font-weight:bold;
+}
+.menu5 li:hover ul li ul,
+.menu5 li a:hover ul li a ul {
+	visibility:hidden; 
+	position:absolute; 
+	top:0; 
+	left:9.5em; 
+	height:0; 
+	overflow:hidden;
+}
+.menu5 li:hover ul li a:hover,
+.menu5 li a:hover ul li a:hover 
+{
+	text-decoration: none;
+	background: #000;
+}
+.menu5 li a ul li.chosen a
+{
+	color: white;
+}
+
+.menu5 li:hover ul li:hover ul,
+.menu5 li a:hover ul li a:hover ul 
+{
+	visibility:visible; 
+	color:#fff; 
+	height:auto; 
+	background:#777; 
+	width:9.5em;
+} 
+.menu5 li:hover ul li:hover ul.left,
+.menu5 li a:hover ul li a:hover ul.left 
+{
+	left:-9.3em;
+}
+.menu5 li:hover ul li:hover ul li a,
+.menu5 li a:hover ul li a:hover ul li a 
+{
+	display:block; 
+	height:auto;
+}
+.menu5 li:hover ul li:hover ul li:hover a,
+.menu5 li a:hover ul li a:hover ul li a:hover 
+{
+	text-decoration:underline;
+}

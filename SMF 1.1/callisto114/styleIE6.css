@@ -1,0 +1,881 @@
+/* TP specific classes */
+.sitemap{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sitemap_topheader{
+	background: #ECEDF3;
+	border-bottom: solid 1px #ffffff;
+	padding: 4px;
+}
+
+.sitemap_header{
+	background: #ECEDF3;
+	border-bottom: solid 1px #ffffff;
+	padding: 4px;
+	display: block;
+	font-weight: bold;
+ }
+
+.sitemap_header_active{
+	background: #C8D6E1;
+	border-bottom: solid 1px #ffffff;
+	padding: 4px;
+	display: block;
+	font-weight: bold;
+}
+
+.sitemap_header:hover , .sitemap_header_active:hover{
+	background: #DBE4ED;
+	border-bottom: solid 1px #ffffff;
+	padding: 4px;
+	display: block;
+	text-decoration: none;
+}
+
+/* TP other styles */
+ul#articlelist
+{
+	margin: 0;
+	padding: 0.5ex 0;
+	list-style: none;
+}
+ul#catlist
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-top: solid 1px #d0d0d0;
+}
+
+ul#articlelist li
+{
+	margin: 0;
+	display: block;
+	padding: 0 0 0 3ex;
+	background: url(images/divider.gif) no-repeat 5px 3px;
+}
+ul#catlist li
+{
+	display: block;
+	padding: 0 0 0 3ex;
+	margin: 0;
+}
+
+/* TP rss feed styles */
+.rss_title{
+ font-weight: bold;
+}
+
+.rss_body{
+	margin-bottom: 1ex;
+}
+
+.rss_image{
+	margin: 4px 0 4px 0;
+}
+form
+{
+	padding: 0;
+	margin: 0;
+}
+/* Normal, standard links. */
+a:link
+{
+	color: #003;
+	text-decoration: none;
+}
+a:visited
+{
+	color: #003;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #003;
+	text-decoration: underline;
+}
+
+/* Navigation links - for the link tree. */
+.nav, .nav:link, .nav:visited
+{
+	color: #003;
+	text-decoration: none;
+}
+a.nav:hover
+{
+	color: #003;
+	text-decoration: underline;
+}
+
+/* Tables should show empty cells. */
+table
+{
+	empty-cells: show;
+}
+
+/* By default (td, body..) use verdana in black. */
+body, td, th , tr
+{
+	font-size: 100.01%;
+	font-family: verdana, sans-serif;
+}
+
+/* The main body of the entire forum. */
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* Input boxes - just a bit smaller than normal so they align well. */
+input, textarea, button
+{
+	font-family: arial, sans-serif;
+	border-width: 1px;
+	padding: 2px;
+}
+input, button
+{
+	font-size: 90%;
+}
+
+textarea
+{
+	font-size: 100%;
+}
+
+/* All input elements that are checkboxes or radio buttons. */
+input.check
+{
+}
+
+/* Selects are a bit smaller, because it makes them look even better 8). */
+select
+{
+	font-size: 90%;
+	font-weight: normal;
+	font-family: arial, sans-serif;
+	border-width: 1px;
+	padding: 2px;
+}
+
+/* Standard horizontal rule.. ([hr], etc.) */
+hr, .hrcolor
+{
+	height: 1px;
+	border: 0;
+	color: #fff;
+	background-color: #fff;
+}
+
+/* No image should have a border when linked */
+a img
+{
+	border: 0;
+}
+/* A quote, perhaps from another post. */
+.quote
+{
+	color: #000000;
+	background-color: #D7DAEC;
+	border: 1px solid #000000;
+	margin: 1px;
+	padding: 1px;
+	font-size: x-small;
+	line-height: 1.4em;
+}
+
+/* A code block - maybe even PHP ;). */
+.code
+{
+	color: #000000;
+	background-color: #dddddd;
+	font-family: "courier new", "times new roman", monospace;
+	font-size: x-small;
+	line-height: 1.3em;
+	/* Put a nice border around it. */
+	border: 1px solid #000000;
+	margin: 1px auto 1px auto;
+	padding: 1px;
+	width: 99%;
+	/* Don't wrap its contents, and show scrollbars. */
+	white-space: nowrap;
+	overflow: auto;
+	/* Stop after about 24 lines, and just show a scrollbar. */
+	max-height: 24em;
+}
+
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader, .codeheader
+{
+	color: #000000;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: x-small;
+	line-height: 1.2em;
+}
+
+/* Generally, those [?] icons.  This makes your cursor a help icon. */
+.help
+{
+	cursor: help;
+}
+
+/* /me uses this a lot. (emote, try typing /me in a post.) */
+.meaction
+{
+	color: red;
+}
+
+/* The main post box - this makes it as wide as possible. */
+.editor
+{
+	width: 96%;
+}
+
+/* Highlighted text - such as search results. */
+.highlight
+{
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+}
+
+/* Alternating backgrounds for posts, and several other sections of the forum. */
+.windowbg
+{
+}
+.windowbg2
+{
+}
+.windowbg3
+{
+}
+/* the today container in calendar */
+.calendar_today
+{
+	background-color: #FFFFFF;
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+.titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td
+{
+}
+.titlebg, .titlebg a:link, .titlebg a:visited
+{
+}
+
+.titlebg a:hover
+{
+}
+/* same as titlebg, but used where bold text is not needed */
+.titlebg2 a:link, .titlebg2 a:visited
+{
+}
+
+.titlebg2 a:hover
+{
+}
+
+/* This is used for categories, page indexes, and several other areas in the forum.
+.catbg and .catbg2 is for boardindex, while .catbg3 is for messageindex and display headers*/
+.catbg , tr.catbg td , .catbg3 , tr.catbg3 td
+{
+}
+.catbg2 , tr.catbg2 td
+{
+}
+.catbg, .catbg2, .catbg3
+{
+}
+.catbg, .catbg2
+{
+}
+.catbg3, tr.catbg3 td, .catbg3 a:link, .catbg3 a:visited
+{
+}
+.catbg a:link, .catbg a:visited , .catbg2 a:link, .catbg2 a:visited
+{
+}
+.catbg a:hover, .catbg2 a:hover, .catbg3 a:hover
+{
+}
+/* This is used for tables that have a grid/border background color (such as the topic listing.) */
+.bordercolor
+{
+}
+
+/* This is used on tables that should just have a border around them. */
+.tborder
+{
+}
+
+/* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
+.smalltext
+{
+	font-size: 0.85em;
+}
+.middletext
+{
+	font-size: 0.90em;
+}
+.normaltext
+{
+	font-size: 1em;
+}
+.largetext
+{
+	font-size: 1.3em;
+}
+
+
+/* Posts and personal messages displayed throughout the forum. */
+.post, .personalmessage
+{
+	overflow: auto;
+}
+
+/* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
+.signature
+{
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 3px;
+	line-height: 1.3em;
+}
+
+/* Sometimes there will be an error when you post */
+.error
+{
+	color: red;
+}
+
+
+/* definitions for the main tab, active means the tab reflects which page is displayed */
+.maintab_first, .maintab_back, .maintab_last, .maintab_active_first, .maintab_active_back, .maintab_active_last,
+.mirrortab_first, .mirrortab_back, .mirrortab_last, .mirrortab_active_first, .mirrortab_active_back, .mirrortab_active_last
+{
+	vertical-align: top;
+}
+.maintab_back, .maintab_active_back,
+.mirrortab_back, .mirrortab_active_back
+{
+	text-decoration: none;
+	font-size:  90%;
+	padding: 5px;
+}
+
+.maintab_first,.mirrortab_first
+{
+	display: none;
+}
+.maintab_back,.mirrortab_back
+{
+}
+.maintab_last,.mirrortab_last
+{
+	display: none;
+}
+.maintab_active_first, .mirrortab_active_first
+{
+	display: none;
+}
+.maintab_active_back, .mirrortab_active_back
+{
+	text-decoration: overline;
+}
+.maintab_active_last, .mirrortab_active_last
+{
+	display: none;
+}
+
+/* how links behave in main tab. */
+.maintab_back a:link , .maintab_back a:visited, 
+.mirrortab_back a:link , .mirrortab_back a:visited
+{
+	text-decoration: none;
+}
+/* how links behave in main tab. */
+.maintab_active_back a:link , .maintab_active_back a:visited,
+.mirrortab_active_back a:link , .mirrortab_active_back a:visited
+{
+	font-weight: bold;
+}
+.maintab_back a:hover, .maintab_active_back a:hover,
+.mirrortab_back a:hover, .mirrortab_active_back a:hover
+{
+	color: red;
+	text-decoration: overline;
+}
+
+
+/* The AJAX notifier */
+#ajax_in_progress
+{
+	background: #32CD32;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18pt;
+	padding: 3px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+* html body /* for IE */
+{
+	text-align: center;
+}
+#mainframe
+{
+	font-size: 90%;
+	width: 95%;
+	text-align: left;
+	margin: auto;
+	min-width: 700px;
+}
+#topmenu
+{
+	text-align: right;
+}
+#topmenu ul
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#topmenu li
+{
+	float: left;
+}
+#topmenu ul li a
+{
+	display: block;
+	padding: 0 5px 0 5px;
+	font-weight: bold;
+	
+}
+div#user
+{
+	clear: both;
+	border-bottom: solid 2px #fff;
+	padding-bottom: 10px;
+}
+#user_inner
+{
+}
+#userarea
+{
+	padding: 10px 10px 20px 10px;
+}
+#linktree
+{
+	border-bottom: solid 2px #fff;
+	padding-bottom: 10px;
+	background: #d9d3d0;
+}
+
+/* box */
+
+#smfshout
+{
+	padding: 6px;
+	font-size: 85%;
+}
+.smfshout_delete
+{
+	border: solid 1px #888;
+	background: white;
+	padding: 1px;
+}
+.smfshout_body
+{
+	border: solid 1px #888;
+	background: white;
+	padding: 3px;
+	text-align: left;
+}
+.smfshout_frame
+{
+	padding: 5px 0 0 0;
+}
+
+#switch
+{
+	padding: 5px;
+	text-align: right;
+}
+#topmenu #switchform
+{
+	margin: 0;
+	padding: 0;
+}
+#usertop ul
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.innerpads
+{
+}
+#switchform
+{
+}
+#innerframe2
+{
+	clear: both;
+	padding: 0 4px 0 5px;
+	position: relative;
+	top: -15px;
+}
+
+#errorpanel
+{
+}
+.errorbar
+{
+	width: 100%;
+	background:red;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	border: solid 2px black;
+	font-size: large;
+}
+
+#top
+{
+  background: url(images/img-ie6/back_m.png) top right repeat-x;
+	padding: 86px 0 0 0;
+}
+#topr
+{
+	background: url(images/img-ie6/back_r.png) top right no-repeat;
+}
+#topl
+{
+	background: url(images/img-ie6/back_l.png) top left no-repeat;
+	padding: 0 34px 0 34px;
+}
+/* the main menu */
+#menudiv
+{
+}
+#menuinner
+{
+	margin: 0;
+	float: right;
+}
+
+ul#menubox
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul#menubox li
+{
+	background: url(images/img/menu_l.png) no-repeat;
+	margin: 0;
+	padding: 0 0 0 12px;
+	float: left;
+}
+ul#menubox li.chosen
+{
+	background: url(images/img/menuactive_l.png) no-repeat;
+	padding: 0 0 0 12px;
+}
+/* for IE */
+* html ul#menubox li
+{
+	width: 1%;
+}
+ul#menubox li a
+{
+	background: url(images/img/menu_r.png) top right no-repeat;
+	display: block;
+	padding: 0 12px 0 0;
+}
+ul#menubox li a span
+{
+	display: block;
+	height: 20px;
+	padding: 0;
+	line-height: 23px;
+	font-size: 0.85em;
+	color: black;
+	background: url(images/img/menu_m.png) repeat-x;
+	white-space: nowrap;
+}
+ul#menubox li a:hover span,ul#menubox li a:hover
+{
+	color: red;
+	text-decoration: none;
+}
+ul#menubox li.chosen a
+{
+	background: url(images/img/menuactive_r.png) top right no-repeat;
+	padding: 0 12px 0 0;
+}
+ul#menubox li.chosen a span
+{
+	color: black;
+	background: url(images/img/menuactive_m.png) repeat-x;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+
+/* the boxes */
+.titbg_mid
+{
+	background: url(images/img/titlebg_midmid.jpg) repeat-x;
+}
+.titbg_left
+{
+	background: url(images/img/titlebg_leftmid.jpg) no-repeat;
+}
+.titbg_right
+{
+	background: url(images/img/titlebg_midright.jpg) top right no-repeat;
+	padding: 8px 10px 19px 20px;
+}
+.titbg_right, .titbg_right a, .titbg_right td
+{
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+.titbg_right a:hover
+{
+	color: darkred;
+}
+#footerarea 
+{
+	padding-bottom: 90px;
+	border-top: solid 2px #fff;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.greybox
+{
+	background: #fff;
+	margin: 0 10px 0 10px;
+}
+.greybox_botm
+{
+	background: url(images/img/greybox_botm.jpg) top right repeat-x;
+	margin: 0 10px 0 10px;
+}
+.greybox_topl
+{
+	background: url(images/img/greybox_topl.jpg) top left no-repeat;
+}
+.greybox_topr
+{
+	background: url(images/img/greybox_topr.jpg) top right no-repeat;
+	padding: 10px 20px 0px 10px;
+}
+.greybox_botl
+{
+	background: url(images/img/greybox_botl.jpg) top left no-repeat;
+}
+.greybox_botr
+{
+	background: url(images/img/greybox_botr.jpg) top right no-repeat;
+	height: 69px;
+}
+
+.whitebox
+{
+	background: #c5c5c5;
+}
+.whitebox_topl
+{
+	background: url(images/img/whitebox_topl.jpg) top left no-repeat;
+}
+.whitebox_topr
+{
+	background: url(images/img/whitebox_topr.jpg) top right no-repeat;
+	padding: 10px;
+	color: black;
+}
+.whitebox_botl
+{
+	background: url(images/img/whitebox_botl.jpg) bottom left no-repeat;
+}
+.whitebox_botr
+{
+	background: url(images/img/whitebox_botr.jpg) bottom right no-repeat;
+}
+
+
+.greenbox
+{
+	background: url(images/img/greenbox_m.jpg) top left repeat-x;
+}
+.greenbox_l
+{
+	background: url(images/img/greenbox_l.jpg) top left no-repeat;
+}
+.greenbox_r
+{
+	background: url(images/img/greenbox_r.jpg) top right no-repeat;
+	padding: 12px 5px 20px 5px;
+	color: black;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.greenbox_r a
+{
+	color: black;
+}
+.greenboxb
+{
+	background: url(images/img/greenbox2_m.jpg) top left repeat-x;
+}
+.greenboxb_l
+{
+	background: url(images/img/greenbox2_l.jpg) top left no-repeat;
+}
+.greenboxb_r
+{
+	background: url(images/img/greenbox2_r.jpg) top right no-repeat;
+
+	padding: 12px 5px 20px 5px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.greenboxb_r a
+{
+}
+
+.catbg, .catbg2, .catbg3
+{
+	background: #dfd2c0;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+}
+.catbg3
+{
+	font-weight: normal;
+	font-size: 85%;
+	letter-spacing: 0;
+}
+.windowbg3
+{
+	background: #dadbda;
+}
+span.smallpad
+{
+	display: block;
+	padding: 5px;
+}
+.linktree2
+{
+	background: #e3e4e6;
+}
+#linktree, .linktree2
+{
+	padding: 20px 10px 15px 10px;
+	font-size: 85%;
+}
+.catbg4
+{
+	font-family: Georgia, serif;
+	font-weight: bold;
+	padding: 10px;
+	margin: 10px 0 10px 0;
+	border: solid 1px #ccc;
+	background: #d0d0d3;
+}
+.catbg2
+{
+	letter-spacing: 0;
+	font-size: 85%;
+}
+#sform
+{
+	padding-bottom: 10px;
+}
+.titlebg
+{
+	background: #d0d0d6;
+	padding: 8px;
+	font-weight: bold;
+	font-size: 85%;
+}
+
+#cal .windowbg
+{
+	background: #f0f0f3;
+}
+#cal .calendar_today
+{
+}
+h1
+{
+	margin: 20px 25px 30px 25px;
+	padding: 0;
+	font-size: 150%;
+}
+
+#backframe
+{
+	background: url(images/img-ie6/mainback.png) repeat-x;
+}
+#bodyarea
+{
+}
+#bodyarea_inner
+{
+	
+}
+#content
+{
+	padding-top: 35px;
+}
+#content_botm
+{
+	background: url(images/img/content_botm.jpg) repeat-x #e5e5e4 bottom left;
+}
+#content_botr
+{
+	background: url(images/img/content_botr.jpg) no-repeat bottom right;
+}
+#content_botl
+{
+	background: url(images/img/content_botl.jpg) no-repeat bottom left;
+}
+
+#content_topr
+{
+	background: url(images/img/content_topr.jpg) no-repeat top right;
+}
+#content_topl
+{
+	background: url(images/img/content_topl.jpg) no-repeat top left;
+	padding: 4px 10px 0px 10px;
+}
+#userbot
+{
+}
+#leftbarHeader
+{
+	border-right: solid 1px #fff; 
+	padding-right: 14px;
+	padding-left: 0;
+}
+#rightbarHeader
+{
+	border-left: solid 1px #fff; 
+	padding-left: 14px;
+}

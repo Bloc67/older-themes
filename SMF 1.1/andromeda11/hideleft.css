@@ -1,0 +1,9 @@
+#leftsection
+{
+	width: 20px;
+	overflow: hidden;
+}
+#rightsection
+{
+	margin-left: 20px;
+}

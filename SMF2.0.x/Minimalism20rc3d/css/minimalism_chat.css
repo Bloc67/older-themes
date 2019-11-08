@@ -1,0 +1,967 @@
+a {
+	outline: 0;
+}
+a img, a img, .bbc_img {
+	border: 0;
+}
+a, a:link, a:active, a:visited {
+	color: #040;
+	text-decoration: none;
+}
+a:hover
+{
+	color: black;
+}
+/* Tables should show empty cells. */
+table
+{
+	empty-cells: show;
+}
+
+body {
+	margin: 0;
+	padding: 0 ;
+	background: white url(../images/theme/topbg_chat.png) repeat-x;
+}
+body#help_popup, #admin_login .centertext {
+	padding: 1em;
+}
+body {
+	font: .9em/1.3em trebuchet,Helvetica,sans-serif;
+}
+
+/* Help popups require a different styling of the body element. */
+body#help_popup
+{
+	padding: 1em;
+}
+
+/* use dark grey for the text, leaving #000 for headers etc */
+body, td, th, tr
+{
+	color: #333;
+}
+
+/* This division wraps the entire forum when a forum width is set. */
+div#wrapper
+{
+	margin: 0 auto;
+}
+
+/* lets give all forms zero padding/margins */
+form
+{
+	padding: 0;
+	margin: 0;
+}
+
+input, button, select, textarea
+{
+	font: 95%/115% verdana, Helvetica, sans-serif;
+	color: #000;
+	background: #fff;
+	border: 1px solid #7f9db9;
+	padding: 2px;
+}
+
+/* Select elements look horrible with the extra padding, so leave them unpadded. */
+select
+{
+	padding: 0;
+}
+
+/* Add some padding to the options instead. */
+select option
+{
+	padding: 1px;
+}
+
+/* The font size of textareas should be just a little bit larger. */
+textarea
+{
+	font: 100%/130% verdana, Helvetica, sans-serif;
+}
+
+/* Buttons should be styled a bit differently, in order to make them look more button'ish. */
+.button_submit, .button_reset
+{
+	background: #cde7ff url(../images/theme/submit_bg.png) no-repeat;
+	border: 1px solid #aaa;
+	cursor: pointer;
+	font-weight: normal;
+}
+input:hover, textarea:hover, button:hover, select:hover
+{
+	border: 1px solid #454545;
+}
+.button_submit:hover, .button_reset:hover
+{
+	border: 1px solid #aaa;
+	background: url(../images/theme/submit_bg.png) no-repeat 0 -140px #cde7ff;
+}
+input:focus, textarea:focus, button:focus, select:focus
+{
+	border: 1px solid #454545;
+}
+
+/* All input elements that are checkboxes or radio buttons shouldn't have a border around them. */
+input.input_check, input.input_radio
+{
+	border: none;
+	background: none;
+}
+h1,h2,h3,h4,h5,h6
+{
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+h1#proh1
+{
+	float: left;
+	font-size: 22px;
+	font-weight: normal;
+	font-family: arial, sans-serif;
+	color: white;
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+h1#proh1 a
+{
+	display: block;
+	float: left;
+	height: 40px;
+	line-height: 38px;
+	padding: 0 0 0 10px;
+	color: white;
+}
+h1#proh1 .avatar40h
+{
+	display: block;
+	float: left;
+}
+.avatar40h img
+{
+	height: 40px;
+	max-width: 100%;
+}
+.avatar40h2 img
+{
+	background: white;
+	padding: 2px;
+	border: solid 1px #aaa;
+	height: 40px;
+	max-width: 100%;
+}
+.avatar40hfloat
+{
+	float: left;
+	padding: 4px;
+	font-size: 0.8em;
+	color: #555;
+	text-align: center;
+}
+.avatar40hfloat img
+{
+	background: white;
+	padding: 2px;
+	border: solid 1px #aaa;
+	height: 40px;
+	max-width: 100%;
+}
+
+.avatar40hfloat img.buddyoverlay,
+.avatar40h2 img.buddyoverlay
+{
+	background: #feb;
+}
+#topframe
+{
+	padding: 5px 0 0 0;
+	height: 75px;
+}
+#topmenu_container
+{
+	float: right;
+	margin: 45px 0 0 0;
+	color: white;
+	font-size: 90%;
+}
+#topmenu_container ul,#topmenu_container ul li,
+#usermenu,#usermenu li
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#topmenu_container ul li
+{
+	float: left;
+	padding: 5px;
+	color: white;
+}
+#topmenu_container ul li ul
+{
+	display: none;
+}
+#topmenu_container ul li a
+{
+	display: block;
+	color: white;
+}
+#topmenu_container ul li a:hover
+{
+	color: #bce;
+}
+#topmenu_container ul li a span.markbubble
+{
+	margin: -6px 4px 0 4px;
+	position: relative;
+	float: right;
+	display: block;
+	padding-left: 5px;
+	height: 16px;
+	background: url(../images/theme/markbubble_black.png) no-repeat;
+}
+#topmenu_container ul li a span.markbubble span
+{
+	position: relative;
+	margin-right: -5px;
+	display: block;
+	padding-right: 5px;
+	height: 16px;
+	line-height: 16px;
+	color: white;
+	font-size: 10px;
+	background: url(../images/theme/markbubble_black.png) top right no-repeat;
+}
+#usercell h2
+{
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	font-size: 1em;
+	color: #004;
+}
+#usermenu li
+{
+	padding: 1px 0 0 0;
+	float: left;
+	clear: left;
+}
+#usermenu li ul
+{
+	display: none;
+}
+#usermenu li a
+{
+	padding: 2px 0;
+	display: block;
+	color: #888;
+}
+#usermenu li a:hover
+{
+	color: black;
+}
+#usermenu li a span.markbubble
+{
+	margin: 2px 4px 0 4px;
+	position: relative;
+	float: right;
+	display: block;
+	padding-left: 5px;
+	height: 16px;
+	background: url(../images/theme/markbubble.png) no-repeat;
+}
+#usermenu li a span.markbubble span
+{
+	position: relative;
+	margin-right: -5px;
+	display: block;
+	padding-right: 5px;
+	height: 16px;
+	line-height: 16px;
+	color: white;
+	font-size: 10px;
+	background: url(../images/theme/markbubble.png) top right no-repeat;
+}
+.innerwidth
+{
+	width: 80%;
+	margin: 0 auto;
+}
+#naviframe
+{
+	clear: both;
+	padding: 1em 0;
+	color: #333;
+	font-size: 0.9em;
+}
+#naviframe a
+{
+	color: #353;
+}
+#naviframe a:hover
+{
+	color: black;
+}
+.leftb
+{
+	overflow: hidden;
+	clear: left;
+	margin-top: 1em;
+}
+#contentframe .leftb h2,
+#contentframe .leftb2 h2
+{
+	font-size: 0.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: solid 1px #ccc;
+	padding: 5px 0 5px 0;
+	margin: 0 0 5px 0;
+	color: #444;
+}
+.leftb ul, .leftb li
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	color: #888;
+	overflow: hidden;
+}
+.leftb li
+{
+	float: left;
+	clear: left;
+	display: block;
+	padding: 3px 0 3px 0;
+	color: #888;
+}
+.leftb li a
+{
+	float: left;
+	color: #888;
+}
+.leftb li a:hover
+{
+	color: #000;
+}
+#lb
+{
+	overflow: hidden;
+}
+#footframe
+{
+	border-top: solid 2px #cad7dc;
+	padding: 1em 0;
+	text-align: center;
+	margin-top: 1em;
+}
+.pronew
+{
+	color: #a50;
+	font-size: 0.75em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.pronew2
+{
+	color: #a50;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+h2.section
+{
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #689;
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+h2.section2
+{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #689;
+	margin: 0.5em 0 8px 0;
+	padding: 0;
+}
+.textpart
+{
+	margin-left: 60px;
+	padding-bottom: 2em;
+	font-size: 0.9em;
+	color: #444;
+}
+.recent_topic
+{
+	overflow: hidden;
+}
+.textpart .date
+{
+	margin: 0;
+}
+.textpart .who
+{
+	color: #015691;
+	margin: 0;
+}
+.textpart .who a, #contentframe a.bluey
+{
+	color: #015691;
+}
+.textpart .who a:hover, #contentframe a.bluey:hover
+{
+	color: #000;
+}
+.textpart .bodytext
+{
+	color: #222;
+}
+.sectionright
+{
+	font-size: 0.9em;
+	float: right;
+}
+.sectionright a
+{
+	color: #777;
+}
+.sectionright a:hover
+{
+	color: #000;
+}
+.sectionright a.chosen
+{
+	font-weight: bold;
+}
+.catsection
+{
+	font-weight: bold;
+}
+.aeva_section
+{
+	overflow: hidden;
+	padding: 3px 0 5px 0;
+}
+.aeva_container
+{
+	float: left;
+}
+.aeva_pic
+{
+	width:  120px;
+	height: 80px;
+	overflow: hidden;
+	margin: 0 5px 10px 0;
+	border: solid 1px #bbb;	
+}
+.aeva_pic2
+{
+	width:  120px;
+	height: 80px;
+	overflow: hidden;
+	margin: 0 5px 10px 0;
+	border: solid 1px #bbb;
+	background: url(../images/theme/buddyoverlay.png) no-repeat;
+}
+.aeva_pic img,
+.aeva_pic2 img
+{
+}
+.aeva_container .name
+{
+	margin-right: 15px;
+	width: 120px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 0.96em;
+	padding: 0 0 3px 0;
+	text-transform: lowercase;
+}
+.aeva_container .name a
+{
+	color: #888;
+}
+.aeva_container .name a:hover
+{
+	color: #000;
+}
+.whoblock a
+{
+	color: #015691;
+}
+.whoblock a:hover
+{
+	color: #000;
+}
+
+.avatar16h
+{
+	width: 32px;
+	overflow: hidden;
+	float: left;
+}
+.avatar16h img
+{
+	padding-right: 8px;
+	height: 20px;
+	max-width: 100%;
+}
+.avatar16h2
+{
+	width: 42px;
+	overflow: hidden;
+	float: left;
+}
+.avatar16h2 img
+{
+	padding-right: 8px;
+	height: 30px;
+	max-width: 100%;
+}
+.avatar16h3
+{
+	width: 25px;
+	overflow: hidden;
+	float: left;
+}
+.avatar16h3 img
+{
+	height: 20px;
+	max-width: 100%;
+}
+.avatar60w img
+{
+	background: white;
+	padding: 2px;
+	border: solid 1px #aaa;
+	height: 60px;
+	max-height: 100%;
+}
+
+.topictable, .topictable2
+{
+	padding: 5px;
+	overflow: hidden;
+	background: #fff;
+}
+span.whop
+{
+	font-weight: normal;
+	display: block;
+	float: right;
+	font-size: 0.8em;
+}
+span.whop a, .topictable2 span.whop a
+{
+	color: #356;
+}
+.topictable a:hover, .topictable2 a:hover
+{
+	color: #000;
+}
+.topictable
+{
+}
+.topictable2
+{
+	border-bottom: solid 2px white;
+	background: #f0f4f8;
+}
+span.smalllinks
+{
+	font-size: 0.8em;
+}
+span.smalllinks a
+{
+	padding: 2px 3px;
+}
+span.smalllinks a:hover
+{
+	background: #556;
+	color: white;
+}
+.subprobuttons
+{
+	clear: right;
+	border: solid 2px #D7DBD4;
+	border-left: solid 15px #D7DBD4;
+	background: #fff;
+	padding: 1em;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+.formitem span.label
+{
+	display: block;
+	padding: 0 ;
+}
+.formitem input 
+{
+	border: solid 2px #D7DBD4;
+	background: white;
+	width: 100%;
+	margin-top: 4px;
+	font-size: 0.9em;
+	color: #666;
+}
+.probuttons_container
+{
+	overflow: hidden;
+}
+.probuttons
+{
+	float: right;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: -2px;
+}
+.probuttons a
+{
+	padding: 2px 8px 4px 8px;
+	display: block;
+	float: left;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #556;
+	border: solid 1px transparent;
+}
+.probuttons a.active
+{
+	border: solid 2px #D7DBD4;
+	background: #fff;
+	border-bottom: none;
+}
+.probuttons a:hover
+{
+	color: black;
+}
+.probuttons a:hover span.enhanced
+{
+	color: #000;
+}
+.probuttons a.active:hover
+{
+	color: black;
+}
+#spp .button_submit
+{
+	font-size: 0.8em;
+	background: white;
+}
+#spp .button_submit:hover
+{
+	background: #f0f7fc;
+}
+hr.divider
+{
+	background: transparent;
+	clear: both;
+	border: none;
+	height: 1px;
+	margin: 8px 0;
+}
+hr.divider2
+{
+	background: #ccc;
+	clear: both;
+	border: none;
+	height: 1px;
+	margin: 8px 0;
+}
+
+hr.divider3
+{
+	background: #eee;
+	clear: both;
+	border: none;
+	height: 1px;
+	margin: 2px 0;
+}
+.prochilds
+{
+	overflow: hidden;
+	padding: 2px 0;
+	color: #888;
+}
+.mini-description
+{
+	background: url(../images/theme/info.png) no-repeat 5px 50%;
+	padding: 8px 1em 8px 27px;
+	border-bottom: solid 1px #ddd;
+	margin-top: 0;
+}
+.mini_attach
+{
+	float: left;
+	margin: 0;
+	padding: 0.5em 0.5em 0.5em 0;
+}
+#ltree
+{
+	background: #f6f6f6;
+	padding: 0.5em 1em;
+	font-size: 0.85em;
+	margin: 4px 0;
+}
+
+
+.aeva_header h3 {
+	font-family: default;
+	font-size: 11pt;
+	float: left;
+	margin-top: 0;
+}
+.pics td {
+	border: none;
+	padding: 8px;
+	text-align: center;
+	vertical-align: top;
+	
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+#recent_pics,
+#random_pics,
+#aeva_form 
+{
+	overflow: auto;
+}
+.aep {
+	margin: 6px auto;
+}
+.aea, .aep {
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+.item_heading, .item_headings {
+	border: 1px solid #bbb;
+}
+fieldset
+{
+	margin: 0 0 1em 0;
+}
+fieldset input
+{
+	width: auto;
+}
+.voteitem_container
+{
+	background: #e0e0e0;
+	height: 8px;
+	margin: 6px 8em 6px 0;
+}
+.voteitem_container div
+{
+	background: #7D9144;
+	height: 8px;
+}
+
+
+
+.mainb
+{
+	overflow: hidden;
+	clear: both;
+	margin-top: 1em;
+}
+mainb ul, .mainb li
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	color: #888;
+	overflow: hidden;
+}
+.mainb li
+{
+	width: 49%; 
+	float: left;
+	display: block;
+	padding: 3px 0 3px 0;
+	color: #888;
+}
+.mainb li a
+{
+	color: #888;
+}
+.mainb li a:hover
+{
+	color: #000;
+}
+
+/* TP */
+#tpleftbarContainer
+{
+	padding: 10px;
+	border-right: solid 15px white;
+	background: #f8f8f8;
+}
+#tprightbarContainer
+{
+	padding-left: 15px;
+}
+#tpleftbarContainer h3.titlebg,
+#tpleftbarContainer h3.catbg,
+#tprightbarContainer h3.titlebg,
+#tprightbarContainer h3.catbg
+{
+	font-size: 0.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: solid 1px #ccc;
+	padding: 0 0 0;
+	margin: 0;
+	color: #444;
+	height: auto;
+}
+#tprightbarContainer h3.titlebg img,
+#tprightbarContainer h3.catbg img
+{
+	padding-bottom: 5px;
+}
+#tpleftbarContainer h3.titlebg span.left,
+#tpleftbarContainer h3.catbg span.left,
+#tprightbarContainer h3.titlebg span.left,
+#tprightbarContainer h3.catbg span.left
+{
+	display: none;
+}
+
+
+#portalmenu,#portalmenu li
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#portalmenu li
+{
+	float: left;
+	padding: 5px;
+	color: #555;
+}
+#portalmenu li ul
+{
+	display: none;
+}
+#portalmenu li a
+{
+	display: block;
+	color: #555;
+}
+#portalmenu li a:hover
+{
+	color: #000;
+}
+#portalmenu li a span.markbubble
+{
+	margin: -6px 4px 0 4px;
+	position: relative;
+	float: right;
+	display: block;
+	padding-left: 5px;
+	height: 16px;
+	background: url(../images/theme/markbubble.png) no-repeat;
+}
+#portalmenu li a span.markbubble span
+{
+	position: relative;
+	margin-right: -5px;
+	display: block;
+	padding-right: 5px;
+	height: 16px;
+	line-height: 16px;
+	color: white;
+	font-size: 10px;
+	background: url(../images/theme/markbubble.png) top right no-repeat;
+}
+#lbar
+{
+	background: #d7dbd4;
+}
+#usercell
+{
+	background: white;
+	margin: 2px 2px 1px 22px;
+	padding: 15px;
+}
+#whosblock
+{
+	background: #f0f0f0;
+	padding: 1em;
+	overflow: hidden;
+}
+h2.cats
+{
+	font-size: 1.3em;
+	font-weight: normal;
+	color: #666;
+	margin: 1em 0 5px 0;
+}
+h2.cats a
+{
+	color: #666;
+}
+h2.cats a:hover
+{
+	color: #000;
+}
+
+h3.cats
+{
+	margin: 2px 0 2px 0;
+	font-weight: normal;
+	color: #333;
+}
+.recent_topic a:hover,
+h3.cats a:hover
+{
+	color: #a50;
+}
+.cats_children
+{
+	padding: 0;
+	font-size: 0.85em;
+}
+.cats_children a
+{
+	color: #666;
+}
+.cats_children a:hover
+{
+	color: #000;
+}
+.divid
+{
+	height: 2em;
+	background: #f0f0f0;
+	margin: 1em 0;
+}
+
+.dropmenu li ul
+{
+	background: #f0f0f0;
+	border: solid 1px #bbb;
+}
+.dropmenu li ul ul
+{
+	background: #ffffff;
+}
+
+/* the hover effects on level2 and 3*/
+.dropmenu li li a:hover, .dropmenu li li:hover>a
+{
+	background: #666;
+	color: #fff;
+	text-decoration: none;
+}
+.dropmenu li li.additional_items
+{
+	background: #f0f0f0;
+}
